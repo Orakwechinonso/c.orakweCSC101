@@ -1,5 +1,0 @@
-; Additional time servers may be added to this file however
-; you must add the information using the format: Description (server_name)
-;
-National Institute of Standards and Technology (time-a.nist.gov)
-CTS (tick.ucla.edu)

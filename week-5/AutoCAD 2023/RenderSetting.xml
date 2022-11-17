@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!DOCTYPE RenderSetting>
+<RenderSetting version="1.0">
+  <Exposure value="-9.0"/>
+  <EnvironmentFiles>
+    <Environment id="GridLight" label="Grid Light">
+      <File id="hdr_GridLight"
+            path="/Environments/studio_03_grids.hdr"
+            exposure="-9.0"/>
+    </Environment>
+    <Environment id="Plaza" label="Plaza">
+      <File id="hdr_Plaza"
+            path="/Environments/mi360_Plaza.hdr"
+            exposure="-13.0"/>
+    </Environment>
+    <Environment id="Snowfield" label="Snowfield">
+      <File id="hdr_Snowfield"
+            path="/Environments/mi360_Snow_lat_long.hdr"
+            exposure="-11.5"/>
+    </Environment>
+    <Environment id="WarmLight" label="Warm Light">
+      <File id="hdr_WarmLight"
+            path="/Environments/studio_03_grids_spot_03_warm.hdr"
+            exposure="-9.0"/>
+    </Environment>
+  </EnvironmentFiles>
+  <RapidRTSetting>
+    <ConvergenceGoal value="2"/>
+    <RenderProgress value="6"/>
+    <ProgressiveTimerInterval value="0"/>
+    <IterationMax_EBasic value="5"/>
+    <IterationMax_EAdvanced value="300"/>
+  </RapidRTSetting>
+</RenderSetting>

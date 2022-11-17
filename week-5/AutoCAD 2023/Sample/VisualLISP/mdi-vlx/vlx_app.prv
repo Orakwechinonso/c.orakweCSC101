@@ -1,0 +1,12 @@
+;;; Visual LISP make file [V1.0] vlx_app saved to:[D:/Tahoe/SAMPLE/VisualLISP/mdi-vlx] at:[11/4/98] 
+(PRV-DEF (:target . "vlx_app.VLX")
+	 (:active-x . T)
+	 (:separate-namespace . T)
+	 (:protected . T)
+	 (:load-file-list (:lsp "vlx_file.lsp"))
+	 (:require-file-list)
+	 (:ob-directory)
+	 (:tmp-directory)
+	 (:optimization . lsa)
+)
+;; EOF

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AcCalcControlData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AllowGroupHide="true">
+    <ESWMinSize>
+        <Width>280</Width>
+        <Height>166</Height>
+    </ESWMinSize>
+    <ESWDefaultSize>
+        <Width>300</Width>
+        <Height>450</Height>
+    </ESWDefaultSize>
+    <ToolBar>
+        <ToolBarButton Image="calc_clear" Expression="C" ToolTip="#Clear" />
+        <ToolBarButton Image="calc_clear_hist" Expression="CH" ToolTip="#Clear History" />
+        <ToolBarButton Image="calc_paste"  Expression="paste" ToolTip="#Paste value to command line" Type="Modeless"/>
+        <ToolBarButton Image="SEPARATOR" />
+        <ToolBarButton Image="calc_point" Expression="CUR" ToolTip="#Get Coordinates" />
+        <ToolBarButton Image="calc_dist"  Expression="DIST(cur, cur)" ToolTip="#Distance Between Two Points" />
+        <ToolBarButton Image="calc_angle" Expression="ANG(CUR,CUR)" ToolTip="#Angle of Line Defined by Two Points" />
+        <ToolBarButton Image="calc_intersect"  Expression="ill(cur,cur,cur,cur)" ToolTip="#Intersection of Two Lines Defined by Four Points" />
+        <ToolBarButton Image="SEPARATOR" Expression="" />
+        <ToolBarButton Image="calc_help" Expression="help" ToolTip="#Help (F1)" />
+    </ToolBar>
+    <ButtonGroup GroupName="#Number Pad" GroupNumber="1" MaxHRatio="2.0" IsCollapsed="false" >
+        <ButtonSize>
+            <Width>36</Width>
+            <Height>23</Height>
+        </ButtonSize>
+        <Button Label="#C" Action="clear" ToolTip="#Clear" ExpressionType="UIExpression" Color="Red" HIndex="0" VIndex="0" />
+        <Button Label="←" Action="backspace" ToolTip="#Backspace" ExpressionType="UIExpression" Color="Red" HIndex="1" VIndex="0" />
+        <Button Label="√" Expression="sqrt(" ToolTip="#Square Root" ExpressionType="Operator_prefix" Color="Inactive" HIndex="2" VIndex="0" />
+        <Button Label="/" Expression="/" ExpressionType="Operator_postfix" Color="Inactive" HIndex="3" VIndex="0" />
+        <Button Label="1/x" Expression="1/(" ToolTip="#Inverse" ExpressionType="Operator_prefix" Color="Inactive" HIndex="4" VIndex="0" />
+        <Button Label="7" Expression="7" ExpressionType="Operand" Color="Active" HIndex="0" VIndex="1" />
+        <Button Label="8" Expression="8" ExpressionType="Operand" Color="Active" HIndex="1" VIndex="1" />
+        <Button Label="9" Expression="9" ExpressionType="Operand" Color="Active" HIndex="2" VIndex="1" />
+        <Button Label="*" Expression="*" ExpressionType="Operator_postfix" Color="Inactive" HIndex="3" VIndex="1" />
+        <Button Label="x^2" Expression="sqr(" ToolTip="#X to the Power of 2" ExpressionType="Operator_prefix" Color="Inactive" HIndex="4" VIndex="1" />
+        <Button Label="4" Expression="4" ExpressionType="Operand" Color="Active" HIndex="0" VIndex="2" />
+        <Button Label="5" Expression="5" ExpressionType="Operand" Color="Active" HIndex="1" VIndex="2" />
+        <Button Label="6" Expression="6" ExpressionType="Operand" Color="Active" HIndex="2" VIndex="2" />
+        <Button Label="+" Expression="+" ExpressionType="Operator_postfix" Color="Inactive" HIndex="3" VIndex="2" />  
+        <Button Label="x^3" Expression="^3" ToolTip="#X to the Power of 3" ExpressionType="Operator_postfix" Color="Inactive" HIndex="4" VIndex="2" />
+        <Button Label="1" Expression="1" ExpressionType="Operand" Color="Active" HIndex="0" VIndex="3" />
+        <Button Label="2" Expression="2" ExpressionType="Operand" Color="Active" HIndex="1" VIndex="3" />
+        <Button Label="3" Expression="3" ExpressionType="Operand" Color="Active" HIndex="2" VIndex="3" />
+        <Button Label="-" Expression="-" ExpressionType="Operator_postfix" Color="Inactive" HIndex="3" VIndex="3" />
+        <Button Label="x^y" Expression="^" ToolTip="#X to the Power of Y" ExpressionType="Operator_postfix" Color="Inactive" HIndex="4" VIndex="3" />
+        <Button Label="0" Expression="0" ExpressionType="Operand" Color="Active" HIndex="0" VIndex="4" />
+        <Button Label="." Expression="." ExpressionType="Operand" Color="Active" HIndex="1" VIndex="4" />
+        <Button Label="pi" Expression="pi" ExpressionType="Operand" Color="Active" HIndex="2" VIndex="4" />
+        <Button Label="(" Expression="(" ExpressionType="Operator_postfix" Color="Inactive" HIndex="3" VIndex="4" />
+        <Button Label=")" Expression=")" ExpressionType="Operator_postfix" Color="Inactive" HIndex="4" VIndex="4" />
+        <Button Label="=" Action="evaluate" Expression="=" ExpressionType="UIExpression" Color="Blue" HIndex="0" VIndex="5" />
+        <Button Label="MS" ExpressionType="UIExpression" ToolTip="#Store To Memory" Action="mem_store" Color="Inactive" HIndex="1" VIndex="5" />
+        <Button Label="M+" ExpressionType="UIExpression" ToolTip="#Add to Value Stored in Memory" Action="mem_plus" Color="Inactive" HIndex="2" VIndex="5" />
+        <Button Label="MR" ExpressionType="UIExpression" ToolTip="#Restore Memory Value" Action="mem_recall" Color="Inactive" HIndex="3" VIndex="5" />
+        <Button Label="MC" ExpressionType="UIExpression" ToolTip="#Clear Memory" Action="mem_clear" Color="Inactive" HIndex="4" VIndex="5" />
+    </ButtonGroup>
+    <ButtonGroup GroupName="#Scientific" GroupNumber="2" MaxHRatio="2.0" IsCollapsed="true" HIndex="0" VIndex="0" >
+        <ButtonSize>
+            <Width>36</Width>
+            <Height>23</Height>
+        </ButtonSize>
+        <Button Label="sin" Expression="sin(" ToolTip="#Sine" ExpressionType="Operator_prefix" Color="Inactive" HIndex="0" VIndex="0" />
+        <Button Label="cos" Expression="cos(" ToolTip="#Cosine" ExpressionType="Operator_prefix" Color="Inactive" HIndex="1" VIndex="0" />
+        <Button Label="tan" Expression="tang(" ToolTip="#Tangent" ExpressionType="Operator_prefix" Color="Inactive" HIndex="2" VIndex="0" />
+        <Button Label="log" Expression="log(" ToolTip="#Base-10 Log" ExpressionType="Operator_prefix" Color="Inactive" HIndex="3" VIndex="0" />
+        <Button Label="10^x" Expression="exp10(" ToolTip="#Base-10 Exponent" ExpressionType="Operator_prefix" Color="Inactive" HIndex="4" VIndex="0" />
+        <Button Label="asin" Expression="asin(" ToolTip="#Arcsine" ExpressionType="Operator_prefix" Color="Inactive" HIndex="0" VIndex="1" />
+        <Button Label="acos" Expression="acos(" ToolTip="#Arccosine" ExpressionType="Operator_prefix" Color="Inactive" HIndex="1" VIndex="1" />
+        <Button Label="atan" Expression="atan(" ToolTip="#Arctangent" ExpressionType="Operator_prefix" Color="Inactive" HIndex="2" VIndex="1" />
+        <Button Label="ln" Expression="ln(" ToolTip="#Natural Log" ExpressionType="Operator_prefix" Color="Inactive" HIndex="3" VIndex="1" />
+        <Button Label="e^x" Expression="exp(" ToolTip="#Natural Exponent" ExpressionType="Operator_prefix" Color="Inactive" HIndex="4" VIndex="1" />
+        <Button Label="r2d" Expression="r2d(" ToolTip="#Convert Radians to Degrees" ExpressionType="Operator_prefix" Color="Inactive" HIndex="0" VIndex="2" />
+        <Button Label="d2r" Expression="d2r(" ToolTip="#Convert Degrees to Radians" ExpressionType="Operator_prefix" Color="Inactive" HIndex="1" VIndex="2" />
+        <Button Label="#abs" Expression="abs(" ToolTip="#Absolute Value" ExpressionType="Operator_prefix" Color="Inactive" HIndex="2" VIndex="2" />
+        <Button Label="#rnd" Expression="round(" ToolTip="#Round" ExpressionType="Operator_prefix" Color="Inactive" HIndex="3" VIndex="2" />
+        <Button Label="#trunc" Expression="trunc(" ToolTip="#Truncate" ExpressionType="Operator_prefix" Color="Inactive" HIndex="4" VIndex="2" />
+    </ButtonGroup>
+    <UnitsGroup GroupName="#Units Conversion" GroupNumber="3" IsCollapsed="true">
+        <UnitType Name="Length" Label="#Length" IsDefault="true">
+            <UnitSubType Name="cm" Label="#Centimeters" />
+            <UnitSubType Name="ft" Label="#Feet" />
+            <UnitSubType Name="in" Label="#Inches" />
+            <UnitSubType Name="km" Label="#Kilometers" />
+            <UnitSubType Name="m" Label="#Meters" IsDefault="true" />
+            <UnitSubType Name="mi" Label="#Miles" />                   
+            <UnitSubType Name="mm" Label="#Millimeters" />
+            <UnitSubType Name="survey_foot" Label="#Survey feet" />
+            <UnitSubType Name="yd" Label="#Yards" />
+        </UnitType>/>
+        <UnitType Name="Area" Label="#Area">
+            <UnitSubType Name="acre" Label="#Acres" />
+            <UnitSubType Name="sq_cm" Label="#Square centimeters" />
+            <UnitSubType Name="sq_ft" Label="#Square feet" />
+            <UnitSubType Name="sq_in" Label="#Square inches" />
+            <UnitSubType Name="sq_km" Label="#Square kilometers" />
+            <UnitSubType Name="sq_m" Label="#Square meters" IsDefault="true" />
+            <UnitSubType Name="sq_mm" Label="#Square millimeters" />
+            <UnitSubType Name="sq_yd" Label="#Square yards" />
+        </UnitType>/>        
+        <UnitType Name="Volume" Label="#Volume">
+            <UnitSubType Name="cu_cm" Label="#Cubic centimeters" />
+            <UnitSubType Name="cu_ft" Label="#Cubic feet" />
+            <UnitSubType Name="cu_in" Label="#Cubic inches" />
+            <UnitSubType Name="cu_km" Label="#Cubic kilometers" />
+            <UnitSubType Name="cu_m" Label="#Cubic meters" IsDefault="true" />
+            <UnitSubType Name="cu_mm" Label="#Cubic millimeters" />
+            <UnitSubType Name="cu_yd" Label="#Cubic yards" />
+        </UnitType>/>        
+        <UnitType Name="Angular" Label="#Angular">
+            <UnitSubType Name="circle" Label="#Circles" />
+            <UnitSubType Name="degree" Label="#Degrees" IsDefault="true" />
+            <UnitSubType Name="grad" Label="#Grads" />
+            <UnitSubType Name="quadrant" Label="#Quadrants" />
+            <UnitSubType Name="radian" Label="#Radians" />
+        </UnitType>/>
+    </UnitsGroup>
+    <VariablesGroup GroupName="#Variables" GroupNumber="4" MinHeight="110" IsCollapsed="true">
+        <AcCalcVariablesData>
+        <VarCategory Name="#Sample variables" Type="default_function">
+            <Variable Name="Phi" Value="1.61803399" Type="double_constant" Description="#Golden ratio" />
+            <Variable Name="dee" Value="dist(end,end)" Type="function" Description="#Distance between two endpoints" />
+            <Variable Name="ille" Value="ill(end,end,end,end)" Type="function" Description="#Intersection of two lines defined by four endpoints" />
+            <Variable Name="mee" Value="(end+end)/2" Type="function" Description="#Midpoint between two endpoints" />
+            <Variable Name="nee" Value="nor(end,end)" Type="function" Description="#Unit vector in the XY plane normal to two endpoints" />
+            <Variable Name="rad" Value="rad" Type="function" Description="#Rad function for obtaining radius of a circle, arc, or polyline arc segment" />
+            <Variable Name="vee" Value="vec(end,end)" Type="function" Description="#Vector from two endpoints" />
+            <Variable Name="vee1" Value="vec1(end,end)" Type="function" Description="#Unit vector from two endpoints" />
+        </VarCategory>
+        <Path>U:\develop\global\Debug\bin\acad\calvar.ini</Path>
+        </AcCalcVariablesData>
+    </VariablesGroup>
+</AcCalcControlData>

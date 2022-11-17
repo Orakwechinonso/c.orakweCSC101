@@ -1,0 +1,51 @@
+{
+  "predefinedSamples": [
+    "ActiveX\\ExtAttr\\Assembly Sample.dwg",
+    "Mechanical Sample\\Data Extraction and Multileaders Sample.dwg",
+    "Database Connectivity\\Floor Plan Sample.dwg"
+  ],
+  "getOnlineTemplates": "url_online_template",
+  "learn": {
+    "url": "url_learn_tab",
+    "tipsUrl": "url_tips"
+  },
+  "insights": {
+    "url": "url_insights_tab"
+  },
+  "tryTab": {
+    "enabled": "no",
+    "settingUrl": ""
+  },
+  "alert": {
+    "enabled": "yes",
+    "alertUrl": "url_alerts"
+  },
+  "links": {
+    "whats_new": {
+      "enabled": "yes",
+      "url": "url_whats_new"
+    },
+    "online_help": {
+      "enabled": "yes",
+      "url": "url_online_help"
+    },
+    "community_forum": {
+      "enabled": "yes",
+      "url": "url_community_forum"
+    },
+    "customer_support": {
+      "enabled": "yes",
+      "url": "url_customer_support"
+    },
+    "acad_web": {
+      "enabled": "yes",
+      "url": "url_acad_web"
+    },
+    "acad_mobile": {
+      "enabled": "yes",
+      "url": "url_acad_mobile"
+    }
+  },
+  "myInsightsTab": "enabled",
+  "adpPrefix": "ACD"
+}

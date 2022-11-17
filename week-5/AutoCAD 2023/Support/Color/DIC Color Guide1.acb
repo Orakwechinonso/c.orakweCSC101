@@ -1,0 +1,5816 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<colorBook>
+  <bookName>DIC COLOR GUIDE(R)</bookName>
+  <majorVersion>1</majorVersion>
+  <minorVersion>0</minorVersion>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>SDM</redEncrypt>
+        <greenEncrypt>QND</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 1</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODO</redEncrypt>
+        <greenEncrypt>OJD</greenEncrypt>
+        <blueEncrypt>DQK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 2</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDO</redEncrypt>
+        <greenEncrypt>ORD</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 3</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDN</redEncrypt>
+        <greenEncrypt>PJD</greenEncrypt>
+        <blueEncrypt>DOI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 4</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDO</redEncrypt>
+        <greenEncrypt>QID</greenEncrypt>
+        <blueEncrypt>DPG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 5</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDO</redEncrypt>
+        <greenEncrypt>POD</greenEncrypt>
+        <blueEncrypt>DSL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 6</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDO</redEncrypt>
+        <greenEncrypt>QDD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 7</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDO</redEncrypt>
+        <greenEncrypt>OSD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 8</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODO</redEncrypt>
+        <greenEncrypt>OSD</greenEncrypt>
+        <blueEncrypt>DRS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 9</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDO</redEncrypt>
+        <greenEncrypt>NQD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 10</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDN</redEncrypt>
+        <greenEncrypt>MPD</greenEncrypt>
+        <blueEncrypt>DRH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>GDN</redEncrypt>
+        <greenEncrypt>SJD</greenEncrypt>
+        <blueEncrypt>DRM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 11</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDO</redEncrypt>
+        <greenEncrypt>MND</greenEncrypt>
+        <blueEncrypt>DRH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 12</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDP</redEncrypt>
+        <greenEncrypt>NID</greenEncrypt>
+        <blueEncrypt>DRH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 13</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDQ</redEncrypt>
+        <greenEncrypt>NFD</greenEncrypt>
+        <blueEncrypt>DSH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 14</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDR</redEncrypt>
+        <greenEncrypt>NPD</greenEncrypt>
+        <blueEncrypt>DRL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 15</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDE</redEncrypt>
+        <greenEncrypt>NDD</greenEncrypt>
+        <blueEncrypt>DQG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 16</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>NRD</greenEncrypt>
+        <blueEncrypt>DNR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 17</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDD</redEncrypt>
+        <greenEncrypt>NDD</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 18</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDE</redEncrypt>
+        <greenEncrypt>NND</greenEncrypt>
+        <blueEncrypt>DOK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 19</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDS</redEncrypt>
+        <greenEncrypt>OKD</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 20</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDS</redEncrypt>
+        <greenEncrypt>OED</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDQ</redEncrypt>
+        <greenEncrypt>PKD</greenEncrypt>
+        <blueEncrypt>DLP</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 21</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>NLD</greenEncrypt>
+        <blueEncrypt>DLE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 22</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDO</redEncrypt>
+        <greenEncrypt>NLD</greenEncrypt>
+        <blueEncrypt>DLD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 23</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDN</redEncrypt>
+        <greenEncrypt>PED</greenEncrypt>
+        <blueEncrypt>DOH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 24</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDM</redEncrypt>
+        <greenEncrypt>PSD</greenEncrypt>
+        <blueEncrypt>DNN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 25</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDL</redEncrypt>
+        <greenEncrypt>RQD</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 26</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DQE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 27</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDL</redEncrypt>
+        <greenEncrypt>DED</greenEncrypt>
+        <blueEncrypt>DPP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 28</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDL</redEncrypt>
+        <greenEncrypt>DHD</greenEncrypt>
+        <blueEncrypt>DSQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 29</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>SSD</greenEncrypt>
+        <blueEncrypt>DSG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 30</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DEN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>OMD</greenEncrypt>
+        <blueEncrypt>DEN</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 31</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDL</redEncrypt>
+        <greenEncrypt>QKD</greenEncrypt>
+        <blueEncrypt>DEK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 32</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>ODD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 33</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDL</redEncrypt>
+        <greenEncrypt>NED</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 34</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDN</redEncrypt>
+        <greenEncrypt>NHD</greenEncrypt>
+        <blueEncrypt>DIO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 35</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDP</redEncrypt>
+        <greenEncrypt>NED</greenEncrypt>
+        <blueEncrypt>DDQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 36</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDS</redEncrypt>
+        <greenEncrypt>NFD</greenEncrypt>
+        <blueEncrypt>DDS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 37</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>NGD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 38</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>OED</greenEncrypt>
+        <blueEncrypt>DSK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 39</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDJ</redEncrypt>
+        <greenEncrypt>NND</greenEncrypt>
+        <blueEncrypt>DPS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 40</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDK</redEncrypt>
+        <greenEncrypt>ODD</greenEncrypt>
+        <blueEncrypt>DQQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDH</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DND</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 41</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDI</redEncrypt>
+        <greenEncrypt>OJD</greenEncrypt>
+        <blueEncrypt>DNQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 42</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDH</redEncrypt>
+        <greenEncrypt>OID</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 43</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDD</redEncrypt>
+        <greenEncrypt>PMD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 44</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDR</redEncrypt>
+        <greenEncrypt>PND</greenEncrypt>
+        <blueEncrypt>DOL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 45</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDP</redEncrypt>
+        <greenEncrypt>PND</greenEncrypt>
+        <blueEncrypt>DOQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 46</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>SLD</greenEncrypt>
+        <blueEncrypt>DNK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 47</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDN</redEncrypt>
+        <greenEncrypt>DPD</greenEncrypt>
+        <blueEncrypt>DQE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 48</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDM</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DPM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 49</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDM</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DPJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 50</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDL</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DRO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>MDM</redEncrypt>
+        <greenEncrypt>KKD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 51</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DEG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 52</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>DHD</greenEncrypt>
+        <blueEncrypt>DDH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 53</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDL</redEncrypt>
+        <greenEncrypt>SND</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 54</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DGJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 55</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDL</redEncrypt>
+        <greenEncrypt>QFD</greenEncrypt>
+        <blueEncrypt>DGQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 56</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>PID</greenEncrypt>
+        <blueEncrypt>DFO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 57</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>NRD</greenEncrypt>
+        <blueEncrypt>DIP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 58</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDN</redEncrypt>
+        <greenEncrypt>MRD</greenEncrypt>
+        <blueEncrypt>DDR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 59</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDP</redEncrypt>
+        <greenEncrypt>NJD</greenEncrypt>
+        <blueEncrypt>DGI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 60</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDQ</redEncrypt>
+        <greenEncrypt>NQD</greenEncrypt>
+        <blueEncrypt>DFR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>EDR</redEncrypt>
+        <greenEncrypt>QLD</greenEncrypt>
+        <blueEncrypt>DGG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 61</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDS</redEncrypt>
+        <greenEncrypt>OGD</greenEncrypt>
+        <blueEncrypt>DGR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 62</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDE</redEncrypt>
+        <greenEncrypt>NOD</greenEncrypt>
+        <blueEncrypt>DRE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 63</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>OID</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 64</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>OGD</greenEncrypt>
+        <blueEncrypt>DQK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 65</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>OJD</greenEncrypt>
+        <blueEncrypt>DQQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 66</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDK</redEncrypt>
+        <greenEncrypt>ORD</greenEncrypt>
+        <blueEncrypt>DNM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 67</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>PID</greenEncrypt>
+        <blueEncrypt>DOP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 68</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>PJD</greenEncrypt>
+        <blueEncrypt>DOS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 69</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDF</redEncrypt>
+        <greenEncrypt>QLD</greenEncrypt>
+        <blueEncrypt>DNN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 70</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDF</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DNK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDN</redEncrypt>
+        <greenEncrypt>LOD</greenEncrypt>
+        <blueEncrypt>DLM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 71</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDO</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DLH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 72</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDO</redEncrypt>
+        <greenEncrypt>SQD</greenEncrypt>
+        <blueEncrypt>DNL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 73</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDN</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 74</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDM</redEncrypt>
+        <greenEncrypt>FID</greenEncrypt>
+        <blueEncrypt>DPS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 75</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDL</redEncrypt>
+        <greenEncrypt>EED</greenEncrypt>
+        <blueEncrypt>DSQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 76</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDL</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DEQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 77</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DDR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 78</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDL</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DGD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 79</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDL</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DGO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 80</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>EDD</greenEncrypt>
+        <blueEncrypt>DFK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DIR</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 81</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDL</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 82</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DIJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 83</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDL</redEncrypt>
+        <greenEncrypt>SSD</greenEncrypt>
+        <blueEncrypt>DKO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 84</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DHG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 85</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDL</redEncrypt>
+        <greenEncrypt>QLD</greenEncrypt>
+        <blueEncrypt>DKJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 86</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>POD</greenEncrypt>
+        <blueEncrypt>DJH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 87</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDL</redEncrypt>
+        <greenEncrypt>MGD</greenEncrypt>
+        <blueEncrypt>DJH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 88</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDN</redEncrypt>
+        <greenEncrypt>NQD</greenEncrypt>
+        <blueEncrypt>DKS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 89</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDP</redEncrypt>
+        <greenEncrypt>NQD</greenEncrypt>
+        <blueEncrypt>DFH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 90</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDR</redEncrypt>
+        <greenEncrypt>OQD</greenEncrypt>
+        <blueEncrypt>DHH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDD</redEncrypt>
+        <greenEncrypt>QHD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 91</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDE</redEncrypt>
+        <greenEncrypt>ODD</greenEncrypt>
+        <blueEncrypt>DIR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 92</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDK</redEncrypt>
+        <greenEncrypt>OFD</greenEncrypt>
+        <blueEncrypt>DDJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 93</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>OFD</greenEncrypt>
+        <blueEncrypt>DSE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 94</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>OGD</greenEncrypt>
+        <blueEncrypt>DPG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 95</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>PQD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 96</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDK</redEncrypt>
+        <greenEncrypt>PLD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 97</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>PQD</greenEncrypt>
+        <blueEncrypt>DNF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 98</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>PLD</greenEncrypt>
+        <blueEncrypt>DNL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 99</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDK</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DOI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 100</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDK</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DMP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>DDG</redEncrypt>
+        <greenEncrypt>LGD</greenEncrypt>
+        <blueEncrypt>DOI</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 101</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDF</redEncrypt>
+        <greenEncrypt>RSD</greenEncrypt>
+        <blueEncrypt>DLM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 102</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDE</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DLO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 103</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDD</redEncrypt>
+        <greenEncrypt>RND</greenEncrypt>
+        <blueEncrypt>DLO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 104</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDS</redEncrypt>
+        <greenEncrypt>SID</greenEncrypt>
+        <blueEncrypt>DLP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 105</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDS</redEncrypt>
+        <greenEncrypt>DRD</greenEncrypt>
+        <blueEncrypt>DLK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 106</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDP</redEncrypt>
+        <greenEncrypt>DPD</greenEncrypt>
+        <blueEncrypt>DLH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 107</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDO</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DMK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 108</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>HGD</greenEncrypt>
+        <blueEncrypt>DSR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 109</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDN</redEncrypt>
+        <greenEncrypt>GJD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 110</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDN</redEncrypt>
+        <greenEncrypt>HQD</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDL</redEncrypt>
+        <greenEncrypt>FID</greenEncrypt>
+        <blueEncrypt>DSQ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 111</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDM</redEncrypt>
+        <greenEncrypt>HMD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 112</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDM</redEncrypt>
+        <greenEncrypt>IKD</greenEncrypt>
+        <blueEncrypt>DPG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 113</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDM</redEncrypt>
+        <greenEncrypt>HPD</greenEncrypt>
+        <blueEncrypt>DFO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 114</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDM</redEncrypt>
+        <greenEncrypt>IOD</greenEncrypt>
+        <blueEncrypt>DGI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 115</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>GLD</greenEncrypt>
+        <blueEncrypt>DDQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 116</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODL</redEncrypt>
+        <greenEncrypt>HHD</greenEncrypt>
+        <blueEncrypt>DEN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 117</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>HGD</greenEncrypt>
+        <blueEncrypt>DEG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 118</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>GSD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 119</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDL</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DJR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 120</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DHL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>MGD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 121</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>SSD</greenEncrypt>
+        <blueEncrypt>DHM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 122</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>RID</greenEncrypt>
+        <blueEncrypt>DHS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 123</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>QDD</greenEncrypt>
+        <blueEncrypt>DIK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 124</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>PMD</greenEncrypt>
+        <blueEncrypt>DID</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 125</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>OED</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 126</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>MND</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 127</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDN</redEncrypt>
+        <greenEncrypt>NID</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 128</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>NSD</greenEncrypt>
+        <blueEncrypt>DIP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 129</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDG</redEncrypt>
+        <greenEncrypt>OED</greenEncrypt>
+        <blueEncrypt>DEK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 130</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDK</redEncrypt>
+        <greenEncrypt>OMD</greenEncrypt>
+        <blueEncrypt>DJM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>NRD</greenEncrypt>
+        <blueEncrypt>DDL</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 131</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>PFD</greenEncrypt>
+        <blueEncrypt>DGH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 132</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>PGD</greenEncrypt>
+        <blueEncrypt>DQG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 133</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>PFD</greenEncrypt>
+        <blueEncrypt>DSF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 134</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DSI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 135</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>QDD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 136</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>QRD</greenEncrypt>
+        <blueEncrypt>DRJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 137</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>QDD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 138</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>RGD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 139</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>RPD</greenEncrypt>
+        <blueEncrypt>DMP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 140</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>RND</greenEncrypt>
+        <blueEncrypt>DLI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>MDH</redEncrypt>
+        <greenEncrypt>MQD</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 141</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDI</redEncrypt>
+        <greenEncrypt>SED</greenEncrypt>
+        <blueEncrypt>DLP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 142</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>SED</greenEncrypt>
+        <blueEncrypt>DLP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 143</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDF</redEncrypt>
+        <greenEncrypt>ERD</greenEncrypt>
+        <blueEncrypt>DRM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 144</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDE</redEncrypt>
+        <greenEncrypt>FKD</greenEncrypt>
+        <blueEncrypt>DMR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 145</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DMR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 146</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDR</redEncrypt>
+        <greenEncrypt>HOD</greenEncrypt>
+        <blueEncrypt>DMD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 147</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDD</redEncrypt>
+        <greenEncrypt>JSD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 148</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>IMD</greenEncrypt>
+        <blueEncrypt>DQQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 149</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDQ</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 150</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDR</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DSR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 150B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDQ</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 151</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDO</redEncrypt>
+        <greenEncrypt>JKD</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 152</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDO</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 153</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDN</redEncrypt>
+        <greenEncrypt>ILD</greenEncrypt>
+        <blueEncrypt>DQL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 154</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDN</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DFE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 155</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDN</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DDO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 156</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDM</redEncrypt>
+        <greenEncrypt>JND</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 157</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>IOD</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 158</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDL</redEncrypt>
+        <greenEncrypt>IJD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 159</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDL</redEncrypt>
+        <greenEncrypt>HSD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>HFD</greenEncrypt>
+        <blueEncrypt>DKL</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 160</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>FRD</greenEncrypt>
+        <blueEncrypt>DHI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 161</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>EGD</greenEncrypt>
+        <blueEncrypt>DII</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 162</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>DKD</greenEncrypt>
+        <blueEncrypt>DIJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 163</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>RQD</greenEncrypt>
+        <blueEncrypt>DIK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 164</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DID</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 165</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>PSD</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 166</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODL</redEncrypt>
+        <greenEncrypt>OFD</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 167</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>MMD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 168</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDM</redEncrypt>
+        <greenEncrypt>NFD</greenEncrypt>
+        <blueEncrypt>DIP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 169</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDO</redEncrypt>
+        <greenEncrypt>NPD</greenEncrypt>
+        <blueEncrypt>DIQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>ODP</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DJM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 170</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDQ</redEncrypt>
+        <greenEncrypt>OID</greenEncrypt>
+        <blueEncrypt>DIH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 171</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDF</redEncrypt>
+        <greenEncrypt>PGD</greenEncrypt>
+        <blueEncrypt>DKE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 172</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>QED</greenEncrypt>
+        <blueEncrypt>DEG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 173</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>QQD</greenEncrypt>
+        <blueEncrypt>DGQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 174</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>PMD</greenEncrypt>
+        <blueEncrypt>DFO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 175</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DPI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 176</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DPI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 177</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DSE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 178</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DSE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 179</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>RLD</greenEncrypt>
+        <blueEncrypt>DRK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>MOD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 180</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 181</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>SMD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 182</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>DND</greenEncrypt>
+        <blueEncrypt>DRP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 183</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DMF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 184</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 185</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDG</redEncrypt>
+        <greenEncrypt>GOD</greenEncrypt>
+        <blueEncrypt>DMG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 186</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>IRD</greenEncrypt>
+        <blueEncrypt>DRI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 187</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODE</redEncrypt>
+        <greenEncrypt>JGD</greenEncrypt>
+        <blueEncrypt>DRK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 188</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDE</redEncrypt>
+        <greenEncrypt>IMD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 189</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODS</redEncrypt>
+        <greenEncrypt>KSD</greenEncrypt>
+        <blueEncrypt>DRR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>QDS</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 190</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>KGD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 191</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODR</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DPP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 192</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDS</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DFS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 193</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDQ</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DGJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 194</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDP</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DGE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 195</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDP</redEncrypt>
+        <greenEncrypt>KLD</greenEncrypt>
+        <blueEncrypt>DDS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 196</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDQ</redEncrypt>
+        <greenEncrypt>JLD</greenEncrypt>
+        <blueEncrypt>DJO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 197</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDP</redEncrypt>
+        <greenEncrypt>JHD</greenEncrypt>
+        <blueEncrypt>DJF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 198</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDN</redEncrypt>
+        <greenEncrypt>IJD</greenEncrypt>
+        <blueEncrypt>DJQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 199</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>HPD</greenEncrypt>
+        <blueEncrypt>DKE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>PDN</redEncrypt>
+        <greenEncrypt>IRD</greenEncrypt>
+        <blueEncrypt>DHE</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 200</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>GED</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 201</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>FHD</greenEncrypt>
+        <blueEncrypt>DHK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 202</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODO</redEncrypt>
+        <greenEncrypt>ERD</greenEncrypt>
+        <blueEncrypt>DIJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 203</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>EGD</greenEncrypt>
+        <blueEncrypt>DIK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 204</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDM</redEncrypt>
+        <greenEncrypt>DFD</greenEncrypt>
+        <blueEncrypt>DIS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 205</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDL</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 206</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDL</redEncrypt>
+        <greenEncrypt>QED</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 207</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDO</redEncrypt>
+        <greenEncrypt>RSD</greenEncrypt>
+        <blueEncrypt>DHF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 208</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDO</redEncrypt>
+        <greenEncrypt>POD</greenEncrypt>
+        <blueEncrypt>DIP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 209</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDP</redEncrypt>
+        <greenEncrypt>POD</greenEncrypt>
+        <blueEncrypt>DIQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDS</redEncrypt>
+        <greenEncrypt>OMD</greenEncrypt>
+        <blueEncrypt>DJM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 210</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDR</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DIH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 211</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>QLD</greenEncrypt>
+        <blueEncrypt>DJI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 212</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDF</redEncrypt>
+        <greenEncrypt>RFD</greenEncrypt>
+        <blueEncrypt>DJF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 213</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDH</redEncrypt>
+        <greenEncrypt>SQD</greenEncrypt>
+        <blueEncrypt>DEK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 214</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDH</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DDJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 215</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>RRD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 216</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>RSD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 217</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>SQD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 218</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DFF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 219</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>EID</greenEncrypt>
+        <blueEncrypt>DFF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>HDD</greenEncrypt>
+        <blueEncrypt>DRS</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 220</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDK</redEncrypt>
+        <greenEncrypt>FSD</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 221</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDK</redEncrypt>
+        <greenEncrypt>EPD</greenEncrypt>
+        <blueEncrypt>DRI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 222</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDI</redEncrypt>
+        <greenEncrypt>GHD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 223</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDG</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DSG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 224</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDG</redEncrypt>
+        <greenEncrypt>HMD</greenEncrypt>
+        <blueEncrypt>DQL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 225</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODG</redEncrypt>
+        <greenEncrypt>IJD</greenEncrypt>
+        <blueEncrypt>DQI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 226</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDF</redEncrypt>
+        <greenEncrypt>IND</greenEncrypt>
+        <blueEncrypt>DFS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 227</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDE</redEncrypt>
+        <greenEncrypt>ISD</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 228</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>IQD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 229</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDE</redEncrypt>
+        <greenEncrypt>IOD</greenEncrypt>
+        <blueEncrypt>DDG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DIK</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 230</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDD</redEncrypt>
+        <greenEncrypt>KJD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 231</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDD</redEncrypt>
+        <greenEncrypt>KDD</greenEncrypt>
+        <blueEncrypt>DEE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 232</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDR</redEncrypt>
+        <greenEncrypt>JKD</greenEncrypt>
+        <blueEncrypt>DEE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 233</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDR</redEncrypt>
+        <greenEncrypt>IKD</greenEncrypt>
+        <blueEncrypt>DEE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 234</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDQ</redEncrypt>
+        <greenEncrypt>JJD</greenEncrypt>
+        <blueEncrypt>DJP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 235</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDQ</redEncrypt>
+        <greenEncrypt>JHD</greenEncrypt>
+        <blueEncrypt>DKR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 236</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>HMD</greenEncrypt>
+        <blueEncrypt>DJF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 237</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDP</redEncrypt>
+        <greenEncrypt>HHD</greenEncrypt>
+        <blueEncrypt>DKJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 238</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>FLD</greenEncrypt>
+        <blueEncrypt>DHK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 239</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDQ</redEncrypt>
+        <greenEncrypt>FHD</greenEncrypt>
+        <blueEncrypt>DHS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>QDP</redEncrypt>
+        <greenEncrypt>JKD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 240</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDQ</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DHL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 241</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDP</redEncrypt>
+        <greenEncrypt>DKD</greenEncrypt>
+        <blueEncrypt>DIL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 242</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDP</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DHG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 243</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDS</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DIO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 244</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODR</redEncrypt>
+        <greenEncrypt>SID</greenEncrypt>
+        <blueEncrypt>DID</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 245</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>SJD</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 246</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDE</redEncrypt>
+        <greenEncrypt>SLD</greenEncrypt>
+        <blueEncrypt>DKF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 247</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDF</redEncrypt>
+        <greenEncrypt>DDD</greenEncrypt>
+        <blueEncrypt>DKF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 248</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDG</redEncrypt>
+        <greenEncrypt>DFD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 249</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDH</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DJP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>HDH</redEncrypt>
+        <greenEncrypt>MGD</greenEncrypt>
+        <blueEncrypt>DGD</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 250</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDI</redEncrypt>
+        <greenEncrypt>SPD</greenEncrypt>
+        <blueEncrypt>DDQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 251</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>FND</greenEncrypt>
+        <blueEncrypt>DEP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 252</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>EKD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 253</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>EDD</greenEncrypt>
+        <blueEncrypt>DFM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 254</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDK</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DQD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 255</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>HJD</greenEncrypt>
+        <blueEncrypt>DFM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 256</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDH</redEncrypt>
+        <greenEncrypt>HGD</greenEncrypt>
+        <blueEncrypt>DGR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 257</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDG</redEncrypt>
+        <greenEncrypt>IED</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 258</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDM</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 259</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>PND</greenEncrypt>
+        <blueEncrypt>DRM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>MDO</redEncrypt>
+        <greenEncrypt>LQD</greenEncrypt>
+        <blueEncrypt>DPQ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 260</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODN</redEncrypt>
+        <greenEncrypt>RFD</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 261</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>SPD</greenEncrypt>
+        <blueEncrypt>DSH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 262</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDN</redEncrypt>
+        <greenEncrypt>EKD</greenEncrypt>
+        <blueEncrypt>DPM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 263</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DQK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 264</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDP</redEncrypt>
+        <greenEncrypt>FLD</greenEncrypt>
+        <blueEncrypt>DFP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 265</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DQG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 266</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDN</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 267</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDN</redEncrypt>
+        <greenEncrypt>FFD</greenEncrypt>
+        <blueEncrypt>DQP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 268</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDM</redEncrypt>
+        <greenEncrypt>FFD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 269</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDN</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>NDO</redEncrypt>
+        <greenEncrypt>HFD</greenEncrypt>
+        <blueEncrypt>DRH</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 270</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDN</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DQM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 271</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>JRD</greenEncrypt>
+        <blueEncrypt>DGQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 272</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDP</redEncrypt>
+        <greenEncrypt>FND</greenEncrypt>
+        <blueEncrypt>DFE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 273</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDR</redEncrypt>
+        <greenEncrypt>IRD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 274</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDM</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DQP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 275</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDM</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 276</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDN</redEncrypt>
+        <greenEncrypt>GHD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 277</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDN</redEncrypt>
+        <greenEncrypt>GRD</greenEncrypt>
+        <blueEncrypt>DFI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 278</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>GDD</greenEncrypt>
+        <blueEncrypt>DFS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 279</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDO</redEncrypt>
+        <greenEncrypt>HKD</greenEncrypt>
+        <blueEncrypt>DFL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>QDN</redEncrypt>
+        <greenEncrypt>IID</greenEncrypt>
+        <blueEncrypt>DEI</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 280</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DFL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 281</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDP</redEncrypt>
+        <greenEncrypt>IQD</greenEncrypt>
+        <blueEncrypt>DDL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 282</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDP</redEncrypt>
+        <greenEncrypt>HHD</greenEncrypt>
+        <blueEncrypt>DFF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 283</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDR</redEncrypt>
+        <greenEncrypt>JID</greenEncrypt>
+        <blueEncrypt>DEF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 284</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDN</redEncrypt>
+        <greenEncrypt>FDD</greenEncrypt>
+        <blueEncrypt>DFN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 285</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDO</redEncrypt>
+        <greenEncrypt>HOD</greenEncrypt>
+        <blueEncrypt>DDD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 286</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>IHD</greenEncrypt>
+        <blueEncrypt>DDS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 287</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODL</redEncrypt>
+        <greenEncrypt>QFD</greenEncrypt>
+        <blueEncrypt>DPO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 288</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDM</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 289</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDN</redEncrypt>
+        <greenEncrypt>DQD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>PDN</redEncrypt>
+        <greenEncrypt>JMD</greenEncrypt>
+        <blueEncrypt>DEE</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 290</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DFP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 291</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDO</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 292</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDQ</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DGI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 293</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDR</redEncrypt>
+        <greenEncrypt>GOD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 294</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDM</redEncrypt>
+        <greenEncrypt>END</greenEncrypt>
+        <blueEncrypt>DGL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 295</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDO</redEncrypt>
+        <greenEncrypt>HFD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 296</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDQ</redEncrypt>
+        <greenEncrypt>GHD</greenEncrypt>
+        <blueEncrypt>DEK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 297</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 298</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDQ</redEncrypt>
+        <greenEncrypt>GPD</greenEncrypt>
+        <blueEncrypt>DEH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 299</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDP</redEncrypt>
+        <greenEncrypt>GMD</greenEncrypt>
+        <blueEncrypt>DDO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>RDS</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DIJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 300</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDR</redEncrypt>
+        <greenEncrypt>HGD</greenEncrypt>
+        <blueEncrypt>DJO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 301</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDP</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DED</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 302</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDP</redEncrypt>
+        <greenEncrypt>FPD</greenEncrypt>
+        <blueEncrypt>DJG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 303</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODS</redEncrypt>
+        <greenEncrypt>GDD</greenEncrypt>
+        <blueEncrypt>DKN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 304</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDD</redEncrypt>
+        <greenEncrypt>IID</greenEncrypt>
+        <blueEncrypt>DKG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 305</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDR</redEncrypt>
+        <greenEncrypt>IDD</greenEncrypt>
+        <blueEncrypt>DJD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 306</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDR</redEncrypt>
+        <greenEncrypt>GRD</greenEncrypt>
+        <blueEncrypt>DHS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 307</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDD</redEncrypt>
+        <greenEncrypt>GLD</greenEncrypt>
+        <blueEncrypt>DKQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 308</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>GQD</greenEncrypt>
+        <blueEncrypt>DJR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 309</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDD</redEncrypt>
+        <greenEncrypt>GPD</greenEncrypt>
+        <blueEncrypt>DJO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>HDD</redEncrypt>
+        <greenEncrypt>FMD</greenEncrypt>
+        <blueEncrypt>DIO</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 310</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDE</redEncrypt>
+        <greenEncrypt>HKD</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 311</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDG</redEncrypt>
+        <greenEncrypt>HRD</greenEncrypt>
+        <blueEncrypt>DKS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 312</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDF</redEncrypt>
+        <greenEncrypt>HFD</greenEncrypt>
+        <blueEncrypt>DKQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 313</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>RMD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 314</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDO</redEncrypt>
+        <greenEncrypt>SND</greenEncrypt>
+        <blueEncrypt>DKR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 315</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>DQD</greenEncrypt>
+        <blueEncrypt>DDE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 316</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDO</redEncrypt>
+        <greenEncrypt>RND</greenEncrypt>
+        <blueEncrypt>DGG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 317</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDP</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 318</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDO</redEncrypt>
+        <greenEncrypt>SPD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 319</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDP</redEncrypt>
+        <greenEncrypt>EKD</greenEncrypt>
+        <blueEncrypt>DEQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>NDQ</redEncrypt>
+        <greenEncrypt>KID</greenEncrypt>
+        <blueEncrypt>DFO</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 320</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDP</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DEJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 321</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDR</redEncrypt>
+        <greenEncrypt>FHD</greenEncrypt>
+        <blueEncrypt>DJH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 322</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>GHD</greenEncrypt>
+        <blueEncrypt>DKL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 323</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 324</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDQ</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 325</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDR</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DJG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 326</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDR</redEncrypt>
+        <greenEncrypt>GFD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 327</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDD</redEncrypt>
+        <greenEncrypt>HRD</greenEncrypt>
+        <blueEncrypt>DKE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 328</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>HHD</greenEncrypt>
+        <blueEncrypt>DKE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 329</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>GOD</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>MDG</redEncrypt>
+        <greenEncrypt>IHD</greenEncrypt>
+        <blueEncrypt>DIO</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 330</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 331</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>GRD</greenEncrypt>
+        <blueEncrypt>DJK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 332</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDF</redEncrypt>
+        <greenEncrypt>HQD</greenEncrypt>
+        <blueEncrypt>DKN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 333</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDF</redEncrypt>
+        <greenEncrypt>HPD</greenEncrypt>
+        <blueEncrypt>DKN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 334</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>QRD</greenEncrypt>
+        <blueEncrypt>DFD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 335</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODO</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DDP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 336</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDP</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DJR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 337</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>SSD</greenEncrypt>
+        <blueEncrypt>DEF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 338</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDR</redEncrypt>
+        <greenEncrypt>EDD</greenEncrypt>
+        <blueEncrypt>DHG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 339</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDS</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DJP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>KHD</greenEncrypt>
+        <blueEncrypt>DHJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 340</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDS</redEncrypt>
+        <greenEncrypt>END</greenEncrypt>
+        <blueEncrypt>DKO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 341</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDD</redEncrypt>
+        <greenEncrypt>FOD</greenEncrypt>
+        <blueEncrypt>DKI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 342</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDE</redEncrypt>
+        <greenEncrypt>GID</greenEncrypt>
+        <blueEncrypt>DKL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 343</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDE</redEncrypt>
+        <greenEncrypt>FOD</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 344</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DJD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 345</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>GMD</greenEncrypt>
+        <blueEncrypt>DKQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 346</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDD</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 347</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDF</redEncrypt>
+        <greenEncrypt>GMD</greenEncrypt>
+        <blueEncrypt>DKM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 348</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDQ</redEncrypt>
+        <greenEncrypt>RFD</greenEncrypt>
+        <blueEncrypt>DDI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 349</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODD</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DJH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDE</redEncrypt>
+        <greenEncrypt>JHD</greenEncrypt>
+        <blueEncrypt>DII</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 350</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDD</redEncrypt>
+        <greenEncrypt>DND</greenEncrypt>
+        <blueEncrypt>DJL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 351</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DJS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 352</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDF</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 353</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDE</redEncrypt>
+        <greenEncrypt>FKD</greenEncrypt>
+        <blueEncrypt>DKR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 354</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDD</redEncrypt>
+        <greenEncrypt>EPD</greenEncrypt>
+        <blueEncrypt>DJF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 355</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DEG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 356</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDF</redEncrypt>
+        <greenEncrypt>GID</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 357</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDQ</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DGD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 358</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>PSD</greenEncrypt>
+        <blueEncrypt>DGH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 359</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>PHD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>SDP</redEncrypt>
+        <greenEncrypt>NMD</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 360</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDQ</redEncrypt>
+        <greenEncrypt>PKD</greenEncrypt>
+        <blueEncrypt>DJP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 361</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDR</redEncrypt>
+        <greenEncrypt>PND</greenEncrypt>
+        <blueEncrypt>DHM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 362</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDS</redEncrypt>
+        <greenEncrypt>RPD</greenEncrypt>
+        <blueEncrypt>DKJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 363</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDS</redEncrypt>
+        <greenEncrypt>QHD</greenEncrypt>
+        <blueEncrypt>DDD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 364</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDS</redEncrypt>
+        <greenEncrypt>POD</greenEncrypt>
+        <blueEncrypt>DGN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 365</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDD</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 366</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDE</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DDM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 367</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDE</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DDG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 368</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDE</redEncrypt>
+        <greenEncrypt>SOD</greenEncrypt>
+        <blueEncrypt>DKJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 369</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDE</redEncrypt>
+        <greenEncrypt>DKD</greenEncrypt>
+        <blueEncrypt>DJK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>HDE</redEncrypt>
+        <greenEncrypt>JSD</greenEncrypt>
+        <blueEncrypt>DIO</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 370</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDD</redEncrypt>
+        <greenEncrypt>DED</greenEncrypt>
+        <blueEncrypt>DJJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 371</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDR</redEncrypt>
+        <greenEncrypt>SMD</greenEncrypt>
+        <blueEncrypt>DHJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 372</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDS</redEncrypt>
+        <greenEncrypt>SLD</greenEncrypt>
+        <blueEncrypt>DKJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 373</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDE</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DHN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 374</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDE</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DKM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 375</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODG</redEncrypt>
+        <greenEncrypt>DND</greenEncrypt>
+        <blueEncrypt>DJD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 376</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDH</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DJS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 377</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODI</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 378</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDI</redEncrypt>
+        <greenEncrypt>FKD</greenEncrypt>
+        <blueEncrypt>DJG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 379</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDJ</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DJN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>GDH</redEncrypt>
+        <greenEncrypt>IRD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 380</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDI</redEncrypt>
+        <greenEncrypt>GDD</greenEncrypt>
+        <blueEncrypt>DJR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 381</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDE</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DGN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 382</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDE</redEncrypt>
+        <greenEncrypt>QOD</greenEncrypt>
+        <blueEncrypt>DGP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 383</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDF</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DDQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 384</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DGH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 385</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDG</redEncrypt>
+        <greenEncrypt>DQD</greenEncrypt>
+        <blueEncrypt>DEL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 386</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDG</redEncrypt>
+        <greenEncrypt>DPD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 387</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDI</redEncrypt>
+        <greenEncrypt>EDD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 388</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDJ</redEncrypt>
+        <greenEncrypt>DND</greenEncrypt>
+        <blueEncrypt>DEO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 389</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODK</redEncrypt>
+        <greenEncrypt>FQD</greenEncrypt>
+        <blueEncrypt>DEQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>ODR</redEncrypt>
+        <greenEncrypt>OSD</greenEncrypt>
+        <blueEncrypt>DRS</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 390</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>QED</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 391</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDE</redEncrypt>
+        <greenEncrypt>DID</greenEncrypt>
+        <blueEncrypt>DGJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 392</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDF</redEncrypt>
+        <greenEncrypt>SOD</greenEncrypt>
+        <blueEncrypt>DGK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 393</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDH</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DEQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 394</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>RFD</greenEncrypt>
+        <blueEncrypt>DFN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 395</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDH</redEncrypt>
+        <greenEncrypt>SID</greenEncrypt>
+        <blueEncrypt>DGN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 396</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDI</redEncrypt>
+        <greenEncrypt>DOD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 397</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>QDD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 398</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDE</redEncrypt>
+        <greenEncrypt>PED</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 399</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDD</redEncrypt>
+        <greenEncrypt>QHD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>QDF</redEncrypt>
+        <greenEncrypt>OHD</greenEncrypt>
+        <blueEncrypt>DRF</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 400</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDG</redEncrypt>
+        <greenEncrypt>QQD</greenEncrypt>
+        <blueEncrypt>DQS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 401</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDG</redEncrypt>
+        <greenEncrypt>SPD</greenEncrypt>
+        <blueEncrypt>DFM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 402</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDH</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DQH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 403</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDF</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DQG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 404</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDE</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DPO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 405</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDG</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DQJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 406</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODH</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DFS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 407</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDI</redEncrypt>
+        <greenEncrypt>EID</greenEncrypt>
+        <blueEncrypt>DGP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 408</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDK</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DGN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 409</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDK</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DDG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>IQD</greenEncrypt>
+        <blueEncrypt>DDL</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 410</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>GHD</greenEncrypt>
+        <blueEncrypt>DGI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 411</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDK</redEncrypt>
+        <greenEncrypt>GJD</greenEncrypt>
+        <blueEncrypt>DGP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 412</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODF</redEncrypt>
+        <greenEncrypt>QED</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 413</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDF</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DPO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 414</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDG</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 415</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDR</redEncrypt>
+        <greenEncrypt>OKD</greenEncrypt>
+        <blueEncrypt>DRQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 416</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDD</redEncrypt>
+        <greenEncrypt>PDD</greenEncrypt>
+        <blueEncrypt>DRN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 417</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>QKD</greenEncrypt>
+        <blueEncrypt>DSM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 418</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>QHD</greenEncrypt>
+        <blueEncrypt>DSF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 419</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDG</redEncrypt>
+        <greenEncrypt>RGD</greenEncrypt>
+        <blueEncrypt>DSO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDG</redEncrypt>
+        <greenEncrypt>LQD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 420</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDF</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 421</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDG</redEncrypt>
+        <greenEncrypt>SND</greenEncrypt>
+        <blueEncrypt>DSK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 422</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDG</redEncrypt>
+        <greenEncrypt>SRD</greenEncrypt>
+        <blueEncrypt>DPQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 423</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODG</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DPO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 424</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDH</redEncrypt>
+        <greenEncrypt>EFD</greenEncrypt>
+        <blueEncrypt>DPM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 425</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDG</redEncrypt>
+        <greenEncrypt>FDD</greenEncrypt>
+        <blueEncrypt>DQE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 426</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDG</redEncrypt>
+        <greenEncrypt>FID</greenEncrypt>
+        <blueEncrypt>DFG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 427</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDS</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 428</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDD</redEncrypt>
+        <greenEncrypt>QQD</greenEncrypt>
+        <blueEncrypt>DSO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 429</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDD</redEncrypt>
+        <greenEncrypt>RGD</greenEncrypt>
+        <blueEncrypt>DSL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDG</redEncrypt>
+        <greenEncrypt>LID</greenEncrypt>
+        <blueEncrypt>DSK</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 430</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDF</redEncrypt>
+        <greenEncrypt>RPD</greenEncrypt>
+        <blueEncrypt>DPN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 431</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDE</redEncrypt>
+        <greenEncrypt>SKD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 432</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDG</redEncrypt>
+        <greenEncrypt>DQD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 433</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDI</redEncrypt>
+        <greenEncrypt>GQD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 434</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDJ</redEncrypt>
+        <greenEncrypt>GRD</greenEncrypt>
+        <blueEncrypt>DGJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 435</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDI</redEncrypt>
+        <greenEncrypt>HID</greenEncrypt>
+        <blueEncrypt>DDH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 436</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDD</redEncrypt>
+        <greenEncrypt>SJD</greenEncrypt>
+        <blueEncrypt>DRJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 437</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODE</redEncrypt>
+        <greenEncrypt>EFD</greenEncrypt>
+        <blueEncrypt>DSJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 438</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDE</redEncrypt>
+        <greenEncrypt>DOD</greenEncrypt>
+        <blueEncrypt>DSE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 439</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>DPD</greenEncrypt>
+        <blueEncrypt>DSO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>MDG</redEncrypt>
+        <greenEncrypt>KQD</greenEncrypt>
+        <blueEncrypt>DPM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 440</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDF</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DSH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 441</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDP</redEncrypt>
+        <greenEncrypt>PGD</greenEncrypt>
+        <blueEncrypt>DSS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 442</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDR</redEncrypt>
+        <greenEncrypt>QHD</greenEncrypt>
+        <blueEncrypt>DSQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 443</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODS</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DSJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 444</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDD</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DPN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 445</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>SMD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 446</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DFP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 447</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDF</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DFD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 448</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODG</redEncrypt>
+        <greenEncrypt>FMD</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 449</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDH</redEncrypt>
+        <greenEncrypt>GQD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>ODE</redEncrypt>
+        <greenEncrypt>MPD</greenEncrypt>
+        <blueEncrypt>DPF</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 450</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDD</redEncrypt>
+        <greenEncrypt>SID</greenEncrypt>
+        <blueEncrypt>DSS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 451</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODQ</redEncrypt>
+        <greenEncrypt>RID</greenEncrypt>
+        <blueEncrypt>DSL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 452</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDR</redEncrypt>
+        <greenEncrypt>RPD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 453</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>SLD</greenEncrypt>
+        <blueEncrypt>DRO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 454</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDQ</redEncrypt>
+        <greenEncrypt>SGD</greenEncrypt>
+        <blueEncrypt>DMG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 455</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDD</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 456</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 457</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODD</redEncrypt>
+        <greenEncrypt>END</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 458</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDR</redEncrypt>
+        <greenEncrypt>SLD</greenEncrypt>
+        <blueEncrypt>DPG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 459</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDR</redEncrypt>
+        <greenEncrypt>SRD</greenEncrypt>
+        <blueEncrypt>DPQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDS</redEncrypt>
+        <greenEncrypt>JDD</greenEncrypt>
+        <blueEncrypt>DSM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 460</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 461</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDD</redEncrypt>
+        <greenEncrypt>EFD</greenEncrypt>
+        <blueEncrypt>DFL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 462</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDD</redEncrypt>
+        <greenEncrypt>FHD</greenEncrypt>
+        <blueEncrypt>DQH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 463</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDF</redEncrypt>
+        <greenEncrypt>GJD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 464</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDF</redEncrypt>
+        <greenEncrypt>FID</greenEncrypt>
+        <blueEncrypt>DGK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 465</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDF</redEncrypt>
+        <greenEncrypt>GND</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 466</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DGK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 467</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODP</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 468</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDM</redEncrypt>
+        <greenEncrypt>PSD</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 469</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>LJD</greenEncrypt>
+        <blueEncrypt>DSN</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 470</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDN</redEncrypt>
+        <greenEncrypt>RSD</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 471</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDP</redEncrypt>
+        <greenEncrypt>RMD</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 472</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDP</redEncrypt>
+        <greenEncrypt>SOD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 473</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDQ</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DQJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 474</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>EGD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 475</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODR</redEncrypt>
+        <greenEncrypt>END</greenEncrypt>
+        <blueEncrypt>DFI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 476</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDP</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DQD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 477</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>PID</greenEncrypt>
+        <blueEncrypt>DSO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 478</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDN</redEncrypt>
+        <greenEncrypt>RID</greenEncrypt>
+        <blueEncrypt>DSL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 479</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDP</redEncrypt>
+        <greenEncrypt>EID</greenEncrypt>
+        <blueEncrypt>DQG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>EDO</redEncrypt>
+        <greenEncrypt>JRD</greenEncrypt>
+        <blueEncrypt>DRJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 480</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDN</redEncrypt>
+        <greenEncrypt>DKD</greenEncrypt>
+        <blueEncrypt>DQO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 481</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDO</redEncrypt>
+        <greenEncrypt>DID</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 482</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>FPD</greenEncrypt>
+        <blueEncrypt>DFD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 483</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDQ</redEncrypt>
+        <greenEncrypt>FRD</greenEncrypt>
+        <blueEncrypt>DPG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 484</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDQ</redEncrypt>
+        <greenEncrypt>GDD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 485</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDR</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 486</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODQ</redEncrypt>
+        <greenEncrypt>GKD</greenEncrypt>
+        <blueEncrypt>DQH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 487</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDQ</redEncrypt>
+        <greenEncrypt>FFD</greenEncrypt>
+        <blueEncrypt>DFD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 488</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDR</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 489</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODR</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDS</redEncrypt>
+        <greenEncrypt>ISD</greenEncrypt>
+        <blueEncrypt>DEQ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 490</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDR</redEncrypt>
+        <greenEncrypt>GJD</greenEncrypt>
+        <blueEncrypt>DFD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 491</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDS</redEncrypt>
+        <greenEncrypt>GRD</greenEncrypt>
+        <blueEncrypt>DDL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 492</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODD</redEncrypt>
+        <greenEncrypt>HED</greenEncrypt>
+        <blueEncrypt>DDG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 493</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDS</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DGR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 494</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDQ</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DGL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 495</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDE</redEncrypt>
+        <greenEncrypt>GMD</greenEncrypt>
+        <blueEncrypt>DDM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 496</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDE</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DDM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 497</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>HSD</greenEncrypt>
+        <blueEncrypt>DDI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 498</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDS</redEncrypt>
+        <greenEncrypt>FND</greenEncrypt>
+        <blueEncrypt>DDD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 499</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDE</redEncrypt>
+        <greenEncrypt>HMD</greenEncrypt>
+        <blueEncrypt>DJE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>HDD</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DFF</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 500</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDE</redEncrypt>
+        <greenEncrypt>IOD</greenEncrypt>
+        <blueEncrypt>DES</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 501</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDF</redEncrypt>
+        <greenEncrypt>IOD</greenEncrypt>
+        <blueEncrypt>DEP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 502</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 503</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>EMD</greenEncrypt>
+        <blueEncrypt>DDS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 504</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDF</redEncrypt>
+        <greenEncrypt>GED</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 505</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>RJD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 506</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDO</redEncrypt>
+        <greenEncrypt>PID</greenEncrypt>
+        <blueEncrypt>DQN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 507</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDD</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DDS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 508</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDS</redEncrypt>
+        <greenEncrypt>DID</greenEncrypt>
+        <blueEncrypt>DGN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 509</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDS</redEncrypt>
+        <greenEncrypt>DED</greenEncrypt>
+        <blueEncrypt>DGH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDG</redEncrypt>
+        <greenEncrypt>HLD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 510</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDF</redEncrypt>
+        <greenEncrypt>FDD</greenEncrypt>
+        <blueEncrypt>DEO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 511</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDG</redEncrypt>
+        <greenEncrypt>FRD</greenEncrypt>
+        <blueEncrypt>DDJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 512</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDD</redEncrypt>
+        <greenEncrypt>SID</greenEncrypt>
+        <blueEncrypt>DFO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 513</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDS</redEncrypt>
+        <greenEncrypt>RID</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 514</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDE</redEncrypt>
+        <greenEncrypt>EQD</greenEncrypt>
+        <blueEncrypt>DGE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 515</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDE</redEncrypt>
+        <greenEncrypt>ELD</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 516</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDF</redEncrypt>
+        <greenEncrypt>FPD</greenEncrypt>
+        <blueEncrypt>DDG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 517</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDP</redEncrypt>
+        <greenEncrypt>QED</greenEncrypt>
+        <blueEncrypt>DQP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 518</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDQ</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DPS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 519</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>SQD</greenEncrypt>
+        <blueEncrypt>DFI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDG</redEncrypt>
+        <greenEncrypt>HKD</greenEncrypt>
+        <blueEncrypt>DGL</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 520</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>FSD</greenEncrypt>
+        <blueEncrypt>DDI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 521</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDG</redEncrypt>
+        <greenEncrypt>GSD</greenEncrypt>
+        <blueEncrypt>DEJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 522</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDN</redEncrypt>
+        <greenEncrypt>PID</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 523</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDQ</redEncrypt>
+        <greenEncrypt>RJD</greenEncrypt>
+        <blueEncrypt>DQE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 524</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDD</redEncrypt>
+        <greenEncrypt>EKD</greenEncrypt>
+        <blueEncrypt>DGE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 525</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDF</redEncrypt>
+        <greenEncrypt>GED</greenEncrypt>
+        <blueEncrypt>DEO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 526</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDG</redEncrypt>
+        <greenEncrypt>GLD</greenEncrypt>
+        <blueEncrypt>DED</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 527</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDP</redEncrypt>
+        <greenEncrypt>QOD</greenEncrypt>
+        <blueEncrypt>DQJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 528</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODD</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DDD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 529</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDE</redEncrypt>
+        <greenEncrypt>EKD</greenEncrypt>
+        <blueEncrypt>DDN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>JDE</redEncrypt>
+        <greenEncrypt>JHD</greenEncrypt>
+        <blueEncrypt>DDM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 530</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>DPD</greenEncrypt>
+        <blueEncrypt>DGH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 531</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDE</redEncrypt>
+        <greenEncrypt>ERD</greenEncrypt>
+        <blueEncrypt>DDE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 532</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDR</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DFM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 533</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDD</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 534</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDE</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DDI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 535</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODF</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 536</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDG</redEncrypt>
+        <greenEncrypt>FMD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 537</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDS</redEncrypt>
+        <greenEncrypt>RRD</greenEncrypt>
+        <blueEncrypt>DFR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 538</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>DID</greenEncrypt>
+        <blueEncrypt>DGI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 539</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDF</redEncrypt>
+        <greenEncrypt>FDD</greenEncrypt>
+        <blueEncrypt>DDK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>RDG</redEncrypt>
+        <greenEncrypt>HOD</greenEncrypt>
+        <blueEncrypt>DGK</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 540</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDF</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DDN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 541</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODG</redEncrypt>
+        <greenEncrypt>GGD</greenEncrypt>
+        <blueEncrypt>DDH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 542</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODS</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DQK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 543</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDS</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DQS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 544</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDE</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DGL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 545</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDE</redEncrypt>
+        <greenEncrypt>EOD</greenEncrypt>
+        <blueEncrypt>DGM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 546</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDF</redEncrypt>
+        <greenEncrypt>FFD</greenEncrypt>
+        <blueEncrypt>DGG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 546 1/2</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDM</redEncrypt>
+        <greenEncrypt>OQD</greenEncrypt>
+        <blueEncrypt>DOQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 547</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDO</redEncrypt>
+        <greenEncrypt>PGD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 548</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDP</redEncrypt>
+        <greenEncrypt>PMD</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>LMD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 549</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDQ</redEncrypt>
+        <greenEncrypt>RED</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 549 1/2</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDP</redEncrypt>
+        <greenEncrypt>RLD</greenEncrypt>
+        <blueEncrypt>DDQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 550</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDS</redEncrypt>
+        <greenEncrypt>SPD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 551</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDD</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DGO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 552</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDD</redEncrypt>
+        <greenEncrypt>EGD</greenEncrypt>
+        <blueEncrypt>DGR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 553</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDE</redEncrypt>
+        <greenEncrypt>ESD</greenEncrypt>
+        <blueEncrypt>DDO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 554</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDF</redEncrypt>
+        <greenEncrypt>FID</greenEncrypt>
+        <blueEncrypt>DDH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 555</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDF</redEncrypt>
+        <greenEncrypt>FND</greenEncrypt>
+        <blueEncrypt>DDE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 556</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDF</redEncrypt>
+        <greenEncrypt>FPD</greenEncrypt>
+        <blueEncrypt>DEM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 557</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDO</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DQP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDO</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 558</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDN</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DQJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 559</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODP</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DGD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 561</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDN</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DDO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 563</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDN</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DEN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 564</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDM</redEncrypt>
+        <greenEncrypt>KMD</greenEncrypt>
+        <blueEncrypt>DJO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 564B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDL</redEncrypt>
+        <greenEncrypt>DJD</greenEncrypt>
+        <blueEncrypt>DJF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 565</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDL</redEncrypt>
+        <greenEncrypt>IDD</greenEncrypt>
+        <blueEncrypt>DHD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 565B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDL</redEncrypt>
+        <greenEncrypt>DRD</greenEncrypt>
+        <blueEncrypt>DHL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 566</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODL</redEncrypt>
+        <greenEncrypt>SHD</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 567</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>OKD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>PDM</redEncrypt>
+        <greenEncrypt>SJD</greenEncrypt>
+        <blueEncrypt>DJM</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 568</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>MRD</greenEncrypt>
+        <blueEncrypt>DIP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 569</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDL</redEncrypt>
+        <greenEncrypt>MQD</greenEncrypt>
+        <blueEncrypt>DIQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 570</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDL</redEncrypt>
+        <greenEncrypt>MQD</greenEncrypt>
+        <blueEncrypt>DIH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 571</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDL</redEncrypt>
+        <greenEncrypt>MLD</greenEncrypt>
+        <blueEncrypt>DII</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 572</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>QRD</greenEncrypt>
+        <blueEncrypt>DJM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 574</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>SFD</greenEncrypt>
+        <blueEncrypt>DSG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 576</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>SGD</greenEncrypt>
+        <blueEncrypt>DRK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 577</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>RQD</greenEncrypt>
+        <blueEncrypt>DRM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 578</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DQF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 579</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>ERD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>JDD</greenEncrypt>
+        <blueEncrypt>DQK</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 579B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>HND</greenEncrypt>
+        <blueEncrypt>DRG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 579C</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDK</redEncrypt>
+        <greenEncrypt>JOD</greenEncrypt>
+        <blueEncrypt>DSE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 579D</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDI</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DSO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 580</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDG</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 581</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDG</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DQS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 581B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDJ</redEncrypt>
+        <greenEncrypt>FJD</greenEncrypt>
+        <blueEncrypt>DHP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 582</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDJ</redEncrypt>
+        <greenEncrypt>JDD</greenEncrypt>
+        <blueEncrypt>DHN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 582B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDM</redEncrypt>
+        <greenEncrypt>QGD</greenEncrypt>
+        <blueEncrypt>DOD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 583</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDM</redEncrypt>
+        <greenEncrypt>MJD</greenEncrypt>
+        <blueEncrypt>DOS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 584</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>DMD</greenEncrypt>
+        <blueEncrypt>DMG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>KJD</greenEncrypt>
+        <blueEncrypt>DNS</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 584B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>IPD</greenEncrypt>
+        <blueEncrypt>DMJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 585</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>DQD</greenEncrypt>
+        <blueEncrypt>DSL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 586</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DPK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 587</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>RDD</greenEncrypt>
+        <blueEncrypt>DQL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 588</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DFI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 589</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDL</redEncrypt>
+        <greenEncrypt>OHD</greenEncrypt>
+        <blueEncrypt>DFE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 590</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDL</redEncrypt>
+        <greenEncrypt>LPD</greenEncrypt>
+        <blueEncrypt>DDR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 591</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDF</redEncrypt>
+        <greenEncrypt>OFD</greenEncrypt>
+        <blueEncrypt>DEO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 592</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDN</redEncrypt>
+        <greenEncrypt>KPD</greenEncrypt>
+        <blueEncrypt>DQQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 593</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDL</redEncrypt>
+        <greenEncrypt>HDD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDM</redEncrypt>
+        <greenEncrypt>HJD</greenEncrypt>
+        <blueEncrypt>DFK</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 594</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDL</redEncrypt>
+        <greenEncrypt>FRD</greenEncrypt>
+        <blueEncrypt>DER</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 595</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDL</redEncrypt>
+        <greenEncrypt>PSD</greenEncrypt>
+        <blueEncrypt>DIE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 596</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDL</redEncrypt>
+        <greenEncrypt>ORD</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 597</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDL</redEncrypt>
+        <greenEncrypt>MHD</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 598</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDK</redEncrypt>
+        <greenEncrypt>PJD</greenEncrypt>
+        <blueEncrypt>DEO</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 599</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDQ</redEncrypt>
+        <greenEncrypt>DHD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 600</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDQ</redEncrypt>
+        <greenEncrypt>RSD</greenEncrypt>
+        <blueEncrypt>DPM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 601</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDQ</redEncrypt>
+        <greenEncrypt>SED</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 602</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDP</redEncrypt>
+        <greenEncrypt>RGD</greenEncrypt>
+        <blueEncrypt>DPP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 603</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>NDQ</redEncrypt>
+        <greenEncrypt>RKD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>IDP</redEncrypt>
+        <greenEncrypt>LED</greenEncrypt>
+        <blueEncrypt>DRJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 604</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDQ</redEncrypt>
+        <greenEncrypt>RND</greenEncrypt>
+        <blueEncrypt>DQS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 605</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDQ</redEncrypt>
+        <greenEncrypt>QND</greenEncrypt>
+        <blueEncrypt>DQR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 606</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDR</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 607</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDQ</redEncrypt>
+        <greenEncrypt>QND</greenEncrypt>
+        <blueEncrypt>DPI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 608</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDR</redEncrypt>
+        <greenEncrypt>QSD</greenEncrypt>
+        <blueEncrypt>DPS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 609</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDR</redEncrypt>
+        <greenEncrypt>QKD</greenEncrypt>
+        <blueEncrypt>DPI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 610</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDS</redEncrypt>
+        <greenEncrypt>QQD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 611</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>ODS</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 612</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>IDS</redEncrypt>
+        <greenEncrypt>QQD</greenEncrypt>
+        <blueEncrypt>DPL</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 613</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDS</redEncrypt>
+        <greenEncrypt>QND</greenEncrypt>
+        <blueEncrypt>DSD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>LDR</redEncrypt>
+        <greenEncrypt>OFD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 614</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>QDS</redEncrypt>
+        <greenEncrypt>QMD</greenEncrypt>
+        <blueEncrypt>DSM</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 615</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDS</redEncrypt>
+        <greenEncrypt>QPD</greenEncrypt>
+        <blueEncrypt>DSP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 616</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDR</redEncrypt>
+        <greenEncrypt>RMD</greenEncrypt>
+        <blueEncrypt>DSJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 617</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDR</redEncrypt>
+        <greenEncrypt>RPD</greenEncrypt>
+        <blueEncrypt>DPR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 618</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDQ</redEncrypt>
+        <greenEncrypt>QJD</greenEncrypt>
+        <blueEncrypt>DSK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 619</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>JDR</redEncrypt>
+        <greenEncrypt>DRD</greenEncrypt>
+        <blueEncrypt>DDP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 620</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDS</redEncrypt>
+        <greenEncrypt>DLD</greenEncrypt>
+        <blueEncrypt>DDH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 621</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDS</redEncrypt>
+        <greenEncrypt>RQD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 632</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>JND</greenEncrypt>
+        <blueEncrypt>DQS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 633</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDN</redEncrypt>
+        <greenEncrypt>KSD</greenEncrypt>
+        <blueEncrypt>DGS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>SDN</redEncrypt>
+        <greenEncrypt>EHD</greenEncrypt>
+        <blueEncrypt>DFJ</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 634</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>LDO</redEncrypt>
+        <greenEncrypt>KSD</greenEncrypt>
+        <blueEncrypt>DES</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 635</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDL</redEncrypt>
+        <greenEncrypt>GID</greenEncrypt>
+        <blueEncrypt>DKK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 636</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDL</redEncrypt>
+        <greenEncrypt>SRD</greenEncrypt>
+        <blueEncrypt>DIF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 637</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>SDL</redEncrypt>
+        <greenEncrypt>NKD</greenEncrypt>
+        <blueEncrypt>DIG</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 638</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>RHD</greenEncrypt>
+        <blueEncrypt>DEJ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 639</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDK</redEncrypt>
+        <greenEncrypt>SED</greenEncrypt>
+        <blueEncrypt>DRR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 640</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>SMD</greenEncrypt>
+        <blueEncrypt>DRI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 641</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>FHD</greenEncrypt>
+        <blueEncrypt>DPE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 642</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDG</redEncrypt>
+        <greenEncrypt>PLD</greenEncrypt>
+        <blueEncrypt>DKP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 643</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>SDD</greenEncrypt>
+        <blueEncrypt>DGF</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>KDJ</redEncrypt>
+        <greenEncrypt>HLD</greenEncrypt>
+        <blueEncrypt>DGP</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 644</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>FGD</greenEncrypt>
+        <blueEncrypt>DDI</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 645</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>RDQ</redEncrypt>
+        <greenEncrypt>GQD</greenEncrypt>
+        <blueEncrypt>DIR</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 646</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDS</redEncrypt>
+        <greenEncrypt>HKD</greenEncrypt>
+        <blueEncrypt>DKK</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 647</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>FDG</redEncrypt>
+        <greenEncrypt>IHD</greenEncrypt>
+        <blueEncrypt>DKE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 648</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>PDO</redEncrypt>
+        <greenEncrypt>KSD</greenEncrypt>
+        <blueEncrypt>DQE</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 649</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>QFD</greenEncrypt>
+        <blueEncrypt>DPS</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 649B</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>KDK</redEncrypt>
+        <greenEncrypt>LOD</greenEncrypt>
+        <blueEncrypt>DPH</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 650</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>DDP</redEncrypt>
+        <greenEncrypt>PLD</greenEncrypt>
+        <blueEncrypt>DRD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 651</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>MDR</redEncrypt>
+        <greenEncrypt>QRD</greenEncrypt>
+        <blueEncrypt>DPN</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 652</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>HDR</redEncrypt>
+        <greenEncrypt>RMD</greenEncrypt>
+        <blueEncrypt>DPD</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+  <colorPage>
+    <pageColor>
+      <RGB8Encrypt>
+        <redEncrypt>FDE</redEncrypt>
+        <greenEncrypt>JPD</greenEncrypt>
+        <blueEncrypt>DEG</blueEncrypt>
+      </RGB8Encrypt>
+    </pageColor>
+    <colorEntry>
+      <colorName>DIC 653</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>GDD</redEncrypt>
+        <greenEncrypt>DKD</greenEncrypt>
+        <blueEncrypt>DFQ</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+    <colorEntry>
+      <colorName>DIC 654</colorName>
+      <RGB8Encrypt>
+        <redEncrypt>EDE</redEncrypt>
+        <greenEncrypt>EJD</greenEncrypt>
+        <blueEncrypt>DGP</blueEncrypt>
+      </RGB8Encrypt>
+    </colorEntry>
+  </colorPage>
+</colorBook>

@@ -1,0 +1,43 @@
+; block.attribute:          @[block.attribute_tag]
+;                           insert name of block . name of attribute tag
+;                           and the attributes value will be inserted
+;
+; reserved commands:        @[XREFLIST]   = lists all attached xrefs
+;                           @[FONTLIST]   = lists all fonts
+;                           @[IMAGELIST]  = lists all attached images
+;
+; literal string:           anything not surrounded by @[ ]
+
+[Summary]
+Title=My Important Project
+Subject=My Subject
+Author=Express Tools User
+Keywords=
+Hyperlink=www.autodesk.com/expresstools
+Comments=@[XREFLIST] @[FONTLIST] @[IMAGELIST]
+
+[Statistics]
+LastSavedBy=TAS
+RevisionNum=
+
+[Custom]
+Custom1a=
+Custom1b=
+Custom2a=
+Custom2b=
+Custom3a=
+Custom3b=
+Custom4a=
+Custom4b=
+Custom5a=
+Custom5b=
+Custom6a=
+Custom6b=
+Custom7a=
+Custom7b=
+Custom8a=
+Custom8b=
+Custom9a=
+Custom9b=
+Custom10a=
+Custom10b=

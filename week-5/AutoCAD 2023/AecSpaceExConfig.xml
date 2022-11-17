@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<Item UID="101" Name="Space Number" Description="Property set and property source for Space number">
+		<Property UID="1011" Name="PropertySetName" Description="The name of the Property Set -&gt;" Value="SpaceObjects"/>
+		<Property UID="1012" Name="PropertyName" Description="The name of the Property -&gt;" Value="Number"/>
+	<Property UID="1013" Name="PropertySetAlternateName" Description="The alternate name of the Property Set -&gt;" Value="SpaceObjects|Raum|ProstorovéObjekty|ObiektyPomieszczenia|ОбъектыПомещений|空间对象|Raumobjekte|ObjetsEspace|OggettiVano|공간객체|ОбъектыПространств"/>
+		<Property UID="1014" Name="PropertyAlternateName" Description="The alternate name of the Property -&gt;" Value="Number|Nummer|编号|Numéro|Numero|번호|Количество|Číslo|Numer|Номер"/>
+	</Item>
+	<Item UID="102" Name="Zone Number" Description="Property set and property source for Zone number">
+		<Property UID="1021" Name="PropertySetName" Description="The name of the Property Set -&gt;" Value="ZoneObjects"/>
+		<Property UID="1022" Name="PropertyName" Description="The name of the Property -&gt;" Value="Number"/>
+	<Property UID="1023" Name="PropertySetAlternateName" Description="The alternate name of the Property Set -&gt;" Value="ZoneObjects|Zone"/>
+		<Property UID="1024" Name="PropertyAlternateName" Description="The alternate name of the Property -&gt;" Value="Number|Nummer|编号|Numéro|Numero|번호|Количество|Číslo|Numer|Номер"/>
+	</Item>
+</Configuration>

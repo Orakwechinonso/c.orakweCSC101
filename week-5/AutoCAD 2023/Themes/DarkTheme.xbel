@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel version="1.0">
+<!--Colors and LinearGradients-->
+<Color name="NormalTextColor">
+    <rgba r="0" g="0" b="0"  a="255"/>
+</Color>
+<Color name="HoverTextColor">
+    <hex value="#FF0000FF"/>
+</Color>
+<Color name="MissingTextColor">
+  <hex value="#FF2424"/>
+</Color>
+<Color name="BrowserBackgroundColor">
+  <hex value="0x4B4B4B"/>
+</Color>
+<!--Containers-->
+<Color name="Container1">
+    <hex value="#727272"/>
+</Color>
+<Color name="Container2">
+    <hex value="#4F4F4F"/>
+</Color>
+<Color name="Container3">
+    <hex value="#4B4B4B"/>
+</Color>
+<Color name="Container4">
+    <hex value="#242424"/>
+</Color>
+<Color name="Container5">
+    <hex value="#1E1E1E"/>
+</Color>
+<Color name="Container6">
+    <hex value="#000000"/>
+</Color>
+<Color name="C6PlusTR2">
+    <hex value="#000000BF"/>
+</Color>
+<Color name="WidgetContainer1">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainer2">
+    <hex value="#00000026"/>
+</Color>
+<Color name="WidgetContainer3">
+    <hex value="#00000026"/>
+</Color>
+<Color name="WidgetContainer4">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainer5">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="WidgetContainer6">
+    <hex value="#F5F5F5FF"/>
+</Color>
+<Color name="WidgetContainer7">
+    <hex value="#434343FF"/>
+</Color>
+<Color name="WidgetContainer8">
+    <hex value="#646464FF"/>
+</Color>
+<Color name="WidgetContainer10">
+    <hex value="#9BD5EF"/>
+</Color>
+<Color name="WidgetContainerDisable">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainerDisable2">
+    <hex value="#D1DEEE4C"/>
+</Color>
+<Color name="WidgetContainerDisable3">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainerDisable4">
+    <hex value="#D1DEEE33"/>
+</Color>    
+<Color name="NoImageSelectedContainer">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainer9">
+  <hex value="#3B4453"/>
+</Color>
+<Color name="WidgetContainer11">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="WidgetContainer12">
+    <hex value="#4E5A6E"/>
+</Color>    
+<Color name="SearchBoxNormalBackground">
+   <hex value="#3B4453"/>
+</Color>
+<Color name="SearchBoxNormalBorder">
+    <hex value="#2E3440"/>
+</Color>
+<Color name="SearchBoxFocusedBackground">
+	<hex value="#4E5A6E"/>
+</Color>
+<Color name="SearchBoxFocusedBorder">
+	<hex value="#38ABDF"/>
+</Color>
+<Color name="SearchBoxFocusedBorderHalo">
+	<hex value="#38ABDF80"/>
+</Color>
+<Color name="SearchBoxHoverBackground">
+	<hex value="#4E5A6E"/>
+</Color>
+<Color name="SearchBoxHoverBorder">
+	<hex value="#D9D9D980"/>
+</Color>
+<Color name="HoverContainer1">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<Color name="DropDownButtonHoverBackground">
+	<hex value="#D1DEEE1A"/>
+</Color>
+<Color name="DropDownButtonHoverBackground2">
+    <hex value="#3B4453"/>
+</Color>    
+<Color name="HoverContainer2">
+    <hex value="#FFFFFF3F"/>
+</Color>
+<Color name="HoverContainer3"> 
+    <hex value="#22293380"/> 
+</Color>
+<Color name="HoverContainer4">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="HoverContainer5">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="HoverContainer6">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<Color name="HoverContainer7">
+    <hex value="#D1DEEE26"/>
+</Color>    
+<Color name="DropDownMenuHoverBackground">
+	<hex value="#D1DEEE1A"/>
+</Color>
+<Color name="TreeViewDropIndicatorBackground"> 
+    <hex value="#506D87FF"/> 
+</Color>
+<Color name="TreeViewDropIndicatorBorder">
+    <hex value="#66A9E0FF"/>
+</Color>
+<Color name="ClickContainer1">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="ClickContainer2">
+    <hex value="#D1DEEE"/>
+</Color>    
+<Color name="DropDownButtonClickedBackground">
+	<hex value="#D1DEEE33"/>
+</Color>
+<Color name="DropDownButtonClickedBackground2">
+    <hex value="#3B4453"/>
+</Color>    
+<Color name="InternalShadow">
+    <hex value="#32404B"/>
+</Color>
+<Color name="ActiveContainer1">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="ActiveContainer2">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="ActiveContainer3"> 
+    <hex value="#222933B3"/> 
+</Color>
+<Color name="ActiveContainer4">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="ActiveContainer5">
+    <hex value="#D1DEEE40"/>
+</Color>    
+<Color name="DropDownMenuClickedBackground">
+	<hex value="#D1DEEE33"/>
+</Color>
+<Color name="ControlActive1">
+    <hex value="#0696D7"/>
+</Color>
+<Color name="C1PlusGradient">
+  <hex value="#727272" anchor="0.0"/>
+  <hex value="#727272" anchor="1.0"/>
+</Color>
+<Color name="C2PlusGradient">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="C3PlusGradient">
+  <hex value="#4D4D4D" anchor="0.0"/>
+  <hex value="#484848" anchor="1.0"/>
+</Color>
+<Color name="C4PlusGradient">
+  <hex value="#3F3F3F" anchor="0.0"/>
+  <hex value="#333333" anchor="1.0"/>
+</Color>
+<Color name="DropDownGroupLabel">
+ <hex value="#454F61"/>
+</Color>
+<Color name="DropDownMenuBackground">
+	<hex value="#454F61"/>
+</Color>
+<Color name="DropDownMenuBorderColor">
+	<hex value="#454F61"/>
+</Color>
+<!--Since we are only using light theme, set the light theme value here as it for dark theme-->
+<Color name="ToolTipBackground">
+  <hex value="#EFEFEF" anchor="0.0"/>
+  <hex value="#ECECEC" anchor="1.0"/>
+</Color>
+<Color name="DropDownContainer">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="MenuBuiltInBackgroundColor1">
+    <hex value="#454F61"/>
+</Color>
+<Color name="MenuBuiltInBorderColor1">
+    <hex value="#1A1F2680"/>
+</Color>
+<Color name="MenuBuiltInItemSelectedBackgroundColor1">
+    <hex value="#22293366"/>
+</Color>
+<Color name="MenuBuiltInItemPressedBackgroundColor1">
+    <hex value="#222933B3"/>
+</Color>
+<!--Borders-->
+<Color name="FocusOutline1">
+    <hex value="#38ABDF59"/>
+</Color>
+<Color name="FocusOutline2">
+    <hex value="#38ABDF59"/>
+</Color>
+<Color name="FocusOutline3">
+    <hex value="#FFFFFF26"/>
+</Color>
+<Color name="FocusOutline4">
+    <hex value="#38ABDF59"/>
+</Color>
+<Color name="FocusOutline5">
+    <hex value="#D1DEEE59"/>
+</Color>
+<Color name="FocusOutline6">
+    <hex value="#38ABDF59"/>
+</Color>
+<Color name="FocusOutline7">
+    <hex value="#D1DEEE26"/>
+</Color>    
+<Color name="HoverOutline1">
+    <hex value="#D1DEEE1A"/>
+</Color>    
+<Color name="DropDownButtonHoverBorder">
+	<hex value="#D1DEEE1A"/>
+</Color>
+<Color name="DropDownButtonHoverBorder2">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="DropDownButtonHoverBorder3">
+    <hex value="#D1DEEE80"/>
+</Color>    
+<Color name="HoverOutline2">
+    <hex value="#FFFFFF4C"/>
+</Color>
+<Color name="HoverOutline3">
+    <hex value="#22293380"/>
+</Color>
+<Color name="HoverOutline4">
+    <hex value="#D9D9D980"/>
+</Color>
+<Color name="HoverOutline5">
+    <hex value="#D1DEEE80"/>
+</Color>
+<Color name="HoverOutline6">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="HoverOutline7">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="DropDownMenuHoverBorder">
+	<hex value="#D1DEEE1A"/>
+</Color>
+<Color name="ClickOutline1">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="ClickOutline2">
+    <hex value="#D1DEEE33"/>
+</Color>    
+<Color name="DropDownButtonClickedBorder">
+	<hex value="#D1DEEE33"/>
+</Color>
+<Color name="DropDownButtonClickedBorder2">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="DropDownButtonFocusOutline">
+    <hex value="#38ABDF"/>
+</Color>    
+<Color name="ActiveOutline1">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="ActiveOutline3">
+    <hex value="#222933B3"/>
+</Color>
+<Color name="ActiveOutline4">
+    <hex value="#D1DEEEBF"/>
+</Color>
+<Color name="DropDownMenuClickedBorder">
+	<hex value="#D1DEEE33"/>
+</Color>
+<!--Since we are only using light theme, set the light theme value here as it for dark theme-->
+<Color name="ToolTipBorder">
+  <hex value="#606060"/>
+</Color>
+
+<!--Borders and Highlights-->
+<Color name="Outline1">
+    <hex value="#FFFFFF26"/>
+</Color>
+<Color name="Outline2">
+    <hex value="#00000066"/>
+</Color>
+<Color name="WidgetOutline1">
+    <hex value="#D1DEEE80"/>
+</Color>
+<Color name="WidgetOutline2">
+    <hex value="#AEAEAE"/>
+</Color>
+<Color name="WidgetOutline3">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="WidgetOutline4">
+    <hex value="#D1DEEE33"/>
+</Color>
+<Color name="WidgetOutline5">
+    <hex value="#00000072"/>
+</Color>
+<Color name="WidgetOutline6">
+    <hex value="#38ABDF"/>
+</Color>
+<Color name="WidgetOutline7">
+    <hex value="#353535FF"/>
+</Color>
+<!--Since we are only using light theme, set the light theme value here as it for dark theme-->
+<Color name="WidgetOutline8">
+    <hex value="#656565"/>
+</Color>
+<Color name="WidgetOutline9">
+    <hex value="#D1DEEE80"/>
+</Color>
+<Color name="WidgetOutline10">
+    <hex value="#D1DEEE"/>
+</Color>
+<Color name="WidgetOutline11">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<Color name="WidgetOutline12">
+    <hex value="#D1DEEE"/>
+</Color>    
+<Color name="WidgetOutlineDisable">
+    <hex value="#D1DEEE99"/>
+</Color>
+<Color name="WidgetOutlineDisable2">
+    <hex value="#D1DEEE4C"/>
+</Color>
+<Color name="WidgetOutlineDisable3">
+    <hex value="#D1DEEE66"/>
+</Color>
+<Color name="Border1">
+    <hex value="#0000003F"/>
+  </Color>
+<Color name="Border3">
+    <hex value="#333333FF"/>
+</Color>
+<Color name="Highlight1">
+    <hex value="#FFFFFF19"/>
+</Color>
+<Color name="HeaderBorderTop">
+    <hex value="#2E3440"/>
+</Color>
+<Color name="HeaderBorderBottom">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="HeaderBorderHighlight">
+  <hex value="#646564"/>
+</Color>
+<Color name="HighLightTopToolbarLine">
+  <hex value="#646564"/>
+</Color>
+<Color name="InsceneHeaderBorderTop">
+    <hex value="#3B4453"/>
+</Color>    
+  
+<!--Font Colors-->
+<Color name="FontNormal1">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="FontBold1">
+    <hex value="#FFFFFF"/>
+</Color>
+<Color name="FontLight1">
+    <hex value="#CCCCCC"/>
+</Color>
+<Color name="FontSearch1">
+    <hex value="#191919"/>
+</Color>
+<Color name="FontSearch2">
+    <hex value="#d9d9d9"/>
+</Color>
+<Color name="SearchFilterFont">
+	<hex value="#d9d9d9"/>
+</Color>
+<!--Since we are only using light theme, set the light theme value here as it for dark theme-->
+<Color name="FontSearchPrompt">
+    <hex value="#d9d9d9"/>
+</Color>
+<Color name="FontActive1">
+    <hex value="#7AB9FF"/>
+</Color>
+<Color name="FontActive2">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="FontGroupHeader">
+    <hex value="#FFFFFF"/>
+</Color>
+<Color name="FontUnderline1">
+    <hex value="#FFFFFF"/>
+</Color>
+<Color name="FontDisable">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="FontNormal3">
+    <hex value="#F5F5F5"/> 
+</Color>
+<Color name="FontBuiltInNormal1">
+    <hex value="#F5F5F5"/>
+</Color>
+<Color name="FontBuiltInDisable1">
+    <hex value="#F5F5F566"/>
+</Color>
+    <!--Separator Colors-->
+<Color name="Separator1">
+    <hex value="#00000026"/>
+</Color>
+<Color name="Separator2">
+    <hex value="#FFFFFF33"/>
+</Color>
+<Color name="DropDownMenuSeparator">
+    <hex value="#FFFFFF1A"/>
+</Color>
+<Color name="MBViewSeparator">
+    <hex value="#222933"/>
+</Color>
+<Color name="MenuBuiltInSeparator1">
+    <hex value="#BCD3EE1A"/>
+</Color>
+<Color name="FontColorDisabled">
+    <hex value="#D9D9D966"/>
+</Color>
+<Color name="FontNormalDisabled1">
+    <hex value="#FFFFFF"/>
+</Color>
+<Color name="FontNormal2">
+    <hex value="#D9D9D9"/>
+</Color>
+
+<Color name="HoverBackground">
+    <hex value="#D1EBFAFF" anchor="0.0"/>
+    <hex value="#C6E8F7FF" anchor="1.0"/>
+</Color>
+<Color name="PressedBackground">
+    <rgba r="195" g="220" b="244" a="255" anchor="0.0"/>
+    <rgba r="174" g="209" b="241" a="255" anchor="1.0"/>
+</Color>
+<Color name="CheckMark">
+    <hex value="#3C3C3C"/>
+</Color>
+<Color name="CheckMark1">
+    <hex value="#3C3C3C"/>
+</Color>    
+<Color name="Triangle">
+    <hex value="#E5E5E5"/>
+</Color>
+<Color name="Triangle2">
+    <hex value="#8691A1"/>
+</Color>    
+<Color name="DropDownTriangle">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="DropDownTriangle2">
+    <hex value="#8691A1"/>
+</Color>    
+<Color name="DropDownTriangleFocus">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="DropDownTriangleDisable">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="DropDownTriangleDisable2">
+    <hex value="#8691A1"/>
+</Color>    
+<Color name="MissFile">
+    <hex value="#66A9E0"/>
+</Color>
+
+<String name="ScrollBarBackground" value="transparent"/>
+
+<Color name="ScrollBarHandleNormalBackground">
+    <hex value="#D1DEEE33"/>
+</Color>
+
+<Color name="ScrollBarHandleHoverBackground">
+    <hex value="#D1DEEE80"/>
+</Color>
+
+<!--Material Browser-->
+<!--Background-->
+<Color name="MBInSceneMaterialViewBackground">
+    <!--Container1-->
+    <hex value="#454F61"/>
+</Color>
+<Color name="MBInSceneToolBarFrameBorderColor">
+    <!--Border1-->
+    <hex value="#0000003F"/>
+</Color>
+<Color name="MBInSceneMaterialViewItemHoverBackground">
+    <!--HoverContainer1-->
+    <hex value="#506D87"/>
+</Color>
+<Color name="MBLibraryMaterialViewItemHoverFontColor">
+    <!--FontActive2-->
+    <hex value="#FFFFFF"/>
+</Color>
+
+<Color name="MBSplitterBackground">
+    <!--Background-->
+    <hex value="#EEEEEE"/>
+</Color>
+<Color name="MBSplitterBorderColor">
+    <!--Border-->
+    <hex value="#CCCCCC"/>
+</Color>
+
+<Color name="MBFrameBackground">
+    <!--Container2-->
+    <hex value="#3B4453"/>
+</Color>
+<Color name="MBFrameBackgroundGradient">
+  <!--C3PlusGradient-->
+	<hex value="#3B4453"/>
+</Color>
+<Color name="MBViewBackground">
+    <!--Container2-->
+    <hex value="#454F61"/>
+</Color>
+<Color name="MBTreeViewBackground">
+	<!--Container2-->
+	<hex value="#3B4453"/>
+</Color>
+<Color name="MBTreeViewBorderColor">
+    <hex value="#2E3440"/>
+</Color>
+<Color name="MBViewItemBackground">
+	<hex value="#454F61"/>
+</Color>
+<Color name="MBViewItemBackgroundOdd">
+    <hex value="#454F61"/>
+</Color>
+<!--Since we are only using light theme, set the light theme value here as it for dark theme-->
+<Color name="MBViewItemSelectionBackground">
+    <hex value="#416A86" />
+</Color>
+<Color name="MBTreeViewItemSelectionBackground">
+    <hex value="#38ABDF80"/>
+</Color>
+<Color name="MBViewItemSelectionOutline">
+    <hex value="#38ABDF80"/>
+</Color>
+<Color name="MBViewItemHoverBackground">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<Color name="MBViewItemHoverOutline">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<!--The color is the same as in the light theme and it will get updated later with PD's spec-->
+<Color name="MBViewItemSelectedGroupBackground">
+    <hex value="#38ABDF4C"/>
+</Color>
+<Color name="MBSeparator1">
+    <!--Separator1-->
+    <hex value="#00000026"/>
+</Color>
+<Color name="MBHeaderViewBackground">
+    <hex value="#454F61"/>
+</Color>
+<Color name="MBHeaderViewBorderColor">
+	<hex value="#2E3440"/>
+</Color>
+<Color name="MBLibraryHeaderBackgroundGradient">
+  <hex value="#3B4453"/>
+</Color>
+<!--The color is the same as in the light theme and should update later-->
+<Color name="MBSearchResultHeaderBackground">
+  <hex value="#3B4453"/>
+</Color>
+ 
+
+<!--Font Color-->
+<Color name="MBViewItemSelectionColor">
+    <!--FontActive2-->
+    <hex value="#FFFFFF"/>
+</Color>
+<Color name="MBTreeViewItemSelectionColor">
+    <hex value="#000000"/>
+</Color>
+<Color name="MBViewFontColor">
+    <!--FontNormal1-->
+    <hex value="#F5F5F5"/>
+</Color>
+<Color name="MBViewSelectedFontColor">
+	<hex value="#F5F5F5"/>
+</Color>
+<Color name="MBInSceneMaterialFontColor">
+    <hex value="#F5F5F5"/>
+</Color>
+<!--The color is the same as in the light theme and should update later-->
+<Color name="MBMaterialGroupFontColorDisabled">
+  <hex value="#7B7B7B"/>
+</Color>
+
+    
+<!--Border Color-->
+<Color name="MBFrameHighlight1">
+    <!--Highlight1-->
+    <hex value="#FFFFFF19"/>
+</Color>
+<Color name="MBFrameBorder1">
+    <!--Border1-->
+    <hex value="#0000003F"/>
+</Color>
+<Color name="MBFrameBorder3">
+    <!--Border3-->
+    <hex value="#3B4453"/>
+</Color>
+<Color name="MBHorizontalSplitterBorderColor">
+    <hex value="#2E3440"/>
+</Color>
+<Color name="MBBottomToolBarFrameTopBorderColor">
+    <hex value="#2E3440"/>
+</Color>
+<!--The color is the same as in the light theme and should update later-->
+<Color name="MBSearchResultBottomBorderColor">
+    <hex value="#2E3440"/>
+</Color>
+<Color name="BreadcrumbItemFocusBackground">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="BreadcrumbItemFocusOutline">
+    <hex value="#38ABDF59"/>
+</Color>
+<Color name="BreadcrumbItemBackground">
+    <hex value="#3B4453"/>
+</Color>
+<Color name="DropDownButtonNormalBorderColor">
+    <hex value="#D1DEEE80"/>
+</Color>
+<Color name="DropDownButtonNormalBorderColor2">
+    <hex value="#D1DEEE33"/>
+</Color>
+<!--End of Material Browser-->
+
+<!--Appearance Editor-->
+
+<Color name="AppearanceEditorBackground">
+    <!--Background-->
+    <hex value="#2E3440"/>
+</Color>
+<Color name="AppearanceEditorSplitterBorderColor">
+    <!--Border-->
+    <hex value="#CCCCCC"/>
+</Color>
+<Color name="PreviewAreaContainer">
+  <hex value="#454F61"/>
+</Color>
+<Color name="AppearanceEditorHeaderBackgroundGradient">
+  <hex value="#C2C2C2" anchor="0.0"/>
+  <hex value="#AAAAAA" anchor="1.0"/>
+</Color>
+<Color name="MEFrameBackgroundGradient">
+  <hex value="#CDCDCD" anchor="0.0"/>
+  <hex value="#BDBDBD" anchor="1.0"/>
+</Color>
+<Color name="RolloutContainerTitleBackgroundColor">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<!--End of Appearance Editor-->
+
+<!--Texture Editor-->
+<!--Background-->
+<Color name="TexturePreviewWindowContainer">
+    <hex value="#454f61"/>
+</Color>
+<!--DimensionText-->
+<Color name="DimensionTextFontColor">
+    <hex value="#D9D9D9"/>
+</Color>
+<!--DimensionLine-->
+<Color name="DimensionLineColor">
+    <hex value="#D9D9D9"/>
+</Color>
+<Color name="GradientBarOutline">
+    <hex value="#D1DEEE33"/>
+</Color>    
+<Color name="GradientBarClickOutline">
+    <hex value="#38ADBF"/>
+</Color>
+<Color name="GradientNodeColor">
+    <hex value="#D9D9D9B3"/>
+</Color>
+<Color name="GradientNodeColor2">
+    <hex value="#D9D9D9B3"/>
+</Color>
+<!--End of Texture Editor-->
+
+<!--TitleBar-->
+<!--TitleBarTopColor-->
+<Color name="TitleBarTopColor">
+  <hex value="#00000050"/>
+</Color>
+
+<!--TitleBarBottomColor-->
+<Color name="TitleBarBottomColor">
+  <hex value="#000000FF"/>
+</Color>
+
+<!--TitleBarTextColor-->
+<Color name="TitleBarTextColor">
+  <hex value="#FEFEFEFF"/>
+</Color>
+
+<!--TitleBarCloseButtonColor-->
+<Color name="TitleBarCloseButtonColor">
+  <hex value="#414141FF"/>
+</Color>
+<!--End of TitleBar-->
+
+<!--AspectTypeButton-->
+<Color name="AspectTabBottomBorder">
+  <hex value="#2E3440"/>
+</Color>
+<Color name="AspectTabBottomUncheckedBorder">
+  <hex value="#2E3440"/>
+</Color>
+<Color name="AspectTabButtonSelectedBackground">
+    <hex value="#454F61"/>
+</Color>    
+<Color name="AspectTabbarGradient">
+  <hex value="#3B4453"/>
+</Color>
+<Color name="AspectTabButtonHoverBackground">
+    <hex value="#D1DEEE1A"/>
+</Color>
+<Color name="AspectTabButtonClickBackground">
+    <hex value="#D1DEEE33"/>
+</Color>
+<!--End of AspectTypeButton-->
+
+  <!--QTMsgBox-->
+  <Color name="MsgBoderBackground">
+    <hex value="#FFFFFFFF"/>
+  </Color>
+  <Color name="MsgLabelText">
+    <hex value="#2B56AAFF"/>
+  </Color>
+  <Color name="MsgBottomBackground">
+    <hex value="#F0F0F0FF"/>
+  </Color>
+  <!--End of QTMsgBox-->
+  
+  <!--Sample Width/Height Line-->
+  <Color name="SampleWidthLine">
+    <hex value="#0ED3BEFF"/>
+  </Color>
+  <Color name="SampleHeightLine">
+    <hex value="#FAA21BFF"/>
+  </Color>
+  <!--End of Sample Width/Height Line-->
+
+<!--Icon resources-->
+<Icon name="MiniButtonToggleOn" file=":/Images/MiniIconUnlock.png"/>
+<Icon name="MiniButtonToggleOff" file=":/Images/MiniIconLock.png"/>
+<Icon name="MiniButtonToggleOnHover" file=":/Images/Unlock_darkBG.png"/>
+<Icon name="MiniButtonToggleOffHover" file=":/Images/Lock_darkBG.png"/>
+<Icon name="InvalidLibraryIcon" file=":/Images/InvalidLibrary_Dk.png"/>
+<Icon name="Progress0" file=":/Images/progress0.png"/>
+<Icon name="Progress1" file=":/Images/progress1.png"/>
+<Icon name="Progress2" file=":/Images/progress2.png"/>
+<Icon name="Progress3" file=":/Images/progress3.png"/>
+<Icon name="Progress4" file=":/Images/progress4.png"/>
+<Icon name="Progress5" file=":/Images/progress5.png"/>
+<Icon name="Progress6" file=":/Images/progress6.png"/>
+<Icon name="Progress7" file=":/Images/progress7.png"/>
+<Icon name="Progress8" file=":/Images/progress8.png"/>
+<Icon name="Progress9" file=":/Images/progress9.png"/>
+<Icon name="Progress10" file=":/Images/progress10.png"/>
+<Icon name="Progress11" file=":/Images/progress11.png"/>
+<Icon name="Progress12" file=":/Images/progress12.png"/>
+<Icon name="Progress13" file=":/Images/progress13.png"/>
+<Icon name="Progress14" file=":/Images/progress14.png"/>
+<Icon name="Progress15" file=":/Images/progress15.png"/>
+<Icon name="Progress16" file=":/Images/progress16.png"/>
+<Icon name="Progress17" file=":/Images/progress17.png"/>
+<Icon name="Progress18" file=":/Images/progress18.png"/>
+<Icon name="Progress19" file=":/Images/progress19.png"/>
+<Icon name="Progress20" file=":/Images/progress20.png"/>
+<Icon name="Progress21" file=":/Images/progress21.png"/>
+<Icon name="DownArrow"  file=":/Images/DownArrow_DK.png"/>
+
+<String name="ParameterLinkButton" value=":/Images/link_16_DK.png"/>
+<String name="BranchClosed" value=":/branch-closed_DK.png"/>
+<String name="BranchOpen" value=":/branch-open_DK.png"/>
+<String name="BranchClosedSelected" value=":/branch-closed-selected_DK.png"/>
+<String name="BranchOpenSelected" value=":/branch-open-selected_DK.png"/>
+<String name="VScrollBarAddLine" value=":/VScrollBar_AddLine_DK.png"/>
+<String name="VScrollBarSubLine" value=":/VScrollBar_SubLine_DK.png"/>
+<String name="HScrollBarAddLine" value=":/HScrollBar_AddLine_DK.png"/> 
+<String name="HScrollBarSubLine" value=":/HScrollBar_SubLine_DK.png"/>
+<String name="BreadcrumbHome_idle" value=":/Images/BreadcrumbHome_idle_Dk.png"/>
+<String name="BreadcrumbHome_hover" value=":/Images/BreadcrumbHome_hover_Dk.png"/>
+<String name="BreadcrumbHome_down" value=":/Images/BreadcrumbHome_down_Dk.png"/>
+<String name="BreadcrumbItem_idle" value=":/Images/BreadcrumbItem_idle_Dk.png"/>
+<String name="BreadcrumbItem_hover" value=":/Images/BreadcrumbItem_hover_Dk.png"/>
+<String name="BreadcrumbItem_down" value=":/Images/BreadcrumbItem_down_Dk.png"/>
+<String name="BreadcrumbItem_nodropdown" value=":/Images/BreadcrumbItem_nodropdown_Dk.png"/>
+<String name="ContectMenu" value=":/Images/ContectMenu_Dk.png"/>
+<String name="hide tree" value=":/Images/hide tree_Dk.png"/>
+<String name="show tree" value=":/Images/show tree_Dk.png"/>
+<String name="icon-filter" value=":/Images/icon-filter.png"/>
+<String name="SearchIcon" value=":/Images/Search_DK.png"/>
+<String name="ClearSearchIcon" value=":/Images/ClearSearch_DK.png"/>
+<String name="ApplyMaterialIcon" value=":/Images/ApplyMaterial_DK.png"/>  
+<String name="AspectbrowserIcon" value=":/Images/Aspectbrowser_DK.png"/>
+<String name="AutodeskCloud_16_newIcon" value=":/Images/AutodeskCloud_16_new_DK.png"/>
+<String name="box_16Icon" value=":/Images/box_16_DK.png"/>
+<String name="BrowserIcon" value=":/Images/Browser_DK.png"/>
+<String name="cameraNormal_16Icon" value=":/Images/cameraNormal_16_DK.png"/>
+<String name="checker_16Icon" value=":/Images/checker_16_DK.png"/>
+<String name="diagonal_16Icon" value=":/Images/diagonal_16_DK.png"/>
+<String name="EditMaterialIcon" value=":/Images/EditMaterial_DK.png"/>
+<String name="FavoriteIconIcon" value=":/Images/FavoriteIcon_DK.png"/>
+<String name="favorites_16Icon" value=":/Images/favorites_16_DK.png"/>
+<String name="gradient_16Icon" value=":/Images/gradient_16_DK.png"/>
+<String name="help_16Icon" value=":/Images/help_16_DK.png"/>
+<String name="image_16Icon" value=":/Images/image_16_DK.png"/>
+<String name="lightingNormal_16Icon" value=":/Images/lightingNormal_16_DK.png"/>
+<String name="linear_16Icon" value=":/Images/linear_16_DK.png"/>
+<String name="linearAsymetrical_16Icon" value=":/Images/linearAsymetrical_16_DK.png"/>
+<String name="makeMaterialCopy_16Icon" value=":/Images/makeMaterialCopy_16_DK.png"/>
+<String name="ManageIcon" value=":/Images/Manage_DK.png"/>
+<String name="marble_16Icon" value=":/Images/marble_16_DK.png"/>
+<String name="New_materialIcon" value=":/Images/New material_DK.png"/>
+<String name="noise_16Icon" value=":/Images/noise_16_DK.png"/>
+<String name="PickerIcon" value=":/Images/Picker_DK.png"/>
+<String name="pong_16Icon" value=":/Images/pong_16_DK.png"/>
+<String name="radial_16Icon" value=":/Images/radial_16_DK.png"/>
+<String name="speckle_16Icon" value=":/Images/speckle_16_DK.png"/>
+<String name="spiral_16Icon" value=":/Images/spiral_16_DK.png"/>
+<String name="sweep_16Icon" value=":/Images/sweep_16_DK.png"/>
+<String name="tartan_16Icon" value=":/Images/tartan_16_DK.png"/>
+<String name="tiles_16Icon" value=":/Images/tiles_16_DK.png"/>
+<String name="waves_16Icon" value=":/Images/waves_16_DK.png"/>
+<String name="wood_16Icon" value=":/Images/wood_16_DK.png"/>  
+<String name="DeleteNodeIcon" value=":/Images/DeleteNode_DK.png"/>  
+<String name="Idle_Hover_Add" value=":/Images/Idle_Hover_Add_DK.png"/>
+<String name="Hover_Hover_Add" value=":/Images/Hover_Hover_Add_DK.png"/>
+<String name="Pressed_Hover_Add" value=":/Images/Pressed_Hover_Add_DK.png"/>
+<String name="Idle_Hover_Replace" value=":/Images/Idle_Hover_Replace_DK.png"/>
+<String name="Hover_Hover_Replace" value=":/Images/Hover_Hover_Replace_DK.png"/>  
+<String name="Pressed_Hover_Replace" value=":/Images/Pressed_Hover_Replace_DK.png"/>
+<String name="Idle_Hover_Delete" value=":/Images/Idle_Hover_Delete_DK.png"/>
+<String name="Hover_Hover_Delete" value=":/Images/Hover_Hover_Delete_DK.png"/>
+<String name="Pressed_Hover_Delete" value=":/Images/Pressed_Hover_Delete_DK.png"/>
+<String name="Idle_Hover_Edit" value=":/Images/Idle_Hover_Edit_DK.png"/>
+<String name="Hover_Hover_Edit" value=":/Images/Hover_Hover_Edit_DK.png"/>
+<String name="Pressed_Hover_Edit" value=":/Images/Pressed_Hover_Edit_DK.png"/>
+<String name="Idle_Hover_AddAndEdit" value=":/Images/Idle_Hover_AddAndEdit_DK.png"/>
+<String name="Hover_Hover_AddAndEdit" value=":/Images/Hover_Hover_AddAndEdit_DK.png"/>
+<String name="Pressed_Hover_AddAndEdit" value=":/Images/Pressed_Hover_AddAndEdit_DK.png"/>
+<String name="Idle_Hover_Download" value=":/Images/download_asset_DK.png"/>  
+<String name="Hover_Hover_Download" value=":/Images/download_asset_hvr_DK.png"/>
+<String name="Pressed_Hover_Download" value=":/Images/download_asset_click_DK.png"/>
+<String name="LibraryIcon" value=":/Images/libraryIcon_DK.png"/>
+<String name="TreeCategoryIcon" value=":/Images/category_DK.png"/>
+<String name="TreeLibraryIcon" value=":/Images/folder_16_DK.png"/>
+<String name="TreeReadOnlyIcon" value=":/Images/lock_gray_16_DK.png"/>
+<String name="TreeBranchOpenIcon" value=":/Images/lock_gray_16_DK.png"/>
+<String name="TreeHomeIcon" value=":/Images/home_DK.png"/>
+<String name="UpArrowIcon" value=":/Images/UpArrow_DK.png"/>
+<String name="DownArrowIcon" value=":/Images/DownArrow_DK.png"/>
+<String name="CheckMarkIcon" value=":/Images/Checkmark_DK.png"/>
+<String name="HideLibraryPanelIcon" value=":/Images/hide library_DK.png"/>
+<String name="ShowLibraryPanelIcon" value=":/Images/show library_DK.png"/>
+<String name="LibEditingIcon" value=":/Images/editing_16_DK.png"/>
+<String name="LibRefreshIcon" value=":/Images/refresh_16_DK.png"/>
+<String name="LinkIcon" value=":/Images/link_16_DK.png"/>
+<String name="EditorReplaceIdleIcon" value=":/Images/Editor_ReplaceBTN_Idle_DK.png"/>
+<String name="EditorReplaceHoverIcon" value=":/Images/Editor_ReplaceBTN_Hover_DK.png"/>
+<String name="EditorReplacePressIcon" value=":/Images/Editor_ReplaceBTN_Pressed_DK.png"/>
+<String name="EditorAddIdleIcon" value=":/Images/Editor_AddBTN_Idle.png"/>
+<String name="EditorAddHoverIcon" value=":/Images/Editor_AddBTN_Hover.png"/>
+<String name="EditorAddPressIcon" value=":/Images/Editor_AddBTN_Pressed.png"/>
+<String name="EditorDeleteIdleIcon" value=":/Images/Editor_DeleteBTN_Idle.png"/>
+<String name="EditorDeleteHoverIcon" value=":/Images/Editor_DeleteBTN_Hover.png"/>
+<String name="EditorDeletePressIcon" value=":/Images/Editor_DeleteBTN_Pressed.png"/>
+<String name="ToolbarExtensionIcon" value=":/Images/toolbar-ext-h-16_DK.png"/>
+<String name="CurrentTheme" value="DarkTheme"/>
+
+<Int name="SearchBoxFixedWidth" value="240" />
+<Int name="ShowGridLine" value="0" />
+<Int name="ShowMenuStaticLabel" value="1" />
+<Int name="StaticLabelFontBold" value="1" />
+<Int name="ShowViewHighlightingOutline" value="0" />
+<Int name="DrawLockBottomLeft" value="1" />
+<Int name="HighlightCurrentSelectedBreadCrumButtom" value="1" />
+<Int name="HighlightCurrentTreeItem" value="1" />
+<Int name="HighlightTreeRootItem" value="0" />
+<Int name="DrawLockBottomLeft" value="1" />
+<Int name="ShowHomeIcon_BreadCrumb" value="0" />
+<Int name="MBTreeViewItemPaddingTop" value="1" />
+<Int name="MBTreeViewItemPaddingBottom" value="1" />
+<Int name="TreeViewIndentation" value="20" />
+<Int name="TreeViewShowBranchDotLine" value="1" />
+<Int name="ButtonFocusMarginWidth" value="2" />
+<Int name="DropDownFocusMarginWidth" value="1" />
+<Int name="BreadCrumbIconWidth" value="24" />
+<Int name="ShowIconForNonGroupBreadCrumbButton" value="0" />
+<Int name="RolloutcontainerTitleHeight" value="26" />    
+<Int name="PropertyGroupShowDivider" value="0" />
+<Int name="ListViewIconPadding" value="8" />
+<Int name="ListViewTextPaddingTop" value="3" />
+<Int name="ListViewTextPaddingBottom" value="3" />    
+</xbel>

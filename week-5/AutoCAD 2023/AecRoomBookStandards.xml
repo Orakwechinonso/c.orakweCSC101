@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<ItemList UID="201" Description="Calculation Standard International">
+		<Item UID="503">
+			<Property UID="3001" Name="InterferencesSubareas" Description="Consider interferences as sub areas -&gt;" Value="Yes"/>
+			<Property UID="3002" Name="BodyModifiersSubareas" Description="Consider body modifiers as sub areas -&gt;" Value="Yes"/>
+		</Item>
+	</ItemList>
+	<ItemList UID="202" Description="Calculation Standard DACH (Germany)">
+		<Item UID="503">
+			<Property UID="3001" Name="InterferencesSubareas" Description="Consider interferences as sub areas -&gt;" Value="Yes"/>
+			<Property UID="3002" Name="BodyModifiersSubareas" Description="Consider body modifiers as sub areas -&gt;" Value="Yes"/>
+		</Item>
+		<Item UID="501" Name="VOB Wall" Description="Ignore Wall openings with areas less than 2.5 meters">
+			<Property UID="1001" Name="IgnoreWallOpening" Description="Ignore openings -&gt;"  Value="Yes"/>
+			<Property UID="1002" Name="MinimumArea" Description="with area less then (meters) -&gt;" Value="2.5"/>
+		</Item>
+		<Item UID="502" Name="VOB Floor" Description="Ignore Floor openings with areas less than 0.1 meters">
+			<Property UID="2001" Name="IgnoreFloorOpening" Description="Ignore openings -&gt;" Value="Yes"/>
+			<Property UID="2002" Name="MinimumArea" Description="with area less then (meters) -&gt;" Value="0.1"/>
+		</Item>
+	</ItemList>
+</Configuration>

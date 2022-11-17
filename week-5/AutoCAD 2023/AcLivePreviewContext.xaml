@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2012 by Autodesk, Inc.  All rights reserved.
+    
+    This computer source code and related instructions and comments 
+    are the unpublished confidential and proprietary information of 
+    Autodesk, Inc. and are protected under applicable copyright and 
+    trade secret law.  They may not be disclosed to, copied or used 
+    by any third party without the prior written consent of Autodesk, Inc.
+-->
+<!-- Defines live preview rules and live preview controls.
+
+Custom applications can supply their own rules by creating *LivePreviewContext.xaml file
+and placing it the same directory where the main exe is located.
+
+Here are some structs definition:
+    
+    public enum PreviewControlType
+    { 
+        RibbonItemControl = 1,
+        PropertyPaletteControl = 2
+    }
+    
+    public class LivePreviewControl
+    {
+        public String Name { get; set; }
+        public String Description { get; set; }
+        public PreviewControlType ControlType { get; set; }
+        public String Rule { get; set; }
+        public short PreviewDelay { get; set; }
+    }
+    
+    [ContentProperty("Content")]
+    public class LivePreviewRule
+    {
+        public String Content { get; set; }
+        public String Name { get; set; }
+        public String Description { get; set; }
+    };
+
+-->
+    
+<LivePreviewContext  
+    xmlns="clr-namespace:Autodesk.AutoCAD.LivePreview;assembly=AcWindows"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Ordering="0"
+    >
+<!--
+    Use AssemblyReference elements to reference custom assemblies.
+    <LivePreviewRules.References>
+        <AssemblyReference Namespace="Corp.Addin" Assembly="corpAddin"/>
+    </LivePreviewRules.References>
+-->
+    <LivePreviewContext.Rules>
+        <LivePreviewRule Name="_TableCellSelected">
+            <![CDATA[
+            Selection.Count==1 && Selection[0].GetProperties()["HasSubSelection"] != null &&
+            (bool)(Selection[0].GetProperties()["HasSubSelection"].GetValue(Selection[0]))
+        ]]>
+        </LivePreviewRule>
+
+        <LivePreviewRule Name="_DocPreviewAvailable">
+            <![CDATA[
+            !TextEditor && !_TableCellSelected && !BlockEditor
+        ]]>
+        </LivePreviewRule>
+
+        <LivePreviewRule Name="_ValidSelection">
+            <![CDATA[
+            (((short)SystemVariables["RIBBONCONTEXTSELLIM"].Value) == 0 || (Selection.Count <= (short)SystemVariables["RIBBONCONTEXTSELLIM"].Value))
+        ]]>
+        </LivePreviewRule>
+
+        <LivePreviewRule Name="EntitisSelected">
+            <![CDATA[
+            _DocPreviewAvailable && Selection.Count > 0 && _ValidSelection
+        ]]>
+        </LivePreviewRule>
+
+        <LivePreviewRule Name="HatchSelected">
+            <![CDATA[
+            Selection.ContainsOnly("Hatch")
+        ]]>
+        </LivePreviewRule>
+        
+        <LivePreviewRule Name="TableSelected">
+            <![CDATA[
+            Selection.ContainsOnly("Table")
+        ]]>
+        </LivePreviewRule>
+
+        <LivePreviewRule Name="TextEditor">
+            <![CDATA[
+            ((short)SystemVariables["TEXTEDITOR"].Value) == 1
+        ]]>
+        </LivePreviewRule>
+        
+        <LivePreviewRule Name="BlockEditor">
+            <![CDATA[
+            ((short)SystemVariables["BLOCKEDITOR"].Value) == 1
+        ]]>
+        </LivePreviewRule>
+    </LivePreviewContext.Rules>
+    <LivePreviewContext.Controls>
+        <!-- Dropdown controls -->
+        <LivePreviewControl Name="AcTableStyleCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcTableStyleGallery" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcDimensionStyleCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcDimensionStyleGallery" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcMultiLeaderStyleCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcMultiLeaderStyleGallery" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcLinetypeCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcLineWeightCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="LayerControl" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcTextStyleCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+        <LivePreviewControl Name="AcObjectColorCombo" ControlType="RibbonItemControl" Rule="EntitisSelected"/>
+
+        <LivePreviewControl Name="AcPlotStyleCombo" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="AcLayerStateCombo" ControlType="RibbonItemControl"/>
+
+        <LivePreviewControl Name="AcHatchRetainBoundariesCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchDefineBoundarySetCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchTypeCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchISOPenWidth" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchPatternColorCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchPatternBGColorCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchGradientColor1Combo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchGradientColor2Combo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchPatternGallery" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+        <LivePreviewControl Name="AcHatchLayerCombo" ControlType="RibbonItemControl" Rule="HatchSelected"/>
+
+        <LivePreviewControl Name="AcCellStyleCombo" ControlType="RibbonItemControl" Rule="_TableCellSelected"/>
+        <LivePreviewControl Name="AcBackgroundColorCombo" ControlType="RibbonItemControl" Rule="_TableCellSelected"/>
+
+        <LivePreviewControl Name="AcBlockVisibilitiesCombo" ControlType="RibbonItemControl" Rule="BlockEditor"/>
+
+        <!-- System variable controls -->
+        <LivePreviewControl Name="AcFrameDataBoundDropDown" Description="FRAME System Variable Drop-down"/>
+
+        <!-- TODO : The live preview for the following controls may introduce performance problem if the drawing is huge.
+        Per feature team decision we disable their preview functionality until the performance problem is resolved in Kastle. -->
+        
+        <!--
+        <LivePreviewControl Name="AcVSSHADOWSDataBoundDropDown" Description="VSSHADOWS System Variable Drop-down"/>
+        <LivePreviewControl Name="AcSKYSTATUSDataBoundDropDown" Description="SKYSTATUS System Variable Drop-down"/>
+        <LivePreviewControl Name="AcVSMATERIALMODEDataBoundDropDown" Description="VSMATERIALMODE System Variable Drop-down"/>
+        <LivePreviewControl Name="AcVSEDGESDataBoundDropDown" Description="VSEDGES System Variable Drop-down"/>
+        <LivePreviewControl Name="AcVSFACECOLORMODEDataBoundDropDown" Description="VSFACECOLORMODE System Variable Drop-down"/>
+        <LivePreviewControl Name="AcVSFACESTYLEDataBoundDropDown" Description="VSFACESTYLE System Variable Drop-down"/>
+
+        <LivePreviewControl Name="AcNamedUcsCombo" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="AcVisualStyleGalleryControl" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="AcNamedViewControl" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="AcViewPortList" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="RBN_190_2B2FA" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="ID_Multiple_Vports" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="ID_Single_Vport" ControlType="RibbonItemControl"/>
+        <LivePreviewControl Name="Named View Top" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View Bottom" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View Left" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View Right" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View Front" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View Back" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View SW Isometric" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View SE Isometric" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View NE Isometric" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        <LivePreviewControl Name="Named View NW Isometric" ControlType="RibbonItemControl" PreviewDelay="300"/>
+        -->
+        <!-- Text Editor controls -->
+        <LivePreviewControl Name="AcIPEFontColorCombo" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPEFontSizeCombo" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPEFontNameCombo" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPEJustificationMenu" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPELineSpacingMenu" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPEFontStyleGallery" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPEMakeCase" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPERemoveFormatting" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcIPENumberingMenu" ControlType="RibbonItemControl" Rule="TextEditor"/>
+        <LivePreviewControl Name="AcTextLayerCombo" ControlType="RibbonItemControl" Rule="TextEditor"/>
+    </LivePreviewContext.Controls>
+
+</LivePreviewContext>
+

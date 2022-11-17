@@ -1,0 +1,21 @@
+﻿{
+  "commandLine": [ "\"$(engine.path)AcCoreConsole.exe\" /noCER /i \"$(args[HostDwg].path)\" /dsd /s \"$(settings[_scr].path)\"" ],
+  "parameters": {
+    "HostDwg": {
+      "verb": "get",
+      "description": "Host drawing to be loaded into AutoCAD.",
+      "required": true
+    },
+    "DsdFile": {
+      "verb": "get",
+      "description": "DSD file to be processed.",
+      "required": true
+    }
+  },
+  "engine": "Autodesk.AutoCAD+24",
+  "appbundles": [],
+  "settings": {
+    "_scr": { "value": "_BGPLOTRECEIVE $(args[DsdFile].path)\n" }
+  },
+  "description": "PublishDSD."
+}

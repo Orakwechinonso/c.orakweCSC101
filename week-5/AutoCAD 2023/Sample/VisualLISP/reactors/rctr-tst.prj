@@ -1,0 +1,16 @@
+;;; VLisp project file [V2.0] Rctr-tst saved to:[D:/autocad/MyRevs/VLisp/TahoeSamples/Revised/SAMPLE/RCTR-TST] at:[11/9/98] 
+(VLISP-PROJECT-LIST
+  :name
+  Rctr-tst
+  :own-list
+  ("RSAME" "RTRANS" "RTIE" "RCTR" "GETPARM" "APP-REG")
+  :fas-directory
+  nil
+  :tmp-directory
+  nil
+  :project-keys
+  (:BUILD (:standard) :MERGED T :SAFE-MODE T :MSGLEVEL 2)
+  :context-id
+  :AUTOLISP
+)
+;; EOF

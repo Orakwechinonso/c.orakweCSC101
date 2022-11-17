@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Defines tab selector rules.
+
+Custom applications can supply their own rules by creating <RDS>ContextualTabSelectorRules.xaml file
+and placing it the same directory where the main exe is located. RDS (registered developer symbol) should
+be used to avoid name conflicts. Rules will show up the CUI dialog and can be referenced in the (partial) CUI 
+file of the custom application.
+
+Any valid C# boolean expression can be used.
+
+Note that rules can be redefined by custom application: simply use the same Uid and make sure that your rule
+file has >0 Ordering attribute.
+-->
+    
+    
+<!-- Theme design for Rules
+    
+    If it is an annotation object: Theme - Purple
+    Anything to do with Blocks: Theme - Yellow
+    Anything to do with underlays or references (except blocks): Theme - Cyan
+    Text editor and other command modes not relating to Blocks: Theme - Blue
+    Other geometry: Theme - Green
+    
+    Matt Stein: 11/4/08
+    -->
+    
+<TabSelectorRules  
+    xmlns="clr-namespace:Autodesk.AutoCAD.Ribbon;assembly=AcWindows"
+    Ordering="0"
+    >
+<!--
+    Use AssemblyReference elements to reference custom assemblies.
+    <TabSelectorRules.References>
+        <AssemblyReference Namespace="Corp.Addin" Assembly="corpAddin"/>
+    </TabSelectorRules.References>
+-->
+    <!-- Drawing Views -->
+    <Rule Uid="AcDrawingViewsMSCreation" DisplayName="Drawing Views creation from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        (((short)SystemVariables["VIEWCREATION"].Value) == 3) || (((short)SystemVariables["VIEWCREATION"].Value) == 2)
+        ]]>
+    </Rule>
+    
+    <Rule Uid="AcDrawingViewsINVCreation" DisplayName="Drawing Views creation from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWCREATION"].Value) == 1
+        ]]>
+    </Rule>  
+
+      <!-- add rule for DrawingView source property -->
+    <Rule Uid="AcDrawingViewsMSSelected" DisplayName="Drawing Views selected from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        (((short)SystemVariables["VIEWEDITOR"].Value) == 3) || (((short)SystemVariables["VIEWEDITOR"].Value) == 2)
+        ]]>
+    </Rule>
+
+    <Rule Uid="AcDrawingViewsINVSelected" DisplayName="Drawing Views selected from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWEDITOR"].Value) == 1
+        ]]>
+    </Rule>
+
+    <!-- Section View Creation property -->
+    <Rule Uid="AcSectionViewsMSCreation" DisplayName="Section Views creation from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWSECTIONCREATION"].Value) == 3
+        ]]>
+    </Rule>
+    <Rule Uid="AcSectionViewsINVCreation" DisplayName="Section Views creation from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWSECTIONCREATION"].Value) == 1
+        ]]>
+    </Rule>
+
+    <!-- Section View Edit property -->
+    <Rule Uid="AcSectionViewsMSSelected" DisplayName="Section Views selected from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWSECTIONEDITOR"].Value) == 3
+        ]]>
+    </Rule>
+    <Rule Uid="AcSectionViewsINVSelected" DisplayName="Section Views selected from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWSECTIONEDITOR"].Value) == 1
+        ]]>
+    </Rule>
+
+    <!-- Detail View Creation property -->
+    <Rule Uid="AcDetailViewsMSCreation" DisplayName="Detail Views creation from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWDETAILCREATION"].Value) == 3
+        ]]>
+    </Rule>
+    <Rule Uid="AcDetailViewsINVCreation" DisplayName="Detail Views creation from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWDETAILCREATION"].Value) == 1
+        ]]>
+    </Rule>
+
+    <!-- Detail View Edit property -->
+    <Rule Uid="AcDetailViewsMSSelected" DisplayName="Detail Views selected from MS" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWDETAILEDITOR"].Value) == 3
+        ]]>
+    </Rule>
+    <Rule Uid="AcDetailViewsINVSelected" DisplayName="Detail Views selected from INV" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWDETAILEDITOR"].Value) == 1
+        ]]>
+    </Rule>
+
+    <!-- Section 2D View property -->
+    <Rule Uid="AcSectionViewsSelected" DisplayName="Section Views selected" Theme="Blue" Trigger="Selection">
+        <![CDATA[
+            Selection.ContainsOnlyDrawingView()
+        ]]>
+    </Rule>
+
+    <!-- View Sketch Edit property -->
+    <Rule Uid="AcSketchViewsCreation" DisplayName="Sketch Views Creation" Activate="True" Theme="Blue" Trigger="SystemVariable">
+        <![CDATA[
+        ((short)SystemVariables["VIEWSKETCHMODE"].Value) == 1
+        ]]>
+    </Rule>
+</TabSelectorRules>
+

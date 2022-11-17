@@ -1,0 +1,47 @@
+{
+  "widgets": {
+    "learn": {},
+    "create": [
+      [
+        { "autodeskDocsTab": "enabled" },
+        { "myInsightsTab": "disabled" },
+        { "title": "column_get_started_title" },
+        {
+          "projectBar": "disabled",
+          "newProject": "enabled",
+          "openProject": "enabled",
+          "projectIcon": ""
+        },
+        { "startDrawing": "enabled" },
+        {
+          "createSheetSet": "enabled",
+          "customMenuActions": [],
+          "templateBar": "enabled"
+        },
+        {
+          "openFile": "enabled",
+          "openSheetSet": "enabled",
+          "getOnlineTemplates": "",
+          "exploreSamples": "enabled",
+          "customLinks": []
+        }
+      ],
+      [
+        { "recentFileImages": [] }
+      ],
+      [
+        {
+          "Update": "enabled",
+          "Hwacc": "enabled",
+          "License": "enabled",
+          "OfflineHelp": "enabled"
+        },
+        {
+          "feedbackPanel": "enabled",
+          "userInfoPanel": "enabled",
+          "contentWidgetPanel": "enabled"
+        }
+      ]
+    ]
+  }
+}

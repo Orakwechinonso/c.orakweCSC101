@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css" />
+        <link rel="stylesheet" type="text/css" href="css/panel.css" />
+    </head>
+
+    <body oncontextmenu="return false;">
+        <div id="content">
+            <img id="icon_blockplaceholder"/>
+            <p>
+                <a id="sign_in_link" class="highlight sign-in-collapse" onclick="walkOnBoarding()" href="#"></a>
+            </p>
+            <p id="txt_subhead"></p>
+            <p id="txt_subhead_paragraph" class="txt-collapse"></p>
+            <p><button type="button" id="btn_open_dialog" class="btn-collapse btn" onclick="selectBlockLibrary()"></button></p>
+            <a id="learn_about_link"  onclick="externalLinkClicked()" data-help-id=""
+                href="#">
+            </a>
+            <p id="legal_sentence"></p>
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/Autodesk.BlockInterop.js"></script>
+        <script type="text/javascript" src="js/Autodesk.BlockRecentOnBoarding.js"></script>
+        <script type="text/javascript" src="js/Autodesk.BlockLibraryOnBoarding.js"></script>
+        <script type="text/javascript" src="js/Autodesk.BlockFavoritesOnBoarding.js"></script>
+        <script type="text/javascript" src="js/lang.js"></script>
+        <script type="text/javascript" src="js/utils.js"></script>        
+        <script type="text/javascript" src="js/RecentOnBoarding.js"></script>
+        <script type="text/javascript" src="js/LibrariesOnBoarding.js"></script>
+        <script type="text/javascript" src="js/FavoritesOnBoarding.js"></script>
+        <script type="text/javascript"> 
+            
+        var  externalLinkClicked = null;        
+        var walkOnBoarding = null;
+        var selectBlockLibrary = null;
+        var onLoadFavorites = () => {
+            var state = utils.getUrlParameter('state');
+            state = state || 'notloggedin';
+            var FavoritesOnBoarding = window.FavoritesOnBoarding;
+            if (state === 'notloggedin') {
+                walkOnBoarding = FavoritesOnBoarding.walkOnBoarding;
+            } else {
+                walkOnBoarding = FavoritesOnBoarding.selectStorage;
+            }
+            externalLinkClicked = () => { 
+                const element = document.getElementById('learn_about_link');                
+                const help_id = element.dataset.helpId;
+                FavoritesOnBoarding.launchHelp(help_id); 
+            };
+            FavoritesOnBoarding.refreshPanel();
+
+            var tab_util = utils.recent;
+            tab_util.registerRefreshPanelCallback(FavoritesOnBoarding.refreshPanel);
+        };
+        var onLoadForRecent = () => {
+            var state = utils.getUrlParameter('state');
+            state = state || 'notloggedin';
+            var RecentOnBoarding = window.RecentOnBoarding;
+            if (state === 'notloggedin') {
+                walkOnBoarding = RecentOnBoarding.walkOnBoarding;
+            } else {
+                walkOnBoarding = RecentOnBoarding.selectStorage;
+            }
+            externalLinkClicked = () => { 
+                const element = document.getElementById('learn_about_link');                
+                const help_id = element.dataset.helpId;
+                RecentOnBoarding.launchHelp(help_id); 
+            };
+            RecentOnBoarding.refreshPanel();
+
+            var tab_util = utils.recent;
+            tab_util.registerRefreshPanelCallback(RecentOnBoarding.refreshPanel);         
+        };
+        var onLoadForLibrary = async () => {
+            var tab_util = utils.library;            
+            var LibrariesOnBoarding = window.LibrariesOnBoarding;
+            selectBlockLibrary = LibrariesOnBoarding.selectBlockLibrary;
+            externalLinkClicked = LibrariesOnBoarding.launchHelp;
+            try {
+                var obj = await tab_util.getIsBlockLibraryExisted();
+                var existed = false;
+                if (obj && typeof (obj.value) !== 'undefined') {
+                    existed = obj.value;
+                }
+                if (existed) {
+                    tab_util.closeBrowser();
+                }
+                else {
+                    LibrariesOnBoarding.refreshPanel();
+                    tab_util.registerRefreshPanelCallback(LibrariesOnBoarding.refreshPanel);
+                }
+            } catch (err) {
+                LibrariesOnBoarding.refreshPanel();
+            }
+        };
+        $(function () {
+            var tab_name = utils.getTabName();
+            if (tab_name === "Recent") {
+                onLoadForRecent();
+            } else if (tab_name === "Favorites") {
+                onLoadFavorites();
+            } else {
+                onLoadForLibrary();
+            }                        
+        });      
+        </script>
+    </body>    
+</html>

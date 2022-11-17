@@ -1,0 +1,154 @@
+<html>
+<!--
+	AutoCAD 2000 Internet Edition eTransmit(tm) HTML template
+	Feburary 26, 2000
+
+	Copyright (C) 2000 by Autodesk, Inc.
+	
+	Permission to use, copy, modify, and distribute this software
+	for any purpose and without fee is hereby granted, provided that
+	the above copyright notice appears in all copies and that both
+	the copyright notice and the limited warranty and restricted rights
+	notice below appear in all supporting documentation.
+	
+	AUTODESK, INC. PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS.
+	AUTODESK, INC. SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+	MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC.
+	DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+	UNINTERRUPTED OR ERROR FREE.
+	
+	Use, duplication, or disclosure by the U.S. Government is subject to
+	restrictions set forth in FAR 52.227-19 (Commercial Computer
+	Software - Restricted Rights) and DFAR 252.227-7013(c)(1)(ii)
+	(Rights in Technical Data and Computer Software), as applicable.
+
+	eTransmit(tm) is using the following tags in form of HTML comments 
+    to generate the HTML file base on this template:
+	
+	##ETRANSMIT##NAME##			Transmittal name
+	##ETRANSMIT##NOTES##		Transmittal notes
+	##ETRANSMIT##IMAGE##		BMP image of packed drawing
+	##ETRANSMIT##HREF##			Hyperlink to package
+	##ETRANSMIT##REPORTLINK##	Text for the link to the report file (optional)
+	##ETRANSMIT##UNZIP##		Text /w link to Unzip utility (optional)
+	##ETRANSMIT##REPORT##		Transmittal report (optional)
+
+-->
+
+<!--
+	Title block
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>TRANSMITTAL DOWNLOAD PAGE</title>
+</head>
+
+<body topmargin="0" leftmargin="0">
+
+<!-- Title row -->
+<table WIDTH="100%" CELLSPACING="0" BORDER="0" CELLPADING="0" height="40">
+  <tr VALIGN="TOP">
+    <td BGCOLOR="#003366" WIDTH="14%" height="70">&nbsp;</td>
+    <td BGCOLOR="#003366" WIDTH="86%" VALIGN="center" height="70">
+		<a name="Transmittal Download Page"><font face="Arial Black" size="5" color="#FFFFFF">
+		T R A N S M I T T A L&nbsp; D O W N L O A D&nbsp; P A G E
+		</font></a>
+    </td>
+  </tr>
+</table>
+
+<!-- 
+	Transmittal name row
+-->
+
+<table WIDTH="100%" CELLSPACING="0" BORDER="0" CELLPADING="0">
+  <tr>
+    <td BGCOLOR="#336699" WIDTH="14%" VALIGN="bottom" height="45">&nbsp;</td>
+    <td BGCOLOR="#336699" WIDTH="86%" VALIGN="bottom" align="left" height="45">
+    <p align="left"><font face="Arial Black" size="3" color="#FFFFCC">
+	<!--##ETRANSMIT##NAME##-->
+	</font></p>
+    </td>
+  </tr>
+
+<!-- 
+	Transmittal notes row
+-->
+  <tr>
+    <td BGCOLOR="#336699" WIDTH="14%" VALIGN="top">&nbsp;</td>
+    <td BGCOLOR="#336699" WIDTH="86%" VALIGN="top" align="left">
+    <p align="left"><font face="Times New Roman" size="3" color="#FFFFCC">
+	<!--##ETRANSMIT##NOTES##-->
+	<br>&nbsp;
+	</font></p>
+	</td>
+  </tr>
+</table>
+
+<!-- 
+	Body text row 
+-->
+<table WIDTH="100%" CELLSPACING="0" BORDER="0" CELLPADING="0" height="100%">
+  <tr VALIGN="CENTER">
+    <td BGCOLOR="#336699" WIDTH="1%" height="100%">&nbsp;</td>
+	<td BGCOLOR="#FFFFCC" WIDTH="13%" height="100%">&nbsp;</td>
+    <td BGCOLOR="#FFFFCC" WIDTH="80%" VALIGN="top" height="100%">
+        <p align="Left"><font face="Verdana" size="2">
+		<br>
+        <br>
+		<!-- The BMP and the link to the package. -->
+		<!--##ETRANSMIT##IMAGE##-->
+		<br>
+        <br>
+        </font><font color="#FF0000" face="Verdana" size="2">
+		<!--##ETRANSMIT##HREF##-->
+		<br>
+        <br>
+        <a href="#Transmittal Report:">
+		<font color="#FF0000">
+		<!--##ETRANSMIT##REPORTLINK##-->
+		</font>
+		</a>
+		<br>
+        <br>
+        <br>
+        </font><font face="Verdana" size="2" color="#0080C0">
+		Tools for working with transmittals and drawings: 
+		<br>
+		<blockquote>
+			<!--##ETRANSMIT##VOLOVIEW##-->
+			<br>
+			<!--##ETRANSMIT##UNZIP##-->
+			</font></p>
+		</blockquote>
+		<br>
+    </td>
+	<td BGCOLOR="#FFFFCC" WIDTH="5%" height="100%">&nbsp;</td>
+    <td BGCOLOR="#336699" WIDTH="1%" height="100%">&nbsp;</td>
+  </tr>
+</table>
+
+<!-- 
+	Report text row 
+-->
+<table WIDTH="100%" CELLSPACING="0" BORDER="0" CELLPADING="0" height="100%">
+  <tr VALIGN="CENTER">
+    <td BGCOLOR="#336699" WIDTH="1%" height="100%">&nbsp;</td>
+	<td BGCOLOR="#FFFFCC" WIDTH="13%" height="100%">&nbsp;</td>
+    <td BGCOLOR="#FFFFCC" WIDTH="85%" VALIGN="top" height="100%">
+        <p align="Left"><br><br></p>
+        <a name="Transmittal Report:">
+        <p align="Left"><font face="Verdana" size="2" color="#0080C0">
+		<!--##ETRANSMIT##REPORT##-->
+		<br>
+		</font></p>
+		<a href="#Transmittal Download Page">
+		<font face="Verdana" size="2" color="#0080C0">
+		Back...
+		</font></a>
+    </td>
+    <td BGCOLOR="#336699" WIDTH="1%" height="100%">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

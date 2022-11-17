@@ -1,0 +1,37 @@
+<UpiDllConfig>
+  <UpiValueRetrieval>
+    <upi_element name="upivalue">
+      <upi_attribute name="version" value="1.0"/>
+      <upi_attribute name="type" value="product"/>
+      <upi_element name="level">
+
+           <upi_attribute name="name" value="productline"/>
+           <upi_attribute name="id">
+            <upi_reader name="StringResourceReader" path="..\..\AcJab.dll" id="14303" appliesto="installed"/>
+           </upi_attribute>
+
+              <upi_element name="level">
+              <upi_attribute name="name" value="release"/>
+              <upi_attribute name="id">
+               <upi_reader name="StringResourceReader" path="..\..\AcJab.dll" id="14319" appliesto="installed"/>
+              </upi_attribute>
+
+                <upi_element name="level">
+                <upi_attribute name="name" value="master"/>
+                <upi_attribute name="id" >
+                 <upi_reader name="RegReader" path="\HKLM\SOFTWARE\Autodesk\AutoCAD\R24.2" iterate="true" target="ProductCode" locationkey="UPILocation" appliesto="installed"/>
+                </upi_attribute>
+
+                 <upi_element name="level">
+                   <upi_attribute name="name" value="build"/>
+                   <upi_attribute name="id">
+                    <upi_reader name="FileAttributeReader" path="..\..\proddata.dll" attribute="FileVersion" appliesto="installed"/>
+                   </upi_attribute>
+                 </upi_element>
+
+                </upi_element>
+              </upi_element>
+           </upi_element>
+      </upi_element>
+  </UpiValueRetrieval>
+</UpiDllConfig>

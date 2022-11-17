@@ -1,0 +1,16 @@
+;;; VLisp project file [V2.0] Vla-tst saved to:[D:/autocad/MyRevs/VLisp/TahoeSamples/Revised-VSS/SAMPLE/VLA-TST] at:[11/9/98] 
+(VLISP-PROJECT-LIST
+  :NAME
+  Vla-tst
+  :OWN-LIST
+  ("AL-TST" "VLA-TST")
+  :FAS-DIRECTORY
+  ""
+  :TMP-DIRECTORY
+  ""
+  :PROJECT-KEYS
+  (:BUILD (:standard) :MERGED nil :SAFE-MODE T :MSGLEVEL 1)
+  :CONTEXT-ID
+  :AUTOLISP
+)
+;; EOF

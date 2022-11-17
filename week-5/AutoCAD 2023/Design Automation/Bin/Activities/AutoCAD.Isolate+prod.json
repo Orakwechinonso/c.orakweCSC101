@@ -1,0 +1,12 @@
+{
+  "commandLine": [ "\"$(engine.path)AcCoreConsole.exe\" /isolate \"$(args[environmentId].value)\" \"$(args[environmentId].value)\""],
+  "parameters": {
+      "environmentId": {
+        "verb": "read",
+        "description": "The environment id used to create an isolate running environment.",
+        "required": true
+    }
+  },
+  "engine": "Autodesk.AutoCAD+23_1",
+  "description": "For testing the second command accessing in the condition of cancerllation."
+}

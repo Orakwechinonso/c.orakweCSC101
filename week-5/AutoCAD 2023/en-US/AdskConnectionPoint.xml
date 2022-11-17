@@ -1,0 +1,46 @@
+<ConnectionPoint>
+  <Attributes>
+    <Attribute name="Pipe Size" value="" />
+    <Attribute name="Pipe Units" value="" />
+    <Attribute name="End Type" value="" />
+    <Attribute name="Pressure Class" value="" />
+    <Attribute name="Schedule" value="" />
+    <Attribute name="Facing" value="" />
+  </Attributes>
+  <PickListValues>
+	<NominalSizes>
+		<Imperial>
+			<Value>
+			0.125,0.25,0.375,0.5,0.625,0.75,1,1.25,1.5,2,2.5,3,	3.5,4,
+			5,6,7,8,9,10,11,12,14,15,16,18,20,22,24,25,26,28,30,32,34,36,38,40,
+			42,44,46,48,49,50,52,54,56,58,60,64,66,68,72,76,78,80,84,88,90,96,
+			104,112,120,128,136,144,152,160
+			</Value>
+		</Imperial>
+		<Metric>
+			<Value>
+			6,8,10,15,20,25,32,40,50,65,80,90,100,125,150,175,200,225,250,
+			280,300,350,400,450,500,550,600,650,700,750,800,850,900,950,
+			1000,1050,1100,1150,1200,1250,1300,1350,1400,1473,1500,1600,
+			1650,1700,1800,1900,1950,2000,2100,2200,2250,2400,2600,2800,
+			3000,3200,3400,3600,3800,4000
+			</Value>
+		</Metric>
+	</NominalSizes>
+	<EndTypes> 
+	  <EndType value="Plain" local="Plain"/>
+	  <EndType value="PlainPlastic" local="Plastic Plain"/>
+	  <EndType value="Beveled" local="Beveled"/>
+	  <EndType value="ThreadedMale" local="Threaded Male"/>
+	  <EndType value="ThreadedFemale" local="Threaded Female"/>
+	  <EndType value="SocketFemale" local="Socket Female"/>
+	  <EndType value="SocketFemalePlastic" local="Plastic Socket Female"/>
+	  <EndType value="Flanged" local="Flanged"/>
+	  <EndType value="Grooved" local="Grooved"/>
+	  <EndType value="Bell" local="Bell"/>
+	  <EndType value="Spigot" local="Spigot"/>
+	  <EndType value="MechJointMale" local="Mechanical Joint Male"/>
+	  <EndType value="MechJointFemale" local="Mechanical Joint Female"/>
+	</EndTypes>
+  </PickListValues>
+</ConnectionPoint>

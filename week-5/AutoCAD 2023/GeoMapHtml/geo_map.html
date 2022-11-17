@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+    <meta charset="utf-8">
+    <title>Autodesk GeoLocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Le styles -->
+    <link id="styleSheetForDialog" href="#" rel="stylesheet"/>
+
+    <script type="text/javascript" src="assets/js/jquerymx/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="assets/js/jquerymx/jquerymx-3.2.custom.js"></script>
+    <script type="text/javascript" src="assets/js/popUpMenuController.js"></script>
+    <script type="text/javascript" src="assets/js/markerLocationController.js"></script>
+    <script type="text/javascript" src="assets/js/pinRowController.js"></script>
+    <script type="text/javascript" src="assets/js/searchAddressMapController.js"></script>
+    <script type="text/javascript" src="assets/js/mapServiceController.js"></script>
+    <script type="text/javascript" src="assets/js/CoordSysController.js"></script>
+    <script type="text/javascript" src="assets/js/buttonsRowController.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.glob.min.js"></script>
+    <script type="text/javascript" src="assets/js/loadJSDynamic.js"></script>
+    <!--script type="text/javascript" src="assets/js/mockNative.js"></script-->
+    <script type="text/ejs" id="pop_up_menu">
+      <li><a href="javascript:void(0);" id="dropMarker">Drop Marker here</a></li>
+    </script>
+    <script type="text/ejs" id="result_row">
+        <li class="result_row" id=<%= "row_" + this.id %> >
+            <div class='left_col_result_icon'>
+                <a href="javascript:void(0);" id=<%= "icon"+this.id %> class="bullet_result">
+                    <%= this.id%>
+                </a>
+            </div>
+            <div class='right_col_result_info'>
+                <span id=<%= this.id %>><b><%= this.name %></b></span>
+                <span style='display:block;'><%= this.fullname %></span>
+                <div style="height:30px;">
+                    <button class="btn" id="useLocation"><%= $.localize("ID_USE_LOCATION", SELECTED_LANG) %></button>
+                </div>
+            </div>
+            <div style='clear:both;'></div>
+        </li>
+    </script>
+
+    <script type='text/ejs' id='template_address_search_with_map'>
+        <div class='searchbar'>
+            <div id="addressLabel"></div>
+
+            <div class="textboxSearch" id="txtBoxSearch">
+                <div class='watermarkfield'>
+                    <label target="address"><%= $.localize("ID_WATERMARK_SEARCHFIELD", SELECTED_LANG) %></label>
+                    <input class='contextmenu' type="text" id="address"
+                           onfocus="document.getElementById('txtBoxSearch').style.borderColor='#3366bb';"
+                           onblur="document.getElementById('txtBoxSearch').style.borderColor = '#999';"
+                           accesskey='a'>
+                </div>
+            </div>
+
+            <div class="buttonSearch">
+                 <a href="javascript:void(0);" class='btnIcon' style='width:50px;' accesskey='s' id="searchAddress" >
+                    <img src='./assets/icon/search-icon.png'></img>
+                </a>
+            </div>
+        </div>
+
+        <div class='maparea'>
+            <div id='searchResultContainer'>
+                <ul class="nav-list" id='searchResult'>
+                    <p style='color:grey;'><%= $.localize("ID_NO_SEARCH_RESULT", SELECTED_LANG) %></p>
+                    <p style='color:grey;'><%= $.localize("ID_MSG_GUIDE_RIGHT_CLICK", SELECTED_LANG) %></p>
+                </ul>
+            </div>
+            <div id='hidePanel'>
+                <img class="collapse-left" src="./assets/icon/transparent.png" id="collapse_result">
+            </div>
+            <div id="expandPanel" class="arrow-small">
+                <img class="expand-right" src="./assets/icon/transparent.png" id="show_expand_result">
+            </div>
+            <div class='spanright' >
+                <div id="map_section" class="map">
+                    <div id="offlineMsg" class="offlineMsg">
+                        <div class="lineOneOffLine">
+                            <b><%= $.localize("ID_OFFLINEMSG1", SELECTED_LANG) %></b>
+                        </div>
+                        <div id="signInOfflineMsg1" class="lineTwoOffLine">
+                            <%= $.localize("ID_OFFLINEMSG2", SELECTED_LANG) %>
+                        </div>
+                        <div id="signInOfflineMsg2" class="lineTwoOffLine">
+                            <%= $.localize("ID_OFFLINEMSG3", SELECTED_LANG) %>
+                        </div>
+                        <button class="rowButtons" id="useMapsButton" accesskey="u"></button>
+                    </div>
+                </div>
+                <div id="panThereTermsRow">
+                    <a href="javascript:void(0);" title="<%= $.localize("ID_TOOLTIP_PANTHERE",SELECTED_LANG) %>" class='btnPanthere btnIcon' id="panthere" oncontextmenu="return false;">
+                            <img src='./assets/icon/transparent.png'></img>
+                    </a>
+                    <div id="termsContainer">
+                </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type='text/ejs' id='marker_info_template'>
+            <div id='markerInfo' class='panelStyle'>
+                <div class='alignMiddle'>
+                    <div class='innerMiddle'>
+                         <div class='latLabel innerMiddleChild' id='latLabel'></div>
+                         <div class='latValue textboxcommon innerMiddleChild' id='latValue'>
+                            <div class='watermarkfield'>
+                                <label target="lat"><%= $.localize("ID_NOT_DEFINED", SELECTED_LANG) %></label>
+                                <input class="contextmenu" id="lat" title="<%= $.localize("ID_TOOLTIP_LATITUDE_EDIT",SELECTED_LANG) %>" accesskey='l' style='padding-left:3px;' size='21' maxlength="62" type='text' value=<%= this.lat==null?"":this.lat%>> </input>
+                            </div>
+                         </div>
+                         <div class='longLabel innerMiddleChild' id='longLabel'></div>
+                         <div class='longValue textboxcommon innerMiddleChild' id='longValue'>
+                            <div class='watermarkfield'>
+                                <label target="long"><%= $.localize("ID_NOT_DEFINED", SELECTED_LANG) %></label>
+                                <input class="contextmenu" id="long" title="<%= $.localize("ID_TOOLTIP_LONGITUDE_EDIT",SELECTED_LANG) %>" accesskey='o' style='padding-left:3px;' size='21' maxlength="62" type='text' value=<%= this.long==null?"":this.long%>> </input>
+                            </div>
+                         </div>
+                         <div class='elevationLabel innerMiddleChild' id='elevationLabel'></div>
+                         <div class='elevationValue textboxcommon innerMiddleChild' id='elevationValue'>
+                            <div class='watermarkfield'>
+                                <label target="elevation"><%= $.localize("ID_NOT_DEFINED", SELECTED_LANG) %></label>
+                                <input required class="contextmenu" id="elevation" title="<%= $.localize("ID_TOOLTIP_ELEVATION_EDIT",SELECTED_LANG) %>" accesskey='e' required="required" style='padding-left:3px;' size='14' maxlength="62" type='text' value=<%= this.elevation==null?"":this.elevation%>> </input>
+                            </div>
+                         </div>
+                         <div class='metersLabel innerMiddleChild' id='metersLabel'></div>
+                         <br style="clear:both; font-size:0px;" />
+                    </div>
+                </div>
+            </div>
+    </script>
+    <script type='text/ejs' id='coord_sys_template'>
+        <div id="csLeftSection">
+            <div id='csInstructions'>
+                <div id='csInstructions1'>
+                    <%= $.localize("ID_CS_INSTRUCTIONS_1", SELECTED_LANG) %>
+                </div>
+                <div id='csInstructions2'>
+                    <%= $.localize("ID_CS_INSTRUCTIONS_2", SELECTED_LANG) %>
+                </div>
+                <div id='csInstructions3'>
+                    <%= $.localize("ID_CS_INSTRUCTIONS_3", SELECTED_LANG) %>
+                </div>
+            </div>
+        </div>
+        <div id="csRightSection">
+            <div id="csRightSectionInner">
+                <div id="csLabelGIS">
+                    <div class="coordinateSystemLabel" id='coordinateSystemLabel'>
+                    </div>
+                    <div id='coordinateSystemText'>
+                    </div>                                        
+                </div>
+                <div id="csCoordSearchTextBox">
+                   <div class='watermarkfield'>
+                        <label target="csSearch"><%= $.localize("ID_CS_SEARCHFIELD", SELECTED_LANG) %></label>
+                        <input class='contextmenu' type="text" id='csSearch'
+                            onfocus="document.getElementById('csCoordSearchTextBox').style.borderColor='#3366bb';"
+                            onblur="document.getElementById('csCoordSearchTextBox').style.borderColor = '#999';">
+                        <img src='./assets/icon/search-icon.png'></img>
+                    </div>
+                </div>                
+                <div id="csTableHeaderDiv" title="<%= $.localize("ID_TOOLTIP_GIS_CS_DROPDOWN", SELECTED_LANG)%>">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="csHeaderName" class="csColumnName">
+                                    <%= $.localize("ID_CS_HEADER_NAME", SELECTED_LANG)%>
+                                    <span></span>
+                                </th>
+                                <th id="csHeaderReference" class="csColumnReference">
+                                    <%= $.localize("ID_CS_HEADER_REFERENCE", SELECTED_LANG)%>
+                                    <span></span>
+                                </th>
+                                <th id="csHeaderUnit" class="csColumnUnit">
+                                    <%= $.localize("ID_CS_HEADER_UNIT", SELECTED_LANG)%>
+                                    <span></span>
+                                </th>
+                                <th id="csHeaderEPSG" class="csColumnEPSG">
+                                    <%= $.localize("ID_CS_HEADER_EPSG", SELECTED_LANG)%>
+                                    <span></span>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div id="csTableDiv">
+                    <table>
+                         <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="timeZoneRegion" oncontextmenu="return false;">
+                    <div class="timeZoneLabel" id='timeZoneLabel' oncontextmenu="return false;">
+                    </div>
+                    <div class="timeZoneValue" id='timeZoneValue' title="<%= $.localize("ID_TOOLTIP_TIME_ZONE_DROPDOWN", SELECTED_LANG)%>">
+                        <select accesskey='t' id="timeZone" class="dropdownbox" oncontextmenu="return false;"></select>
+                    </div>
+                </div>
+                <div id="drawingUnitsSection" oncontextmenu="return false;">
+                    <div class="drawingUnitLabel" id='drawingUnitLabel'>
+                    </div>
+                    <div class="drawingUnitList" id='drawingUnitList' title="<%= $.localize("ID_TOOLTIP_UNIT_DROPDOWN", SELECTED_LANG)%>" >
+                        <select accesskey='d' class="dropdownbox" id="listDrawingUnits"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type='text/ejs' id='buttons_row_template'>
+      <div id="buttonsRowContainer">
+        <button class="rowButtons" id="backButton" accesskey="b"></button>
+        <button class="rowButtons" id="nextButton" accesskey="n"></button>
+        <button class="rowButtons" id="cancelButton"><%= $.localize("ID_CANCEL", SELECTED_LANG) %></button>
+        <button class="rowButtons" id="helpButton" accesskey="h"></button>
+      </div>
+    </script>
+
+  </head>
+  <body onload='main()'>
+       <div id="loading" class="loading-invisible">
+       </div>
+       <div class="container">
+           <div id='addressSearchSection'></div>
+           <div id='markerInfoAndListCS'></div>
+           <div class="displayNone" id='coordSysSection'></div>
+           <div id="buttonsRow" />
+       </div>
+       <ul id="popupmenu" class="pmenu"></ul>
+  </body>
+</html>

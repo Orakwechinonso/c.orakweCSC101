@@ -1,0 +1,41 @@
+<!----------------------------------------------------------------------------
+//
+//  Copyright 2021 Autodesk, Inc.  All rights reserved.
+//
+// This computer source code and related instructions and comments
+// are the unpublished confidential and proprietary information of
+// Autodesk, Inc. and are protected under applicable copyright and
+// trade secret law.  They may not be disclosed to, copied or used
+// by any third party without the prior written consent of Autodesk, Inc.
+//
+---------------------------------------------------------------------------->
+
+
+<html>
+<body>
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            let queryParams = new URLSearchParams(window.location.search);
+            let componenturl = "";
+            if (queryParams.has("componenturl"))
+                componenturl = "?" + decodeURIComponent(queryParams.toString());
+
+            navigator.serviceWorker.register(`autocad.sw.js${componenturl}`, {
+                updateViaCache: 'none', 
+                scope: './' })
+                .then(registration => {
+                    if (registration.active) {
+                        console.debug("SW active");
+                    }
+                    else if (registration.installing) {
+                        registration.installing.addEventListener('statechange', () => {
+                            if (registration.active) {
+                                console.debug("SW active after install");
+                            }
+                        });
+                    }
+                });
+        }
+    </script>
+</body>
+</html>

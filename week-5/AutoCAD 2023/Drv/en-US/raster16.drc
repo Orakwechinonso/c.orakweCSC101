@@ -1,0 +1,5275 @@
+{
+	"data" : 
+	{
+		"models" : 
+		{
+			"0" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "PNG",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "PNG",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "png",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "png",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "Portable Network Graphics PNG (LZH Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500000550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "RGBA",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI"
+								}
+							},
+							"undithered_colors" : -2
+						},
+						"Gray256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Gray 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI"
+								}
+							},
+							"undithered_colors" : -256
+						},
+						"Indexed256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Indexed 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI"
+								}
+							},
+							"undithered_colors" : 256
+						},
+						"RGB" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 24,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGB",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI"
+								}
+							},
+							"undithered_colors" : 16777216
+						},
+						"RGBA" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 32,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGBA",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI"
+								}
+							},
+							"undithered_colors" : 16777216
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"1" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "UNCOMPRESSED",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "BMP",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "bmp",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "bmp",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "MS-Windows BMP (Uncompressed DIB)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "RGB",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "100DPI",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100DPI" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -2
+						},
+						"Gray256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100DPI",
+							"localized_name" : "Gray 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100DPI" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -256
+						},
+						"Indexed256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100DPI",
+							"localized_name" : "Indexed 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100DPI" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 256
+						},
+						"RGB" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 24,
+							"color_system" : 1,
+							"default_resolution" : "100DPI",
+							"localized_name" : "RGB",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100DPI" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"2" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : true,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "CCITT G4 2D",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "CALS1",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "cal",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "cals1",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "CALS MIL-R-28002A Type 1 (CCITT G4 2D Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "Bitonal",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -2
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"3" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : true,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "CCITT G4 2D",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "CALS1",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "cal",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "ANSI_A_(8.50_x_11.00_Inches)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 215.90000000000001,
+							"media_bounds_ury" : 279.39999999999998,
+							"name" : "ANSI_A_Portrait_8.50W_x_11.00H_-_(6,_6)_x_(210,_273)_=57218_MM",
+							"printable_area" : 57217.627500000002,
+							"printable_bounds_llx" : 6.3499999999999996,
+							"printable_bounds_lly" : 6.3499999999999996,
+							"printable_bounds_urx" : 209.55000000000001,
+							"printable_bounds_ury" : 273.05000000000001
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 279.39999999999998,
+							"media_bounds_ury" : 215.90000000000001,
+							"name" : "ANSI_A_Landscape_11.00W_x_8.50H_-_(6,_6)_x_(273,_210)_=57218_MM",
+							"printable_area" : 57217.627500000002,
+							"printable_bounds_llx" : 6.3499999999999996,
+							"printable_bounds_lly" : 6.3499999999999996,
+							"printable_bounds_urx" : 273.05000000000001,
+							"printable_bounds_ury" : 209.55000000000001
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 711.20000000000005,
+							"media_bounds_ury" : 1016.0,
+							"name" : "ANSI_F_Portrait_28.00W_x_40.00H_-_(13,_13)_x_(724,_1029)_=744676_MM",
+							"printable_area" : 744675.93000000005,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 723.89999999999998,
+							"printable_bounds_ury" : 1028.7
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 1016.0,
+							"media_bounds_ury" : 711.20000000000005,
+							"name" : "ANSI_F_Landscape_40.00W_x_28.00H_-_(13,_13)_x_(1029,_724)_=744676_MM",
+							"printable_area" : 744675.93000000005,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 1028.7,
+							"printable_bounds_ury" : 723.89999999999998
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 210.0,
+							"media_bounds_ury" : 297.0,
+							"name" : "ISO_A4_Portrait_210.00W_x_297.00H_-_(6,_6)_x_(204,_291)_=59364_MM",
+							"printable_area" : 59364.0,
+							"printable_bounds_llx" : 6.0,
+							"printable_bounds_lly" : 6.0,
+							"printable_bounds_urx" : 204.0,
+							"printable_bounds_ury" : 291.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 297.0,
+							"media_bounds_ury" : 210.0,
+							"name" : "ISO_A4_Landscape_297.00W_x_210.00H_-_(6,_6)_x_(291,_204)_=59364_MM",
+							"printable_area" : 59364.0,
+							"printable_bounds_llx" : 6.0,
+							"printable_bounds_lly" : 6.0,
+							"printable_bounds_urx" : 291.0,
+							"printable_bounds_ury" : 204.0
+						},
+						"14" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 297.0,
+							"media_bounds_ury" : 420.0,
+							"name" : "ISO_A3_Portrait_297.00W_x_420.00H_-_(12,_12)_x_(285,_408)_=116280_MM",
+							"printable_area" : 116280.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 285.0,
+							"printable_bounds_ury" : 408.0
+						},
+						"15" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 420.0,
+							"media_bounds_ury" : 297.0,
+							"name" : "ISO_A3_Landscape_420.00W_x_297.00H_-_(12,_12)_x_(408,_285)_=116280_MM",
+							"printable_area" : 116280.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 408.0,
+							"printable_bounds_ury" : 285.0
+						},
+						"16" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 420.0,
+							"media_bounds_ury" : 594.0,
+							"name" : "ISO_A2_Portrait_420.00W_x_594.00H_-_(12,_12)_x_(408,_582)_=237456_MM",
+							"printable_area" : 237456.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 408.0,
+							"printable_bounds_ury" : 582.0
+						},
+						"17" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 594.0,
+							"media_bounds_ury" : 420.0,
+							"name" : "ISO_A2_Landscape_594.00W_x_420.00H_-_(12,_12)_x_(582,_408)_=237456_MM",
+							"printable_area" : 237456.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 582.0,
+							"printable_bounds_ury" : 408.0
+						},
+						"18" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 594.0,
+							"media_bounds_ury" : 841.0,
+							"name" : "ISO_A1_Portrait_594.00W_x_841.00H_-_(12,_12)_x_(582,_829)_=482478_MM",
+							"printable_area" : 482478.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 582.0,
+							"printable_bounds_ury" : 829.0
+						},
+						"19" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 841.0,
+							"media_bounds_ury" : 594.0,
+							"name" : "ISO_A1_Landscape_841.00W_x_594.00H_-_(12,_12)_x_(829,_582)_=482478_MM",
+							"printable_area" : 482478.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 829.0,
+							"printable_bounds_ury" : 582.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 279.39999999999998,
+							"media_bounds_ury" : 431.80000000000001,
+							"name" : "ANSI_B_Portrait_11.00W_x_17.00H_-_(13,_13)_x_(267,_419)_=111774_MM",
+							"printable_area" : 111773.97,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 266.69999999999999,
+							"printable_bounds_ury" : 419.10000000000002
+						},
+						"20" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 841.0,
+							"media_bounds_ury" : 1189.0,
+							"name" : "ISO_A0_Portrait_841.00W_x_1189.00H_-_(12,_12)_x_(829,_1177)_=975733_MM",
+							"printable_area" : 975733.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 829.0,
+							"printable_bounds_ury" : 1177.0
+						},
+						"21" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 1189.0,
+							"media_bounds_ury" : 841.0,
+							"name" : "ISO_A0_Landscape_1189.00W_x_841.00H_-_(12,_12)_x_(1177,_829)_=975733_MM",
+							"printable_area" : 975733.0,
+							"printable_bounds_llx" : 12.0,
+							"printable_bounds_lly" : 12.0,
+							"printable_bounds_urx" : 1177.0,
+							"printable_bounds_ury" : 829.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 431.80000000000001,
+							"media_bounds_ury" : 279.39999999999998,
+							"name" : "ANSI_B_Landscape_17.00W_x_11.00H_-_(13,_13)_x_(419,_267)_=111774_MM",
+							"printable_area" : 111773.97,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 419.10000000000002,
+							"printable_bounds_ury" : 266.69999999999999
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 431.80000000000001,
+							"media_bounds_ury" : 558.79999999999995,
+							"name" : "ANSI_C_Portrait_17.00W_x_22.00H_-_(13,_13)_x_(419,_546)_=228871_MM",
+							"printable_area" : 228870.51000000001,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 419.10000000000002,
+							"printable_bounds_ury" : 546.10000000000002
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 558.79999999999995,
+							"media_bounds_ury" : 431.80000000000001,
+							"name" : "ANSI_C_Landscape_22.00W_x_17.00H_-_(13,_13)_x_(546,_419)_=228871_MM",
+							"printable_area" : 228870.51000000001,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 546.10000000000002,
+							"printable_bounds_ury" : 419.10000000000002
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 558.79999999999995,
+							"media_bounds_ury" : 863.60000000000002,
+							"name" : "ANSI_D_Portrait_22.00W_x_34.00H_-_(13,_13)_x_(546,_851)_=464676_MM",
+							"printable_area" : 464676.48999999999,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 546.10000000000002,
+							"printable_bounds_ury" : 850.89999999999998
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 863.60000000000002,
+							"media_bounds_ury" : 558.79999999999995,
+							"name" : "ANSI_D_Landscape_34.00W_x_22.00H_-_(13,_13)_x_(851,_546)_=464676_MM",
+							"printable_area" : 464676.48999999999,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 850.89999999999998,
+							"printable_bounds_ury" : 546.10000000000002
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 863.60000000000002,
+							"media_bounds_ury" : 1117.5999999999999,
+							"name" : "ANSI_E_Portrait_34.00W_x_44.00H_-_(13,_13)_x_(851,_1105)_=940159_MM",
+							"printable_area" : 940159.41000000003,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 850.89999999999998,
+							"printable_bounds_ury" : 1104.9000000000001
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : true,
+							"media_bounds_urx" : 1117.5999999999999,
+							"media_bounds_ury" : 863.60000000000002,
+							"name" : "ANSI_E_Landscape_44.00W_x_34.00H_-_(13,_13)_x_(1105,_851)_=940159_MM",
+							"printable_area" : 940159.41000000003,
+							"printable_bounds_llx" : 12.699999999999999,
+							"printable_bounds_lly" : 12.699999999999999,
+							"printable_bounds_urx" : 1104.9000000000001,
+							"printable_bounds_ury" : 850.89999999999998
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI A (8.50 x 11.00 Inches)",
+							"media_description_name" : "ANSI_A_Portrait_8.50W_x_11.00H_-_(6,_6)_x_(210,_273)_=57218_MM",
+							"media_group" : 0,
+							"name" : "ANSI_A_(8.50_x_11.00_Inches)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI A (11.00 x 8.50 Inches)",
+							"media_description_name" : "ANSI_A_Landscape_11.00W_x_8.50H_-_(6,_6)_x_(273,_210)_=57218_MM",
+							"media_group" : 0,
+							"name" : "ANSI_A_(11.00_x_8.50_Inches)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI F (28.00 x 40.00 Inches)",
+							"media_description_name" : "ANSI_F_Portrait_28.00W_x_40.00H_-_(13,_13)_x_(724,_1029)_=744676_MM",
+							"media_group" : 0,
+							"name" : "ANSI_F_(28.00_x_40.00_Inches)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI F (40.00 x 28.00 Inches)",
+							"media_description_name" : "ANSI_F_Landscape_40.00W_x_28.00H_-_(13,_13)_x_(1029,_724)_=744676_MM",
+							"media_group" : 0,
+							"name" : "ANSI_F_(40.00_x_28.00_Inches)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ISO A4 (210.00 x 297.00 MM)",
+							"media_description_name" : "ISO_A4_Portrait_210.00W_x_297.00H_-_(6,_6)_x_(204,_291)_=59364_MM",
+							"media_group" : 4,
+							"name" : "ISO_A4_(210.00_x_297.00_MM)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ISO A4 (297.00 x 210.00 MM)",
+							"media_description_name" : "ISO_A4_Landscape_297.00W_x_210.00H_-_(6,_6)_x_(291,_204)_=59364_MM",
+							"media_group" : 4,
+							"name" : "ISO_A4_(297.00_x_210.00_MM)"
+						},
+						"14" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ISO A3 (297.00 x 420.00 MM)",
+							"media_description_name" : "ISO_A3_Portrait_297.00W_x_420.00H_-_(12,_12)_x_(285,_408)_=116280_MM",
+							"media_group" : 4,
+							"name" : "ISO_A3_(297.00_x_420.00_MM)"
+						},
+						"15" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ISO A3 (420.00 x 297.00 MM)",
+							"media_description_name" : "ISO_A3_Landscape_420.00W_x_297.00H_-_(12,_12)_x_(408,_285)_=116280_MM",
+							"media_group" : 4,
+							"name" : "ISO_A3_(420.00_x_297.00_MM)"
+						},
+						"16" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ISO A2 (420.00 x 594.00 MM)",
+							"media_description_name" : "ISO_A2_Portrait_420.00W_x_594.00H_-_(12,_12)_x_(408,_582)_=237456_MM",
+							"media_group" : 4,
+							"name" : "ISO_A2_(420.00_x_594.00_MM)"
+						},
+						"17" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ISO A2 (594.00 x 420.00 MM)",
+							"media_description_name" : "ISO_A2_Landscape_594.00W_x_420.00H_-_(12,_12)_x_(582,_408)_=237456_MM",
+							"media_group" : 4,
+							"name" : "ISO_A2_(594.00_x_420.00_MM)"
+						},
+						"18" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ISO A1 (594.00 x 841.00 MM)",
+							"media_description_name" : "ISO_A1_Portrait_594.00W_x_841.00H_-_(12,_12)_x_(582,_829)_=482478_MM",
+							"media_group" : 4,
+							"name" : "ISO_A1_(594.00_x_841.00_MM)"
+						},
+						"19" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ISO A1 (841.00 x 594.00 MM)",
+							"media_description_name" : "ISO_A1_Landscape_841.00W_x_594.00H_-_(12,_12)_x_(829,_582)_=482478_MM",
+							"media_group" : 4,
+							"name" : "ISO_A1_(841.00_x_594.00_MM)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI B (11.00 x 17.00 Inches)",
+							"media_description_name" : "ANSI_B_Portrait_11.00W_x_17.00H_-_(13,_13)_x_(267,_419)_=111774_MM",
+							"media_group" : 0,
+							"name" : "ANSI_B_(11.00_x_17.00_Inches)"
+						},
+						"20" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ISO A0 (841.00 x 1189.00 MM)",
+							"media_description_name" : "ISO_A0_Portrait_841.00W_x_1189.00H_-_(12,_12)_x_(829,_1177)_=975733_MM",
+							"media_group" : 4,
+							"name" : "ISO_A0_(841.00_x_1189.00_MM)"
+						},
+						"21" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ISO A0 (1189.00 x 841.00 MM)",
+							"media_description_name" : "ISO_A0_Landscape_1189.00W_x_841.00H_-_(12,_12)_x_(1177,_829)_=975733_MM",
+							"media_group" : 4,
+							"name" : "ISO_A0_(1189.00_x_841.00_MM)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI B (17.00 x 11.00 Inches)",
+							"media_description_name" : "ANSI_B_Landscape_17.00W_x_11.00H_-_(13,_13)_x_(419,_267)_=111774_MM",
+							"media_group" : 0,
+							"name" : "ANSI_B_(17.00_x_11.00_Inches)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI C (17.00 x 22.00 Inches)",
+							"media_description_name" : "ANSI_C_Portrait_17.00W_x_22.00H_-_(13,_13)_x_(419,_546)_=228871_MM",
+							"media_group" : 0,
+							"name" : "ANSI_C_(17.00_x_22.00_Inches)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI C (22.00 x 17.00 Inches)",
+							"media_description_name" : "ANSI_C_Landscape_22.00W_x_17.00H_-_(13,_13)_x_(546,_419)_=228871_MM",
+							"media_group" : 0,
+							"name" : "ANSI_C_(22.00_x_17.00_Inches)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI D (22.00 x 34.00 Inches)",
+							"media_description_name" : "ANSI_D_Portrait_22.00W_x_34.00H_-_(13,_13)_x_(546,_851)_=464676_MM",
+							"media_group" : 0,
+							"name" : "ANSI_D_(22.00_x_34.00_Inches)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI D (34.00 x 22.00 Inches)",
+							"media_description_name" : "ANSI_D_Landscape_34.00W_x_22.00H_-_(13,_13)_x_(851,_546)_=464676_MM",
+							"media_group" : 0,
+							"name" : "ANSI_D_(34.00_x_22.00_Inches)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "ANSI E (34.00 x 44.00 Inches)",
+							"media_description_name" : "ANSI_E_Portrait_34.00W_x_44.00H_-_(13,_13)_x_(851,_1105)_=940159_MM",
+							"media_group" : 0,
+							"name" : "ANSI_E_(34.00_x_44.00_Inches)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "ANSI E (44.00 x 34.00 Inches)",
+							"media_description_name" : "ANSI_E_Landscape_44.00W_x_34.00H_-_(13,_13)_x_(1105,_851)_=940159_MM",
+							"media_group" : 0,
+							"name" : "ANSI_E_(44.00_x_34.00_Inches)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "cals1dim",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "Dimensional CALS Type 1 (CCITT G4 2D Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "Bitonal",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "300dpi",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								},
+								"1200dpi" : 
+								{
+									"addressable_resolution_x" : 1200.0,
+									"addressable_resolution_y" : 1200.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 1200.0,
+									"effective_resolution_y" : 1200.0,
+									"localized_name" : "1200 DPI",
+									"physical_resolution_x" : 1200.0,
+									"physical_resolution_y" : 1200.0
+								},
+								"150dpi" : 
+								{
+									"addressable_resolution_x" : 150.0,
+									"addressable_resolution_y" : 150.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 150.0,
+									"effective_resolution_y" : 150.0,
+									"localized_name" : "150 DPI",
+									"physical_resolution_x" : 150.0,
+									"physical_resolution_y" : 150.0
+								},
+								"200dpi" : 
+								{
+									"addressable_resolution_x" : 200.0,
+									"addressable_resolution_y" : 200.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 200.0,
+									"effective_resolution_y" : 200.0,
+									"localized_name" : "200 DPI",
+									"physical_resolution_x" : 200.0,
+									"physical_resolution_y" : 200.0
+								},
+								"300dpi" : 
+								{
+									"addressable_resolution_x" : 300.0,
+									"addressable_resolution_y" : 300.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 300.0,
+									"effective_resolution_y" : 300.0,
+									"localized_name" : "300 DPI",
+									"physical_resolution_x" : 300.0,
+									"physical_resolution_y" : 300.0
+								},
+								"400dpi" : 
+								{
+									"addressable_resolution_x" : 400.0,
+									"addressable_resolution_y" : 400.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 400.0,
+									"effective_resolution_y" : 400.0,
+									"localized_name" : "400 DPI",
+									"physical_resolution_x" : 400.0,
+									"physical_resolution_y" : 400.0
+								},
+								"600dpi" : 
+								{
+									"addressable_resolution_x" : 600.0,
+									"addressable_resolution_y" : 600.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 600.0,
+									"effective_resolution_y" : 600.0,
+									"localized_name" : "600 DPI",
+									"physical_resolution_x" : 600.0,
+									"physical_resolution_y" : 600.0
+								},
+								"75dpi" : 
+								{
+									"addressable_resolution_x" : 75.0,
+									"addressable_resolution_y" : 75.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 75.0,
+									"effective_resolution_y" : 75.0,
+									"localized_name" : "75 DPI",
+									"physical_resolution_x" : 75.0,
+									"physical_resolution_y" : 75.0
+								}
+							},
+							"undithered_colors" : -2
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"4" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "JFIF JPEG",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "JFIF",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "jpg",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "jfif",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "Independent JPEG Group JFIF (JPEG Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "RGB",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Gray256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Gray 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -256
+						},
+						"RGB" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 24,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGB",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"5" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "ZSOFT PACKBITS",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "PCX",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "pcx",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "pcx",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "ZSoft PC Paintbrush PCX (ZSOFT PACKBITS Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "Indexed256",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Indexed256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Indexed 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 256
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"6" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "UNCOMPRESSED",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "TGA",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "tga",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "tga",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "TrueVision TGA Version 2 (Uncompressed)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "RGBA",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Gray256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Gray 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -256
+						},
+						"Indexed256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Indexed 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 256
+						},
+						"RGB" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 24,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGB",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						},
+						"RGBA" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 32,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGBA",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"7" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "UNCOMPRESSED",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "TIFF",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "tif",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "tiff",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-a",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "TIFF Version 6 (Uncompressed)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "RGBA",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -2
+						},
+						"Gray256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Gray 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -256
+						},
+						"Indexed256" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 8,
+							"color_system" : 0,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Indexed 256",
+							"number_of_colors" : 256,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 256
+						},
+						"RGB" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 24,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGB",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						},
+						"RGBA" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 32,
+							"color_system" : 1,
+							"default_resolution" : "100dpi",
+							"localized_name" : "RGBA",
+							"number_of_colors" : 16777216,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : 16777216
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			},
+			"8" : 
+			{
+				"RASTER" : 
+				{
+					"abilities" : "5500",
+					"orientation_prefs" : 0
+				},
+				"custom_name" : 
+				{
+					"RASTER_CALS_Twist" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : true
+					},
+					"RASTER_CALS_Twist_Ability" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 3,
+						"default_value" : false,
+						"localized_name" : "RASTER_CALS_Twist_Ability",
+						"number_of_values" : 2,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : false
+							},
+							"1" : 
+							{
+								"caps_type" : 0,
+								"value" : true
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_Compression_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "CCITT G4 2D",
+						"localized_name" : "RASTER_Compression_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_File_Type" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 0,
+						"default_value" : "TIFF",
+						"localized_name" : "RASTER_File_Type",
+						"number_of_values" : 1,
+						"range_type" : false,
+						"value_list" : 
+						{
+							"0" : 
+							{
+								"caps_type" : 0,
+								"value" : ""
+							}
+						},
+						"verifiable" : false
+					},
+					"RASTER_RGB_Back_Color" : 
+					{
+						"custom_caps_type" : 0,
+						"data_type" : 1,
+						"default_value" : 16777215,
+						"localized_name" : "RASTER_RGB_Back_Color",
+						"range_max" : 16777215.0,
+						"range_min" : 0.0,
+						"range_type" : true,
+						"verifiable" : true
+					}
+				},
+				"init_term" : 
+				{
+					"abilities" : "000",
+					"ui_owner" : "111"
+				},
+				"io" : 
+				{
+					"abilities" : "555500000055",
+					"caps_state" : "000000000000",
+					"default_plot_file_extension" : "tif",
+					"default_type" : 2,
+					"method" : 
+					{
+						"2" : 
+						{
+							"abilities" : "00000000005000000000",
+							"caps_type" : 0
+						}
+					},
+					"ui_owner" : "111111111"
+				},
+				"linetype" : 
+				{
+					"abilities" : "00",
+					"capabilities" : "000000000",
+					"caps_state" : "00"
+				},
+				"media" : 
+				{
+					"abilities" : "500505500500505555000005550000000550000500000500555",
+					"caps_state" : "000000000000000000000000000000000000000000000000000",
+					"default_longplot_reduction" : 1.0,
+					"default_selection_method" : 2,
+					"default_size" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)",
+					"description" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 480.0,
+							"media_bounds_ury" : 640.0,
+							"name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 479.0,
+							"printable_bounds_ury" : 639.0
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 600.0,
+							"media_bounds_ury" : 800.0,
+							"name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 599.0,
+							"printable_bounds_ury" : 799.0
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1152.0,
+							"media_bounds_ury" : 900.0,
+							"name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1151.0,
+							"printable_bounds_ury" : 899.0
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1200.0,
+							"name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1199.0
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1600.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1599.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 768.0,
+							"media_bounds_ury" : 1024.0,
+							"name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 767.0,
+							"printable_bounds_ury" : 1023.0
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 900.0,
+							"media_bounds_ury" : 1152.0,
+							"name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"printable_area" : 1036800.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 899.0,
+							"printable_bounds_ury" : 1151.0
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 1280.0,
+							"name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"printable_area" : 1310720.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 1279.0
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1200.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"printable_area" : 1920000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1199.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1280.0,
+							"media_bounds_ury" : 1600.0,
+							"name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"printable_area" : 2048000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1279.0,
+							"printable_bounds_ury" : 1599.0
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 640.0,
+							"media_bounds_ury" : 480.0,
+							"name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"printable_area" : 307200.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 639.0,
+							"printable_bounds_ury" : 479.0
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 800.0,
+							"media_bounds_ury" : 600.0,
+							"name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"printable_area" : 480000.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 799.0,
+							"printable_bounds_ury" : 599.0
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"dimensional" : false,
+							"media_bounds_urx" : 1024.0,
+							"media_bounds_ury" : 768.0,
+							"name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"printable_area" : 786432.0,
+							"printable_bounds_llx" : 0.0,
+							"printable_bounds_lly" : 0.0,
+							"printable_bounds_urx" : 1023.0,
+							"printable_bounds_ury" : 767.0
+						}
+					},
+					"landscape" : true,
+					"max_number_of_copies" : 1,
+					"max_roll_height" : 320000.0,
+					"mediacopies" : false,
+					"selection_methods" : 2,
+					"size" : 
+					{
+						"0" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "VGA (480.00 x 640.00 Pixels)",
+							"media_description_name" : "VGA_Portrait_480.00W_x_640.00H_-_(,_)_x_(479,_639)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(480.00_x_640.00_Pixels)"
+						},
+						"1" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super VGA (600.00 x 800.00 Pixels)",
+							"media_description_name" : "Super_VGA_Portrait_600.00W_x_800.00H_-_(,_)_x_(599,_799)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(600.00_x_800.00_Pixels)"
+						},
+						"10" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Standard (1152.00 x 900.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Landscape_1152.00W_x_900.00H_-_(,_)_x_(1151,_899)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(1152.00_x_900.00_Pixels)"
+						},
+						"11" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super XGA (1280.00 x 1024.00 Pixels)",
+							"media_description_name" : "Super_XGA_Landscape_1280.00W_x_1024.00H_-_(,_)_x_(1279,_1023)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1280.00_x_1024.00_Pixels)"
+						},
+						"12" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA Hi-Res (1600.00 x 1200.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Landscape_1600.00W_x_1200.00H_-_(,_)_x_(1599,_1199)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1600.00_x_1200.00_Pixels)"
+						},
+						"13" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Sun Hi-Res (1600.00 x 1280.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Landscape_1600.00W_x_1280.00H_-_(,_)_x_(1599,_1279)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1600.00_x_1280.00_Pixels)"
+						},
+						"2" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA (768.00 x 1024.00 Pixels)",
+							"media_description_name" : "XGA_Portrait_768.00W_x_1024.00H_-_(,_)_x_(767,_1023)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(768.00_x_1024.00_Pixels)"
+						},
+						"3" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Standard (900.00 x 1152.00 Pixels)",
+							"media_description_name" : "Sun_Standard_Portrait_900.00W_x_1152.00H_-_(,_)_x_(899,_1151)_=1036800_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Standard_(900.00_x_1152.00_Pixels)"
+						},
+						"4" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Super XGA (1024.00 x 1280.00 Pixels)",
+							"media_description_name" : "Super_XGA_Portrait_1024.00W_x_1280.00H_-_(,_)_x_(1023,_1279)_=1310720_Pixels",
+							"media_group" : 13,
+							"name" : "Super_XGA_(1024.00_x_1280.00_Pixels)"
+						},
+						"5" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "XGA Hi-Res (1200.00 x 1600.00 Pixels)",
+							"media_description_name" : "XGA_Hi-Res_Portrait_1200.00W_x_1600.00H_-_(,_)_x_(1199,_1599)_=1920000_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_Hi-Res_(1200.00_x_1600.00_Pixels)"
+						},
+						"6" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : false,
+							"localized_name" : "Sun Hi-Res (1280.00 x 1600.00 Pixels)",
+							"media_description_name" : "Sun_Hi-Res_Portrait_1280.00W_x_1600.00H_-_(,_)_x_(1279,_1599)_=2048000_Pixels",
+							"media_group" : 13,
+							"name" : "Sun_Hi-Res_(1280.00_x_1600.00_Pixels)"
+						},
+						"7" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "VGA (640.00 x 480.00 Pixels)",
+							"media_description_name" : "VGA_Landscape_640.00W_x_480.00H_-_(,_)_x_(639,_479)_=307200_Pixels",
+							"media_group" : 13,
+							"name" : "VGA_(640.00_x_480.00_Pixels)"
+						},
+						"8" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "Super VGA (800.00 x 600.00 Pixels)",
+							"media_description_name" : "Super_VGA_Landscape_800.00W_x_600.00H_-_(,_)_x_(799,_599)_=480000_Pixels",
+							"media_group" : 13,
+							"name" : "Super_VGA_(800.00_x_600.00_Pixels)"
+						},
+						"9" : 
+						{
+							"caps_type" : 0,
+							"landscape_mode" : true,
+							"localized_name" : "XGA (1024.00 x 768.00 Pixels)",
+							"media_description_name" : "XGA_Landscape_1024.00W_x_768.00H_-_(,_)_x_(1023,_767)_=786432_Pixels",
+							"media_group" : 13,
+							"name" : "XGA_(1024.00_x_768.00_Pixels)"
+						}
+					},
+					"size_max_x" : 320000.0,
+					"size_max_y" : 320000.0,
+					"ui_owner" : "11111111111111111111000"
+				},
+				"meta" : 
+				{
+					"canonical_family_name" : "Raster File Formats",
+					"canonical_model_name" : "tiffcomp",
+					"driver_tag_line" : "Raster File Format HDI - by Autodesk, Inc.",
+					"driver_version" : "a017-1",
+					"localized_family_name" : "Raster File Formats",
+					"localized_model_name" : "TIFF Version 6 (CCITT G4 2D Compression)",
+					"model_abilities" : "000000000000",
+					"toolkit_version" : 0.0
+				},
+				"physical_pen" : 
+				{
+					"abilities" : "0500000000000500055",
+					"caps_state" : "0000000000000000000",
+					"default_npens" : 0,
+					"hardware_fills" : false,
+					"max_npens" : 0,
+					"programmable_speeds" : false,
+					"programmable_widths" : false,
+					"ui_owner" : "1111111"
+				},
+				"res_color_mem" : 
+				{
+					"abilities" : "555500005550000000500050",
+					"caps_state" : "000000000000000000000000",
+					"default_name" : "Bitonal",
+					"memory_changes_print_area" : false,
+					"rcm_list" : 
+					{
+						"Bitonal" : 
+						{
+							"caps_type" : 0,
+							"color_depth" : 1,
+							"color_system" : 2,
+							"default_resolution" : "100dpi",
+							"localized_name" : "Bitonal",
+							"number_of_colors" : 2,
+							"resolution_list" : 
+							{
+								"100dpi" : 
+								{
+									"addressable_resolution_x" : 100.0,
+									"addressable_resolution_y" : 100.0,
+									"caps_type" : 0,
+									"effective_resolution_x" : 100.0,
+									"effective_resolution_y" : 100.0,
+									"localized_name" : "100 DPI",
+									"physical_resolution_x" : 100.0,
+									"physical_resolution_y" : 100.0
+								}
+							},
+							"undithered_colors" : -2
+						}
+					},
+					"ui_owner" : "11111111111111"
+				}
+			}
+		}
+	},
+	"subver" : "jsondrc",
+	"version" : 0.01
+}

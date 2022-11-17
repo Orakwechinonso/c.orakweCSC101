@@ -1,0 +1,13 @@
+;;; VLISP project file [V2.0] REAC-TST saved to:[C:/ACAD/RELEASE 14/VLISP/SAMPLE/REACTORS] at:[06/03/98] 
+(VLISP-PROJECT-LIST
+   :name REAC-TST :own-list
+   ("R-INIT" "R-INFO" "RUTILS" "A-MTEXT" "ACDBEX" "COPYSELF" "CTIE"
+	     "DIMEX" "DUMBELLS" "EDITEX" "LINKEX" "OBJEX" "PIPE" "ROLLS"
+	     "RTRANSL" "SAME-RCL" "SEL-REAC" "TOPLEVEL")
+   :fas-directory nil :tmp-directory nil :project-keys
+   (:BUILD (:standard) :MERGED nil :SAFE-MODE T :MSGLEVEL 1)
+   :context-id :AUTOLISP
+
+) ;_ end of VLISP-PROJECT-LIST
+
+;; EOF

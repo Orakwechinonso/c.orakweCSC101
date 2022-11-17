@@ -1,0 +1,197 @@
+@font-face{
+  font-family: 'Artifakt ElementOfc';
+  src: url('../fonts/ArtifaktElementOfc-Regular.ttf');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    min-width: 250px;
+    min-height: 480px;
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    color:#5D5C5C;
+    background-color: #f6f6f6;
+    -webkit-user-select: none;
+}
+
+body.dark{
+  color: #d9d9d9;
+  background-color: #4d4d4d;
+}
+body.dark-blue {
+  color: #d9d9d9;
+  background-color:#3b4453;
+}
+
+#content {
+    display: block;
+    min-width: 250px;
+    min-height: 480px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+    text-align: center;
+}
+
+#icon_blockplaceholder {
+    display: block;
+    margin: 100px auto 0px auto;
+    height: 128px;
+    width: 128px;
+}
+
+#content #sign_in_link{
+	text-align: center;
+  margin: 52px auto 0px auto;
+  color: #1EAEDB;
+  font-family: 'Artifakt ElementOfc';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  width: 153px;
+}
+
+#content #sign_in_link.dark{
+    color: #1EAEDB;
+}
+
+#content #sign_in_link.dark-blue{
+  color: #1EAEDB;
+}
+
+#content #sign_in_link.sign-in-collapse {
+  display: none;
+}
+
+#content #txt_subhead{
+	text-align: center;
+  margin: 30px auto 30px auto;
+  font-family: 'Artifakt ElementOfc';
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 15px;
+  width: 246px;
+}
+
+#content > #txt_subhead_paragraph {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 15px;
+  width: 246px;
+}
+#content > #txt_subhead_paragraph.txt-collapse {
+  display: none;
+}
+
+#content #learn_about_link{
+  text-align: center;
+  color: #67b1e6;
+  font-family: 'Artifakt ElementOfc';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+}
+
+#content #learn_about_link:hover {
+  color: #4795cc;
+}
+
+#content #learn_about_link:active {
+  color: #2b7bb3;
+}
+
+#content #learn_about_link.dark{
+  color: #67b1e6;
+}
+
+#content #learn_about_link.dark:hover {
+  color: #89cbfa;
+}
+
+#content #learn_about_link.dark:active {
+  color: #b2dfff;
+}
+
+#content #learn_about_link.dark-blue{
+  color: #67b1e6;
+}
+
+#content #learn_about_link.dark-blue:hover {
+  color: #89cbfa;
+}
+
+#content #learn_about_link.dark-blue:active {
+  color: #b2dfff;
+}
+.elem-collapse {
+  display: none;
+}
+
+#content #legal_sentence {
+  text-align: center;
+  margin: 20px auto 20px auto;
+  color: #5D5C5C;
+  font-family: 'Artifakt ElementOfc';
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 15px;
+  width: 246px;
+}
+#content #legal_sentence.dark {
+  color: #e2dcdc8a;
+}
+#content #legal_sentence.dark-blue {
+  color: #e2dcdc8a;
+}
+
+#content .btn {
+  font-size: 12px;
+  background-color: transparent;
+  text-transform: none;  
+  border-radius: 4px;
+  padding:0;
+}
+#content #btn_open_dialog.btn:active {
+  padding: 1px 18px 1px 22px;
+}
+#content #btn_open_dialog.btn {
+  max-width: 95%;
+  padding: 0 20px;
+  height: 32px;
+  overflow: hidden;
+  line-height: 32px;
+  color:#3c3c3c;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+#content #btn_open_dialog.btn:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+#content #btn_open_dialog.btn:active {
+  background-color: rgba(128, 128, 128, 0.25)
+}
+#content #btn_open_dialog.btn:focus {
+  border: 1px solid #0696d7;
+}
+#content #btn_open_dialog.btn.dark-blue {
+  color: #d9d9d9;
+  border: 1px solid rgba(209, 222, 238, 0.5);
+}
+#content #btn_open_dialog.btn.dark-blue:hover {
+  background-color: rgba(209, 222, 238, 0.15)
+}
+#content #btn_open_dialog.btn.dark-blue:active {
+  background-color: rgba(209, 222, 238, 0.25)
+}
+#content #btn_open_dialog.btn.dark-blue:focus {
+  border: 1px solid #38abdf;
+}
+
+#content .btn.btn-collapse {
+  display: none
+}
+
+

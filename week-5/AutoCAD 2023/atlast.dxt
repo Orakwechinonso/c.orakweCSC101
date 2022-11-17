@@ -1,0 +1,2790 @@
+\ 
+\  Copyright 2022 Autodesk, Inc.  All rights reserved.
+\
+\  Use of this software is subject to the terms of the Autodesk license 
+\  agreement provided at the time of installation or download, or which 
+\  otherwise accompanies this software in either electronic or hard copy form.  
+\ =======================================================================
+\ 
+\ Notes, bugs and problems:
+\  2. The anonymous blocks *MODEL_SPACE and *PAPER_SPACE in R13 are changed
+\     to the named blocks $MODEL_SPACE and $PAPER_SPACE in the R12 dxf file.
+\  3. A RAY or XLINE without any entities will result in an exceedingly
+\     small line due to the small drawing extents. Putting a non-infinite
+\     entity in the drawing will remedy this problem.
+\  4. *STACK 10000  - This doesn't seem to work since dictionary entries
+\                     have already been made.
+\  5. The stack notation: ( ... n n ) , used in the defining words below,
+\     assumes that the stack grows from left to right with the right most
+\     term being on top.
+\  6. Make sure you have enough disk space for the output file, otherwise
+\     you will get no output.
+\
+\ =======================================================================
+\ README information April 1997:
+\ 
+\   Header variables DWGCODEPAGE, TREEDEPTH and PINSBASE
+\
+\   in order to comply with R12 DXF file standards as formulated in the
+\   EQM (European Quality Manual) the above header variables are removed
+\   for R12 DXF files. In case they are needed, this translation file can 
+\   be edited and the corresponding statements remove dxf:header:... can 
+\   get commented out.
+\
+\   Fonts with Full Path Names :
+\
+\   in accordance with the behaviour of R13 writing out R12 drawing files,
+\   all *.ttf and *.pfa based text styles are set to txt. If you don't want 
+\   the font file path removed by dxfix, comment the statement following the
+\   line 'replace all *.ttf and *.pfa text styles with txt' out.
+\ 
+\   OCTREE 6 Error:
+\ 
+\     Some DXF files, created in Release 12, or created after using
+\     the DXF translator, result in this error while being read in.
+\     To "repair" the DXF file so that it can be read in, change the
+\     value of TREEDEPTH Group 70 to 3020.  If desired, this value
+\     can then be reset to 0 from inside of AutoCAD, after the
+\     drawing has been read in.
+\ 
+\ =======================================================================
+\ 
+\   Rules for translating AutoCAD Release 13 DXF files to Release 12
+\     Command line options: -x => Delete RAYs and XLINEs, otherwise if this
+\                                 option is not present they will be replaced
+\                                 by finite lines that approximate the drawing
+\                                 extents.
+\
+\
+\   Changes made by this program to go from R13 to R12 DXF:
+\   1. $ACADVER changed from AC1012 to AC1009
+\     The following HEADER section variables were deleted:
+\   2. $CELTSCALE
+\   3. $DELOBJ
+\   4. $DISPSILH
+\   5. $DIMJUST
+\   6. $DIMSD1
+\   7. $DIMSD2
+\   8. $DIMTOLJ
+\   9. $DIMTZIN
+\  10. $DIMALTZ
+\  11. $DIMALTTZ
+\  12. $DIMFIT
+\  13. $DIMUPT
+\  14. $DIMUNIT
+\  15. $DIMDEC
+\  16. $DIMTDEC
+\  17. $DIMALTU
+\  18. $DIMALTTD
+\  19. $DIMTXSTY
+\  20. $DIMAUNIT
+\  21. $CHAMFERC
+\  22. $CHAMFERD
+\  23. $PICKSTYLE
+\  24. $CMLSTYLE
+\  25. $CMLJUST
+\  26. $CMLSCALE
+\  27. $SAVEIMAGES
+\  see remarks above: $DWGCODEPAGE, $TREEDEPTH, $PINSBASE
+\
+\  28. CLASSES section deleted
+\  29. OBJECTS section deleted
+\  30. Delete 300-369 groups - arbitrary strings, chunks and handles
+\  31. Delete 100 groups - AcDb... groups (eg. AcDbSymbolTable, AcDbLinetypeTableRecord, etc)
+\
+\     The following ENTITIES section objects were changed:
+\  32. RAY changed into a long, but finite, line.
+\  33. ELLIPSE decomposed into polyline vertex segments.
+\  34. BODY deleted.
+\  35. OLEFRAME deleted.
+\  36. 3DSOLID deleted.
+\  37. DIMENSION removed -3 group.
+\  38. INSERT removed -3 group.
+\  39. VIEWPORT removed -3 group.
+\  40. LEADER decomposed into polyline vertex segments.
+\  41. MLINE deleted.
+\  42. TOLERANCE deleted.
+\  43. REGION deleted.
+\  44. XLINE changed into a long, but finite, line.
+\  45. MTEXT changed to TEXT.
+\  46. SEQEND removed the -2 group.
+\  47. SPLINE decomposed into polyline vertex segments.
+\  48. ZOMBIE_ENTITY deleted.
+
+\ 'bignum' used to make RAYs and XLINEs long, finite lines.
+1.0E99 2constant bignum
+1.0E-3 2constant bignumerror
+50 constant iterator
+7 constant unicount
+1.0 atan 4.0 f* 2constant pi
+2.7182818 2constant e
+180.0 pi f/ 2constant radToDeg
+pi 180.0 f/ 2constant degToRad
+0 constant false
+-1 constant true
+
+241 constant tolerSymbol
+
+\ DOS produces this one ...
+248 constant degreeSymbol
+\ ... and Windows produces this one.
+176 constant altDegreeSymbol
+
+123 constant leftBrace
+125 constant rightBrace
+92  constant backSlash
+94  constant separator
+47  constant forwardSlash
+59  constant semicolon
+37  constant percent
+32  constant space
+48  constant ascii0
+49  constant ascii1
+50  constant ascii2
+51  constant ascii3
+52  constant ascii4
+53  constant ascii5
+54  constant ascii6
+55  constant ascii7
+56  constant ascii8
+57  constant ascii9
+99	constant littleC
+100 constant littleD
+108 constant littleL
+111 constant littleO
+112 constant littleP
+117 constant littleU
+65  constant bigA
+67  constant bigC
+68  constant bigD
+70  constant bigF
+72  constant bigH
+76  constant bigL
+79  constant bigO
+80  constant bigP
+81  constant bigQ
+83  constant bigS
+84  constant bigT
+85  constant bigU
+87  constant bigW
+-1  constant EOF
+0   constant EOS
+
+4 constant cell
+: cells cell * ;
+: cell+ cell + ;
+
+2variable bignumhi
+2variable bignumlo
+
+2variable xmax
+2variable ymax
+2variable zmax
+variable maxset
+
+2variable xmin
+2variable ymin
+2variable zmin
+variable minset
+
+variable handlesOn
+variable nextHandle
+variable needToRewind
+
+32 string layer
+
+variable icount
+variable jcount
+variable loopCount
+variable maxi
+variable maxj
+2variable ftmp
+
+variable delEndBlock
+
+\ MText variables
+variable fixedMtextGroups
+variable countChar
+variable thisChar
+variable nextChar
+variable thirdChar
+variable group72
+2variable textHeight
+2variable textRotationPrimary
+2variable textRotation
+variable color
+variable 62group
+variable paperSpace
+variable 67group
+80 string mtextStyle
+variable 7group
+5 string unicodeStr
+5 string diameter
+5 string toler
+5 string degree
+0.3 2constant mtextFudge
+\ R12 will not accept more than 256 characters in a DXF text entity.
+\ Oddly, you can 'saveasr12' in R13 with more than 256 characters in an
+\ MText entity and import the drawing into R12. However, doing a DXFOUT
+\ followed by DXFIN on that same drawing in R12 will result in an error.
+256 constant mtextMaxLength
+file mtextFileA
+
+\ Ellipse variables
+2variable ellipsea
+2variable ellipseb
+2variable ellipsestartangle
+2variable ellipseendangle
+2variable ellipseangleincr
+
+\ Spline variables
+32 constant splineConstant
+variable splineIterator
+2variable firstKnot
+2variable knotInterval
+
+\ Number of segments used to approximate an ellipse.
+128 constant ellipseSteps
+1.0E-10 2constant ellipseanglefuzz
+
+\ Create a matrix of doubles
+: matrix
+    create 2dup , , * 8 * allot
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: element                            ( ... r c addr1 )            ( ... addr1+x )
+    dup >r                           ( ... r c addr1 )
+    @                                ( ... r c columns )
+    rot                              ( ... c columns r )
+    * +                              ( ... columns*r+c )
+    \ Since the array consists of doubles, multiply by 8.
+    8 *
+    \ Offset from the columns and rows stored at the head of this array,
+    \ it is two items in byte size.
+    itemsize 2 * +
+    r> +                             ( ... addr1+x )
+;
+
+1 3 matrix extentsMinSave
+1 3 matrix extentsMaxSave
+1 3 matrix vector
+1 3 matrix result
+1 3 matrix offset
+1 3 matrix extrusion
+3 3 matrix rotationMatrix
+
+\                                    Stack on entering:           Stack on leaving:
+: 3x3print                           ( ... addr )                 ( ... )
+    cr ." "Row Column Value" cr
+    0 icount !
+    begin
+    0 jcount !
+    icount @ 3 <
+    while
+        begin
+        jcount @ 3 <
+        while
+            icount @ dup .           ( ... addr icount )
+            jcount @ dup .           ( ... addr icount jcount )
+            2 pick                   ( ... addr icount jcount addr )
+            element 2@ f. cr         ( ... addr )
+            1 jcount +!
+        repeat
+        1 icount +!
+    repeat
+    drop                             ( ... )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: matrixprint                        ( ... row col addr )         ( ... )
+    cr ." "Row Column Value" cr
+    swap                             ( ... row addr col )
+    maxj !                           ( ... row addr )
+    swap                             ( ... addr row )
+    maxi !                           ( ... addr )
+    0 icount !
+    begin
+    0 jcount !
+    icount @ maxi @ <
+    while
+        begin
+        jcount @ maxj @ <
+        while
+            icount @ dup .           ( ... addr icount )
+            jcount @ dup .           ( ... addr icount jcount )
+            2 pick                   ( ... addr icount jcount addr )
+            element 2@ f. cr         ( ... addr )
+            1 jcount +!
+        repeat
+        1 icount +!
+    repeat
+    drop                             ( ... )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: matrixclear                        ( ... row col addr )         ( ... )
+    swap                             ( ... row addr col )
+    maxj !                           ( ... row addr )
+    swap                             ( ... addr row )
+    maxi !                           ( ... addr )
+    0 icount !
+    begin
+    0 jcount !
+    icount @ maxi @ <
+    while
+        begin
+        jcount @ maxj @ <
+        while
+            0.0                      ( ... addr 0.0 0.0 )
+            icount @                 ( ... addr 0.0 0.0 icount )
+            jcount @                 ( ... addr 0.0 0.0 icount jcount )
+            4 pick                   ( ... addr 0.0 0.0 icount jcount addr )
+            element 2!               ( ... addr )
+            1 jcount +!
+        repeat
+        1 icount +!
+    repeat
+    drop                             ( ... )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: 1x33x3multiply                     ( ... addrv addrt )          ( ... )
+    0 icount !
+    begin
+    0 jcount !
+    0.0 ftmp 2!
+    icount @ 3 <
+    while
+        begin
+        jcount @ 3 <
+        while
+            jcount @                 ( ... addrv addrt jcount )
+            icount @                 ( ... addrv addrt jcount icount )
+            2 pick                   ( ... addrv addrt jcount icount addrt )
+            \ Get the i,j element from the 3x3 matrix.
+            element 2@               ( ... addrv addrt f1 f1 )
+            0 jcount @               ( ... addrv addrt f1 f1 0 jcount )
+            5 pick                   ( ... addrv addrt f1 f1 0 jcount addrv )
+            element 2@               ( ... addrv addrt f1 f1 f2 f2 )
+            f* ftmp 2@ f+            ( ... addrv addrt f3 f3 )
+            ftmp 2!                  ( ... addrv addrt )
+
+            1 jcount +!
+        repeat
+        ftmp 2@                      ( ... addrv addrt f4 f4 )
+        0 icount @                   ( ... addrv addrt f4 f4 0 icount )
+        result element 2!            ( ... addrv addrt )
+
+        1 icount +!
+    repeat
+    drop drop                        ( ... )
+;
+
+
+\ ************ START DEBUG-ONLY STUFF ***************
+
+\   Initialization routine
+
+: dxf:start
+\   -1 dumpinput !                    \ Un-comment to dump input items
+\   -1 dumpoutput !                   \ Un-comment to dump output items
+\    6 outprec !                      \ Un-comment to force ASCII output
+\   -1 mbchar !                       \ Un-comment to force multibyte char interp
+\    dumpspecial
+    false maxset !
+    false minset !
+    false handleson !
+    false needToRewind !              \ Only redo the translation if necessary.
+    false delEndBlock !
+\   true trace                        \ Un-comment for debugging.
+;
+
+
+\   Manual translation program (equivalent to the standard loop, so it's
+\                               commented out).
+
+\ : dxf:translate
+\    begin
+\        readitem while
+\        writeitem drop
+\    repeat
+\ ;
+
+\   Print point on stack
+
+80 string edbuf
+512 string longString
+: point.                              \ x y z --
+    2rot
+    "(%g," edbuf fstrform edbuf type
+    2swap
+    "%g" edbuf fstrform edbuf type
+    2dup missing_z 2@ f= if
+        ")"
+    else
+        ",%g)" edbuf fstrform edbuf
+    then
+    type
+;
+
+\ ************* END DEBUG-ONLY STUFF **************
+
+\   Defining words to make common translation operations easier
+\   and more expressive to specify.
+
+\   REMOVE DXF:bilge:rat  --  Causes all instances of item RAT in section
+\                             BILGE to be removed.  (An explicit section
+\                             name is expected; "*" is not valid here)
+
+: remove
+    create
+    does>
+        drop
+        1 delitem !
+;
+
+\  DROP_Z DXF:header:$zilch  --  The Z co-ordinate will be deleted from
+\                                header variable ZILCH.
+
+: drop_z
+    create
+    does>
+        drop
+        10 group 2drop missing_z 2@ 10 setgroup
+;
+
+\   bitmask MASKFIELD DXF:*:*:<field>  --  AND a field with a bitmask
+
+: maskfield
+    create
+    ,                                 \ Compile bitmask
+    does>
+    over                              \ Duplicate group index
+    group                             \ Extract value of group
+    swap                              \ Move bitmask address to the top
+    @                                 \ Get value of bitmask
+    and                               \ Mask the value of the field
+    swap                              \ Get group code on top
+    setgroup                          \ Update group in item
+\   stdout printitem
+;
+
+\   DITCHGROUP DXF:*:<type>:<group>
+
+: ditchgroup
+    create
+    does>
+    drop                              \ Get rid of word's address
+    delgroup                          \ Delete this group from item
+;
+
+\   ERRAT  --  End an error message by editing the location in the
+\              file that the error occurred.
+
+: errat
+    ." " at "
+    itempos
+    inbinary @ if
+        "byte 0x%lX"
+    else
+        1+ "line %ld"
+    then
+    edbuf strform edbuf type
+    ." " of input file.\n"
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: cmove                              ( ... from to n )            ( ... )
+    0 do                             ( ... from to )
+        2dup swap                    ( ... from to to from )
+        i + c@                       ( ... from to to cfrom+i )
+        swap i +                     ( ... from to cfrom+i to+i )
+        c!                           ( ... from to )
+    loop
+    drop drop                        ( ... )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+\ : strncmp                            ( ... str1 str2 n )          ( ... t/f )
+\    \ Temporarily truncate the strings to n characters.
+\    dup                              ( ... str1 str2 n n )
+\    2 pick + dup                     ( ... str1 str2 n str2+n str2+n )
+\    c@                               ( ... str1 str2 n str2+n cstr2+n )
+\    swap                             ( ... str1 str2 n cstr2+n str2+n )
+\    0 swap                           ( ... str1 str2 n cstr2+n 0 str2+n )
+\    c!                               ( ... str1 str2 n cstr2+n )
+\    swap dup                         ( ... str1 str2 cstr2+n n n )
+\    4 pick + dup                     ( ... str1 str2 cstr2+n n str1+n str1+n )
+\    c@                               ( ... str1 str2 cstr2+n n str1+n cstr1+n )
+\    swap                             ( ... str1 str2 cstr2+n n cstr1+n str1+n )
+\    0 swap                           ( ... str1 str2 cstr2+n n cstr1+n 0 str1+n )
+\    c!                               ( ... str1 str2 cstr2+n n cstr1+n )
+\    swap                             ( ... str1 str2 cstr2+n cstr1+n n )
+\    4 pick                           ( ... str1 str2 cstr2+n cstr1+n n str1 )
+\    4 pick                           ( ... str1 str2 cstr2+n cstr1+n n str1 str2 )
+\    strcmp                           ( ... str1 str2 cstr2+n cstr1+n n t/f )
+\
+\    \ Put the strings back the way they were.
+\    3 roll                           ( ... str1 str2 cstr1+n n t/f cstr2+n )
+\    4 roll                           ( ... str1 cstr1+n n t/f cstr2+n str2 )
+\    3 pick +                         ( ... str1 cstr1+n n t/f cstr2+n str2+n )
+\    c!                               ( ... str1 cstr1+n n t/f )
+\    2 roll                           ( ... str1 n t/f cstr1+n )
+\    3 roll                           ( ... n t/f cstr1+n str1 )
+\    3 roll +                         ( ... t/f cstr1+n str1+n )
+\    c!                               ( ... t/f )
+\ ;
+
+\ Equivalent to ROLL only used on doubles.
+\ The stack trace shown below uses 1 as an example.
+\ Doubles are represented as 2 words (eg. z1 z2).
+\                                    Stack on entering:           Stack on leaving:
+: 2roll                              ( ... z1 z2 x1 x2 y1 y2 1 )  ( ... z1 z2 y1 y2 x1 x2 )
+    dup                              ( ... z1 z2 x1 x2 y1 y2 1 1 )
+    1+ 2*                            ( ... z1 z2 x1 x2 y1 y2 1 4 )
+    roll                             ( ... z1 z2 x2 y1 y2 1 x1 )
+    swap                             ( ... z1 z2 x2 y1 y2 x1 1 )
+    2* 1+                            ( ... z1 z2 x2 y1 y2 x1 3 )
+    roll                             ( ... z1 z2 y1 y2 x1 x2 )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: 2pick                              ( ... z1 z2 x1 x2 y1 y2 1 )  ( ... z1 z2 x1 x2 y1 y2 x1 x2 )
+    dup                              ( ... z1 z2 x1 x2 y1 y2 1 1 )
+    1+ 2*                            ( ... z1 z2 x1 x2 y1 y2 1 4 )
+    pick                             ( ... z1 z2 x1 x2 y1 y2 1 x1 )
+    swap                             ( ... z1 z2 x1 x2 y1 y2 x1 1 )
+    2* 1+                            ( ... z1 z2 x1 x2 y1 y2 x1 3 )
+    pick                             ( ... z1 z2 x1 x2 y1 y2 x1 x2 )
+;
+
+
+\ Add 2 3Dpoints (composed of doubles).
+\                                    Stack on entering:           Stack on leaving:
+: 2pointadd                          ( ... x1 y1 z1 x2 y2 z2 )    ( ... x3 y3 z3 )
+    3 2roll                          ( ... x1 y1 x2 y2 z2 z1 )
+    f+                               ( ... x1 y1 x2 y2 z3 )
+    1 2roll                          ( ... x1 y1 x2 z3 y2 )
+    3 2roll                          ( ... x1 x2 z3 y2 y1 )
+    f+                               ( ... x1 x2 z3 y3 )
+    3 2roll                          ( ... x2 z3 y3 x1 )
+    3 2roll                          ( ... z3 y3 x1 x2 )
+    f+                               ( ... z3 y3 x3 )
+    1 2roll                          ( ... z2 x3 y3 )
+    2 2roll                          ( ... x3 y3 z3 )
+;
+
+\ Multiply all components of a point (composed of doubles) by a double scalar.
+\                                    Stack on entering:           Stack on leaving:
+: 2scalarMult                        ( ... x1 y1 z1 n )           ( ... x2 y2 z2 )
+    2dup                             ( ... x1 y1 z1 n n )
+    4 2roll                          ( ... y1 z1 n n x1 )
+    f*                               ( ... y1 z1 n x2 )
+    2swap 2dup                       ( ... y1 z1 x2 n n )
+    4 2roll                          ( ... z1 x2 n n y1 )
+    f*                               ( ... z1 x2 n y2 )
+    2swap                            ( ... z1 x2 y2 n )
+    3 2roll                          ( ... x2 y2 n z1 )
+    f*                               ( ... x2 y2 z2 )
+;
+
+\ Divide all components of a point (composed of doubles) by a double scalar.
+\                                    Stack on entering:           Stack on leaving:
+: 2scalarDiv                         ( ... x1 y1 z1 n )           ( ... x2 y2 z2 )
+    2dup                             ( ... x1 y1 z1 n n )
+    4 2roll                          ( ... y1 z1 n n x1 )
+    2swap                            ( ... y1 z1 n x1 n )
+    f/                               ( ... y1 z1 n x2 )
+    2swap 2dup                       ( ... y1 z1 x2 n n )
+    4 2roll                          ( ... z1 x2 n n y1 )
+    2swap                            ( ... z1 x2 n y1 n )
+    f/                               ( ... z1 x2 n y2 )
+    2swap                            ( ... z1 x2 y2 n )
+    3 2roll                          ( ... x2 y2 n z1 )
+    2swap                            ( ... x2 y2 z1 n )
+    f/                               ( ... x2 y2 z2 )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: 2pointprint                        ( ... x1 y1 z1 )             ( ... x1 y1 z1 )
+    2 2roll 2dup                     ( ... y1 z1 x1 x1 )
+    ." "X=" f.                       ( ... y1 z1 x1 )
+    2 2roll 2dup                     ( ... z1 x1 y1 y1 )
+    ." "Y=" f.                       ( ... z1 x1 y1 )
+    2 2roll 2dup                     ( ... x1 y1 z1 z1 )
+    ." "Z=" f. cr                    ( ... x1 y1 z1 )
+;
+
+\ Is xmax >= x1 >= xmin?
+\                                    Stack on entering:           Stack on leaving:
+: inside                             ( ... x1 xmax xmin )         ( ... t/f )
+    2 2roll 2dup                     ( ... xmax xmin x1 x1 )
+    3 2roll                          ( ... xmin x1 x1 xmax )
+    f<= if                           ( ... xmin x1 )
+        \ x1 is less than or equal to xmax
+        f<= if                       ( ... )
+            \ xmin is less than or equal to x1
+            true                     ( ... true )
+        else
+            false                    ( ... false )
+        then
+    else                             ( ... xmin x1 )
+        2drop 2drop false            ( ... false )
+    then
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: extentsok                          ( ... )                      ( ... t/f )
+    maxset @ minset @ and if         ( ... )
+        \ Extents are there.
+        true                         ( ... true )
+    else
+        \ Extents are missing.
+        false                        ( ... false )
+    then
+;
+
+\ Is the 3D point contained withing the drawing extents?
+\                                    Stack on entering:           Stack on leaving:
+: insideextents                      ( ... x1 y1 z1 )             ( ... t/f )
+    extentsok not if                 ( ... x1 y1 z1 )
+        \ If the extents are missing or malformed then exit.
+        2drop 2drop 2drop true exit
+    then
+
+    zmax 2@ zmin 2@                  ( ... x1 y1 z1 zmax zmin )
+    inside if                        ( ... x1 y1 )
+        ymax 2@ ymin 2@              ( ... x1 y1 ymax ymin )
+        inside if                    ( ... x1 )
+            xmax 2@ xmin 2@          ( ... x1 xmax xmin )
+            inside if                ( ... )
+                true                 ( ... true )
+            else                     ( ... )
+                false                ( ... false )
+            then
+        else                         ( ... x1 )
+            2drop false              ( ... false )
+        then
+    else                             ( ... x1 y1 )
+        2drop 2drop false            ( ... false )
+    then
+;
+
+\ Initialize the high and low values for point * scalar multiplication
+\                                    Stack on entering:           Stack on leaving:
+: initbignumrange                    ( ... )                      ( ... )
+    bignum bignumhi 2!
+    1.0 bignum f/ bignumlo 2!
+;
+
+\ Find a logarithmic mean between bignumhi and bignumlo
+\                                    Stack on entering:           Stack on leaving:
+: bignummean                         ( ... )                      ( ... f )
+    bignumhi 2@ log
+    bignumlo 2@ log
+    f+ 2.0 f/
+    e 2swap pow
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: goodenough                         ( ... )                      ( ... t/f )
+    bignumlo 2@ bignumhi 2@ f- fabs bignumerror f<
+;
+
+(   Process command line options and set special operating modes   )
+
+: modeset
+    "d" option if                     \ If -D option is set, turn on trace
+        1 dxftrace !
+    then
+;
+
+\   End of defining words.  Let the fun begin!
+
+modeset                               \ Process command line options
+
+(   Header variables to delete or modify   )
+
+: dxf:header:$acadver                 \ $ACADVER needs special processing
+    "AC1009" 1 setgroup               \ Substitute R12's version code
+;
+
+\ : dxf:header:$dimscale                \ $DIMSCALE needs special processing
+\    40 group 0.0 f= if                \ If it's zero (for paper space)...
+\        1.0 40 setgroup               \ ...substitute 1.0
+\    then
+\ ;
+
+
+(   Symbol tables to delete or modify   )
+
+remove dxf:header:$celtscale
+remove dxf:header:$delobj
+remove dxf:header:$dispsilh
+remove dxf:header:$dimjust
+remove dxf:header:$dimsd1
+remove dxf:header:$dimsd2
+remove dxf:header:$dimtolj
+remove dxf:header:$dimtzin
+remove dxf:header:$dimaltz
+remove dxf:header:$dimalttz
+remove dxf:header:$dimfit
+remove dxf:header:$dimupt
+remove dxf:header:$dimunit
+remove dxf:header:$dimdec
+remove dxf:header:$dimtdec
+remove dxf:header:$dimaltu
+remove dxf:header:$dimalttd
+remove dxf:header:$dimtxsty
+remove dxf:header:$dimaunit
+remove dxf:header:$chamferc
+remove dxf:header:$chamferd
+remove dxf:header:$pickstyle
+remove dxf:header:$cmlstyle
+remove dxf:header:$cmljust
+remove dxf:header:$cmlscale
+remove dxf:header:$saveimages
+
+\ comment the following statements out if you need the variabels
+remove dxf:header:$dwgcodepage
+remove dxf:header:$treedepth
+remove dxf:header:$pinsbase
+
+: dxf:header:$extmax
+    true maxset !
+    10 group
+    zmax 2!
+    ymax 2!
+    xmax 2!
+;
+
+\ Return the base-10 equivalent of a hexadecimal string.
+\ e.g. String "10" is converted to number 16.
+\                                    Stack on entering:           Stack on leaving:
+: strhexint                          ( ... addr1 )                ( ... n )
+    "0x" edbuf strcpy                ( ... addr1 )
+    edbuf                            ( ... addr1 edbuf )
+    strcat                           ( ... )
+    edbuf strint swap drop           ( ... n )
+;
+
+: dxf:header:$handseed
+    handleson @ if
+        rewind @ if
+            \ Second pass.
+            5 group strhexint         ( ... oldnexthandle )
+            \ Handles are in hex.
+            nexthandle @ "%lX" edbuf strform
+            edbuf 5 setgroup
+            \ Now load the 'nexthandle' with the original 'oldnexthandle'.
+            nexthandle !              ( ... )
+        else
+            \ First pass.
+            5 group strhexint nexthandle !
+        then
+    else
+        ." "Warning. Handle seed value present, but handles not enabled."
+    then
+;
+
+: dxf:header:$handling
+    70 group
+    0= if
+        false handleson !
+    else
+        true handleson !
+    then
+;
+
+remove dxf:classes
+remove dxf:objects
+
+
+(   Entities to delete   )
+
+    \ Since apps can now create their own entities, we don't know what
+    \ entities should be deleted - only which ones to keep ...
+
+: removeUnknownEnts
+    0 group "SECTION"   strcmp 0= if exit then
+    0 group "ENDSEC"    strcmp 0= if exit then
+    0 group "3DFACE"    strcmp 0= if exit then
+    0 group "ATTDEF"    strcmp 0= if exit then
+    0 group "ATTRIB"    strcmp 0= if exit then
+    0 group "ARC"       strcmp 0= if exit then
+    0 group "CIRCLE"    strcmp 0= if exit then
+    0 group "DIMENSION" strcmp 0= if exit then
+    0 group "INSERT"    strcmp 0= if exit then
+    0 group "LINE"      strcmp 0= if exit then
+    0 group "POINT"     strcmp 0= if exit then
+    0 group "POLYLINE"  strcmp 0= if exit then
+    0 group "SEQEND"    strcmp 0= if exit then
+    0 group "SHAPE"     strcmp 0= if exit then
+    0 group "SOLID"     strcmp 0= if exit then
+    0 group "TEXT"      strcmp 0= if exit then
+    0 group "TRACE"     strcmp 0= if exit then
+    0 group "VERTEX"    strcmp 0= if exit then
+    0 group "VIEWPORT"  strcmp 0= if exit then
+    0 group "BLOCK"     strcmp 0= if exit then
+    0 group "ENDBLK"    strcmp 0= if exit then
+    1 delitem !
+    1 specialdone !
+;
+
+
+(   Block definition transformations   )
+
+
+
+(   Dimension entity transformations   )
+32 not maskfield dxf:*:DIMENSION:70        \ remove 32 bit flag of group 70
+
+(   Delete specific group data   )
+
+ditchgroup dxf:*:*:300-369            \ Drop all arbitrary strings, chunks and handles
+ditchgroup dxf:*:*:100                \ Drop all AcDb... groups (eg. AcDbSymbolTable, AcDbLinetypeTableRecord, etc)
+ditchgroup dxf:*:*:60                 \ Ignor Invisibility flag
+ditchgroup dxf:*:*:102                \ drop arbitrary strings in 102 groups
+ditchgroup dxf:*:VPORT:5
+ditchgroup dxf:*:LTYPE:5
+ditchgroup dxf:*:LTYPE:74-75
+ditchgroup dxf:*:LTYPE:44-46
+ditchgroup dxf:*:LTYPE:50
+ditchgroup dxf:*:LAYER:5
+ditchgroup dxf:*:STYLE:5
+ditchgroup dxf:*:VIEW:5
+ditchgroup dxf:*:UCS:5
+ditchgroup dxf:*:APPID:5
+ditchgroup dxf:*:APPID:71
+ditchgroup dxf:*:MTEXT:1000-1100
+ditchgroup dxf:*:BLOCK:5
+
+: printobject
+    ." "Object printout:" cr
+    stdout printitem cr
+;
+
+: dxf:tables:block_record
+    5 group? if
+        1 delitem !
+    then
+;
+
+: removeXdata
+    1101 1000 do
+        i dup loopCount !             ( ... i )
+        groupcount2 dup if            ( ... count )
+            0 do                      ( ... )
+                loopCount @ delgroup
+            loop
+        else                          ( ... count )
+            drop                      ( ... )
+        then
+    loop
+;
+
+\ Remove all XREF data from the TABLES section.
+: dxf:tables:vport
+    removeXdata
+;
+: dxf:tables:ltype
+    removeXdata
+    9 delgroup
+    74 delgroup
+    2 group? if
+        2 group "BYBLOCK" strcmp 0= if
+            1 delitem !
+        then
+        2 group "BYLAYER" strcmp 0= if
+            1 delitem !
+        then
+    then
+;
+
+\ replace all .ttf and .pfa text styles with txt
+: dxf:tables:style
+    removeXdata
+    3 group? if
+        3 group ".ttf" strstr 0= if
+            "txt" 3 setgroup  
+        then
+        3 group ".pfa" strstr 0= if
+            "txt" 3 setgroup  
+        then
+        3 group strlen 0= if
+            "txt" 3 setgroup
+        then
+    then
+;
+
+: dxf:tables:layer
+    removeXdata
+;
+
+: dxf:tables:view
+    removeXdata
+;
+: dxf:tables:ucs
+    removeXdata
+;
+: dxf:tables:appid
+    removeXdata
+;
+
+: dxf:tables:dimstyle
+    groupcount 1 = if
+        0 group? if
+            1 delitem !
+        then
+    then
+
+    groupcount 4 = if
+        5 delgroup
+    then
+
+    105 delgroup
+    100 delgroup
+    270 delgroup
+    271 delgroup
+    272 delgroup
+    273 delgroup
+    274 delgroup
+    275 delgroup
+    280 delgroup
+    281 delgroup
+    282 delgroup
+    283 delgroup
+    284 delgroup
+    285 delgroup
+    286 delgroup
+    287 delgroup
+    288 delgroup
+    removeXdata
+;
+
+: starmodel                           ( ... n )
+    dup dup                           ( ... n n n )
+    group? if                         ( ... n n )
+        group                         ( ... n addr1 )
+        "*MODEL_SPACE"                ( ... n addr1 addr2 )
+        strcmp                        ( ... n flag )
+        0= if                         ( ... n )
+            "$MODEL_SPACE"            ( ... n addr3 )
+            swap                      ( ... addr3 n )
+            setgroup                  ( ... )
+        else                          ( ... n )
+            drop                      ( ... )
+        then
+    else                              ( ... n n )
+        drop drop                     ( ... )
+    then
+;
+
+\ Remove any existing "$MODEL_SPACE" blocks. These can occur in the following
+\  scenario: 1. DXFIX an R13 drawing.
+\            2. Read in the R12 dxf file.
+\            3. DXFOUT the new R13 drawing which now contains both $MODEL_SPACE
+\                and *MODEL_SPACE.
+\            4. DXFIX this new R13 drawing and the old $MODEL_SPACE will be removed.
+: delmodel                            ( ... n )
+    dup                               ( ... n n )
+    group? if                         ( ... n )
+        group                         ( ... addr1 )
+        "$MODEL_SPACE"                ( ... addr1 addr2 )
+        strcmp                        ( ... flag )
+        0= if                         ( ... )
+            true delEndBlock !
+            clearitem writeitem drop
+        then
+    else                              ( ... n )
+        drop
+    then
+
+;
+
+: delpaper                            ( ... n )
+    dup                               ( ... n n )
+    group? if                         ( ... n )
+        group                         ( ... addr1 )
+        "$PAPER_SPACE"                ( ... addr1 addr2 )
+        strcmp                        ( ... flag )
+        0= if                         ( ... )
+            true delEndBlock !
+            clearitem writeitem drop
+        then
+    else                              ( ... n )
+        drop
+    then
+
+;
+
+: starpaper                           ( ... n )
+    dup dup                           ( ... n n n )
+    group? if                         ( ... n n )
+        group                         ( ... n addr1 )
+        "*PAPER_SPACE"                ( ... n addr1 addr2 )
+        strcmp                        ( ... n flag )
+        0= if                         ( ... n )
+            "$PAPER_SPACE"            ( ... n addr3 )
+            swap                      ( ... addr3 n )
+            setgroup                  ( ... )
+        else                          ( ... n )
+            drop                      ( ... )
+        then
+    else                              ( ... n n )
+        drop drop                     ( ... )
+    then
+;
+
+: dxf:blocks:block
+    2 delmodel
+    3 delmodel
+    2 delpaper
+    3 delpaper
+    2 starmodel                       \ Change *MODEL_SPACE and *PAPER_SPACE
+    2 starpaper                       \ to $MODEL_SPACE and $PAPER_SPACE in
+    3 starpaper                       \ the 2 and 3 groups.
+    3 starmodel
+;
+
+\ Note, don't want to delete the 48 group from the TABLES section.
+: dxf:blocks
+    0 group? if
+        removeUnknownEnts
+        0 group                       ( ... addr1 )
+        "ENDBLK"                      ( ... addr1 addr2 )
+        strcmp                        ( ... flag )
+        0= delEndBlock @ and if       ( ... )
+            \ Delete the ENDBLK that corresponds to the PAPER/MODEL_SPACE
+            \  block just deleted.
+            false delEndBlock !
+            clearitem writeitem drop
+        then
+
+    then
+    48 delgroup
+;
+: dxf:entities
+    0 group? if
+        removeUnknownEnts
+    then
+    48 delgroup
+;
+
+: setHiLoRange
+    insideextents if
+        bignummean bignumlo 2!
+    else
+        bignummean bignumhi 2!
+    then
+;
+
+\ Add the offset from the origin.
+: addOffset
+    10 group
+    2pointadd
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: setExtents                         ( ... )                      ( ... )
+    xMin 2@ 0 0 extentsMinSave element 2!
+    yMin 2@ 0 1 extentsMinSave element 2!
+    zMin 2@ 0 2 extentsMinSave element 2!
+    xMax 2@ 0 0 extentsMaxSave element 2!
+    yMax 2@ 0 1 extentsMaxSave element 2!
+    zMax 2@ 0 2 extentsMaxSave element 2!
+
+    10 group                         ( ... x y z )
+    \ Temporarily move the extents to include the origin of the RAY or XLINE.
+    2dup                             ( ... x y z z )
+    zMax 2@                          ( ... x y z z zMax )
+    f> if                            ( ... x y z )
+        zMax 2!                      ( ... x y )
+    else                             ( ... x y z )
+        2dup                         ( ... x y z z )
+        zMin 2@                      ( ... x y z z zMin )
+        f< if                        ( ... x y z )
+            zMin 2!                  ( ... x y )
+        else                         ( ... x y z )
+            2drop                    ( ... x y )
+        then
+    then
+
+    2dup                             ( ... x y y )
+    yMax 2@                          ( ... x y y yMax )
+    f> if                            ( ... x y )
+        yMax 2!                      ( ... x )
+    else                             ( ... x y )
+        2dup                         ( ... x y y )
+        yMin 2@                      ( ... x y y yMin )
+        f< if                        ( ... x y )
+            yMin 2!                  ( ... x )
+        else                         ( ... x y )
+            2drop                    ( ... x )
+        then
+    then
+
+    2dup                             ( ... x x )
+    xMax 2@                          ( ... x x xMax )
+    f> if                            ( ... x )
+        xMax 2!                      ( ... )
+    else                             ( ... x )
+        2dup                         ( ... x x )
+        xMin 2@                      ( ... x x xMin )
+        f< if                        ( ... x )
+            xMin 2!                  ( ... )
+        else                         ( ... x )
+            2drop                    ( ... )
+        then
+    then
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: resetExtents                       ( ... )                      ( ... )
+    0 0 extentsMinSave element 2@ xMin 2!
+    0 1 extentsMinSave element 2@ yMin 2!
+    0 2 extentsMinSave element 2@ zMin 2!
+    0 0 extentsMaxSave element 2@ xMax 2!
+    0 1 extentsMaxSave element 2@ yMax 2!
+    0 2 extentsMaxSave element 2@ zMax 2!
+;
+
+: dxf:*:ray
+    "x" option if
+        1 delitem !
+    else
+        \ Bug in the interpreter makes multiple calls on one ray entity.
+        \ The following code stops that.
+        0 group "LINE" strcmp 0= if
+            exit
+        then
+        setExtents
+        initbignumrange
+        "LINE" 0 setgroup             \ Turn a RAY into a line
+        iterator 0 do
+            11 group                  \ Get the X,Y,Z components of the unit direction vector
+            bignummean 2scalarmult
+            addOffset
+            setHiLoRange
+            goodenough if
+                leave
+            then
+        loop
+        11 group
+        bignummean 2scalarmult
+        addOffset
+        11 setgroup
+        resetExtents
+    then
+;
+
+: dxf:*:xline
+    "x" option if
+        1 delitem !
+    else
+        setExtents
+        initbignumrange
+        "LINE" 0 setgroup             \ Turn an XLINE into a line
+        iterator 0 do
+            11 group                  \ Get the X,Y,Z components of the unit direction vector
+            bignummean fnegate 2scalarmult
+            addOffset
+            setHiLoRange
+            goodenough if
+                leave
+            then
+        loop
+        11 group
+        bignummean fnegate 2scalarmult
+        addOffset
+        \ Hold the results in the stack for later ...
+
+        initbignumrange
+        iterator 0 do
+            11 group                  \ Get the X,Y,Z components of the unit direction vector
+            bignummean 2scalarmult
+            addOffset
+            setHiLoRange
+            goodenough if
+                leave
+            then
+        loop
+        11 group
+        bignummean 2scalarmult
+        addOffset
+        11 setgroup                   \ Set the end point
+
+        \ ... OK, we can now set the 10 group
+        10 setgroup                   \ Set the start point
+        resetExtents
+    then
+;
+
+\ Compute the length of a 3D vector which has one endpoint at 0,0,0.
+\                                    Stack on entering:           Stack on leaving:
+: vectorLength                       ( ... x y z )                ( ... len )
+    2.0 pow                          ( ... x y z**2 )
+    2swap 2.0 pow                    ( ... x z**2 y**2 )
+    f+                               ( ... x z**2+y**2 )
+    2swap 2.0 pow                    ( ... z**2+y**2 x**2 )
+    f+                               ( ... z**2+y**2+x**2 )
+    sqrt                             ( ... len )
+;
+
+\ angle = atan2(sin(p) * radiusRatio, cos(p))
+\                                    Stack on entering:           Stack on leaving:
+: ellipseparamtoangle                ( ... p )                    ( ... a )
+    2dup                             ( ... p p )
+    sin                              ( ... p sin[p] )
+    40 group f*                      ( ... p r*sin[p] )
+    2swap                            ( ... r*sin[p] p )
+    cos                              ( ... r*sin[p] cos[p] )
+    atan2                            ( ... a )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: vector2dup                         ( ... x y z )                ( ... x y z x y z )
+    2 2pick                          ( ... x y z x )
+    2 2pick                          ( ... x y z x y )
+    2 2pick                          ( ... x y z x y z )
+;
+
+\                                    Stack on entering:           Stack on leaving:
+: vector2swap                        ( ... x1 y1 z1 x2 y2 z2 )    ( ... x2 y2 z2 x1 y1 z1 )
+    5 2roll                          ( ... y1 z1 x2 y2 z2 x1 )
+    5 2roll                          ( ... z1 x2 y2 z2 x1 y1 )
+    5 2roll                          ( ... x2 y2 z2 x1 y1 z1 )
+;
+
+\ Dot product of u and v: u . v
+\                                    Stack on entering:           Stack on leaving:
+: dotProduct                         ( ... x1 y1 z1 x2 y2 z2 )    ( ... x1x2+y1y2+z1z2 )
+    2 2roll                          ( ... x1 y1 z1 y2 z2 x2 )
+    5 2roll f*                       ( ... y1 z1 y2 z2 x2x1 )
+    2 2roll                          ( ... y1 z1 z2 x2x1 y2 )
+    4 2roll f* f+                    ( ... z1 z2 x2x1+y2y1 )
+    2swap                            ( ... z1 x2x1+y2y1 z2 )
+    2 2roll f* f+                    ( ... x2x1+y2y1+z2z1 )
+;
+
+\ Cross product of u and v: u x v
+\                                    Stack on entering:           Stack on leaving:
+: crossProduct                       ( ... u1 u2 u3 v1 v2 v3 )    ( ... u2v3-u3v2 u3v1-u1v3 u1v2-u2v1 )
+    4 2pick                          ( ... u1 u2 u3 v1 v2 v3 u2 )
+    1 2pick f*                       ( ... u1 u2 u3 v1 v2 v3 u2v3 )
+    4 2pick                          ( ... u1 u2 u3 v1 v2 v3 u2v3 u3 )
+    3 2pick f* f-                    ( ... u1 u2 u3 v1 v2 v3 u2v3-u3v2 )
+
+    4 2roll                          ( ... u1 u2 v1 v2 v3 u2v3-u3v2 u3 )
+    4 2pick f*                       ( ... u1 u2 v1 v2 v3 u2v3-u3v2 u3v1 )
+    6 2pick                          ( ... u1 u2 v1 v2 v3 u2v3-u3v2 u3v1 u1 )
+    3 2roll f* f-                    ( ... u1 u2 v1 v2 u2v3-u3v2 u3v1-u1v3 )
+
+    5 2roll                          ( ... u2 v1 v2 u2v3-u3v2 u3v1-u1v3 u1 )
+    3 2roll f*                       ( ... u2 v1 u2v3-u3v2 u3v1-u1v3 u1v2 )
+    4 2roll                          ( ... v1 u2v3-u3v2 u3v1-u1v3 u1v2 u2 )
+    4 2roll f* f-                    ( ... u2v3-u3v2 u3v1-u1v3 u1v2-u2v1 )
+;
+
+\ Given a vector, scale its components to make it a unit vector.
+\                                    Stack on entering:           Stack on leaving:
+: makeUnitVector                     ( ... x y z )                ( ... x1 y1 z1 )
+    vector2dup                       ( ... x y z x y z )
+    vectorLength                     ( ... x y z len )
+    2scalarDiv                       ( ... x1 y1 z1 )
+;
+
+\ Angle between 2 vectors, where both vectors have one endpoint at 0,0,0
+\ Use the dot product of these 2 vectors to calculate the angle between them.
+\   u.v = ||u|| ||v|| cos(theta)
+\                                    Stack on entering:                   Stack on leaving:
+: vectorangle                        ( ... ux uy uz vx vy vz )            ( ... theta )
+    vector2dup                       ( ... ux uy uz vx vy vz vx vy vz )
+    8 2pick                          ( ... ux uy uz vx vy vz vx vy vz ux )
+    8 2pick                          ( ... ux uy uz vx vy vz vx vy vz ux uy )
+    8 2pick                          ( ... ux uy uz vx vy vz vx vy vz ux uy uz )
+    vector2swap                      ( ... ux uy uz vx vy vz ux uy uz vx vy vz )
+    dotProduct                       ( ... ux uy uz vx vy vz u.v )
+
+    6 2roll                          ( ... uy uz vx vy vz u.v ux )
+    6 2roll                          ( ... uz vx vy vz u.v ux uy )
+    6 2roll                          ( ... vx vy vz u.v ux uy uz )
+    vectorLength                     ( ... vx vy vz u.v ulen )
+
+    4 2roll                          ( ... vy vz u.v ulen vx )
+    4 2roll                          ( ... vz u.v ulen vx vy )
+    4 2roll                          ( ... u.v ulen vx vy vz )
+    vectorLength f* f/               ( ... u.v / ulen*vlen )
+
+    acos                             ( ... theta )
+;
+
+\ Is this 3D point 0,0,0 ?
+\                                    Stack on entering:           Stack on leaving:
+: isZeroVector                       ( ... x y z )                ( ... x y z t/f )
+    2dup                             ( ... x y z z )
+    0.0 f= if                        ( ... x y z )
+        1 2pick                      ( ... x y z y )
+        0.0 f= if                    ( ... x y z )
+           2 2pick                   ( ... x y z x )
+           0.0 f= if                 ( ... x y z )
+               true                  ( ... x y z t )
+           else                      ( ... x y z )
+               false                 ( ... x y z f )
+           then
+        else                         ( ... x y z )
+            false                    ( ... x y z f )
+        then
+    else                             ( ... x y z )
+        false                        ( ... x y z f )
+    then
+;
+
+: 2pi
+    2.0 pi f*
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: normalizeEllipseAngle                  ( ... a1 )                   ( ... a2 )
+    2dup 0.0 f< if                       ( ... a1 )
+        \ If angle is less than 0 add 2pi radians to make it positive.
+        2pi f+                           ( ... a2 )
+    then
+
+    2dup                                 ( ... a1 a1 )
+    2pi f>= if                           ( ... a1 )
+        \ If angle is greater than or equal to 2pi, subtract 2pi.
+        2pi f-
+    then
+;
+
+
+\                                     Stack on entering:           Stack on leaving:
+: ellipseStepToPoint                  ( ... i )                    ( ... x y z )
+    float ellipseangleincr 2@ f*      ( ... angle )
+    ellipseStartAngle 2@ f+
+    normalizeEllipseAngle
+    2dup                              ( ... angle angle )
+    cos ellipsea 2@ f*                ( ... angle x )
+    2swap                             ( ... x angle )
+    sin ellipseb 2@ f* 0.0            ( ... x y 0.0 )
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: resulttovector                      ( ... )                      ( ... )
+    0 0 result element 2@
+    0 0 vector element 2!
+    0 1 result element 2@
+    0 1 vector element 2!
+    0 2 result element 2@
+    0 2 vector element 2!
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: ellipseApplyTransform               ( ... x y z )                ( ... x y z )
+    0 2 vector element 2!             ( ... x y )
+    0 1 vector element 2!             ( ... x )
+    0 0 vector element 2!             ( ... )
+    vector rotationMatrix 1x33x3multiply
+
+    \ Apply offset
+    0 0 result element 2@             ( ... x )
+    0 1 result element 2@             ( ... x y )
+    0 2 result element 2@             ( ... x y z )
+
+    0 0 offset element 2@             ( ... x y z x )
+    0 1 offset element 2@             ( ... x y z x y )
+    0 2 offset element 2@             ( ... x y z x y z )
+    2pointadd                         ( ... x2 y2 z2 )
+;
+
+\ Leave 'nexthandle' with the next valid handle to use.
+\                                     Stack on entering:           Stack on leaving:
+: addHandle                           ( ... )                      ( ... )
+    handleson @ if
+        \ Handles are in hex.
+        nexthandle @ "%lX" edbuf strform
+        inbinary @ if
+            5 ofile fputc drop
+            edbuf strlen 1+
+            edbuf ofile fwrite drop
+        else
+            "  5" ofile fputs drop
+            edbuf ofile fputs drop
+        then
+        1 nexthandle +!
+        true needToRewind !
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveLayer                           ( ... )                      ( ... )
+    8 group? if                       
+        8 group strlen 31 > if        
+            8 group 0 31 layer substr 
+        else 
+            8 group layer strcpy      
+        then
+    else                              
+        "0" layer strcpy              
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveColor
+    62 group? if
+        62 group
+        color !
+        true
+    else
+        false
+    then
+    62group !
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveSpace
+    67 group? if
+        67 group
+        paperSpace !
+        true
+    else
+        false
+    then
+    67group !
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addLayer                            ( ... )                      ( ... )
+    inbinary @ if
+        8 ofile fputc drop
+        layer strlen 1+
+        layer ofile fwrite drop
+    else
+        "  8" ofile fputs drop
+        layer ofile fputs drop
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addVertexHeader                     ( ... )                      ( ... )
+    \ Add a new vertex.
+    "VERTEX" edbuf strcpy
+    inbinary @ if
+        0 ofile fputc drop
+        edbuf strlen 1+
+        edbuf ofile fwrite drop
+    else
+        "  0" ofile fputs drop
+        edbuf ofile fputs drop
+    then
+    addLayer
+    addHandle
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addVertexTrailer                    ( ... )                      ( ... )
+    inbinary @ if
+        70 ofile fputc drop
+        32 ofile fputshort drop
+    else
+        "  70" ofile fputs drop
+        "    32" ofile fputs drop
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addSequend                          ( ... )                      ( ... )
+    "SEQEND" edbuf strcpy
+    inbinary @ if
+        0 ofile fputc drop
+        edbuf strlen 1+
+        edbuf ofile fwrite drop
+    else
+        "  0" ofile fputs drop
+        edbuf ofile fputs drop
+    then
+
+    addLayer
+    addHandle
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: add10Group                          ( ... x y z )                ( ... )
+    inbinary @ if
+        10 ofile fputc drop
+        2 2roll                       ( ... y z x )
+        ofile fputd drop              ( ... y z )
+        20 ofile fputc drop
+        2swap                         ( ... z y )
+        ofile fputd drop              ( ... z )
+        30 ofile fputc drop
+        ofile fputd drop              ( ... )
+    else
+        " 10" ofile fputs drop
+        2 2roll                       ( ... y z x )
+        "%#g" edbuf fstrform          ( ... y z )
+        edbuf ofile fputs drop
+        " 20" ofile fputs drop
+        2swap                         ( ... z y )
+        "%#g" edbuf fstrform          ( ... z )
+        edbuf ofile fputs drop
+        " 30" ofile fputs drop
+        "%#g" edbuf fstrform          ( ... )
+        edbuf ofile fputs drop
+    then
+;
+
+: dxf:header:$extmin
+    true minset !
+    10 group                          ( ... x y z )
+    zmin 2!
+    ymin 2!
+    xmin 2!
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addColor
+    62group @ if
+        inbinary @ if
+            62 ofile fputc drop
+            color @ ofile fputshort drop
+         else
+            "  62" ofile fputs drop
+            color @ "%ld" edbuf strform
+            edbuf ofile fputs drop
+         then
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addSpace
+    67group @ if
+        inbinary @ if
+            67 ofile fputc drop
+            paperSpace @ ofile fputshort drop
+         else
+            "  67" ofile fputs drop
+            paperSpace @ "%ld" edbuf strform
+            edbuf ofile fputs drop
+         then
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addPolylineHeader                   ( ... )                      ( ... )
+    "POLYLINE" edbuf strcpy
+    inbinary @ if
+        0 ofile fputc drop
+        edbuf strlen 1+
+        edbuf ofile fwrite drop
+    else
+        "  0" ofile fputs drop
+        edbuf ofile fputs drop
+    then
+
+    addSpace
+    addLayer
+    addHandle
+    addColor
+
+    inbinary @ if
+        66 ofile fputc drop
+        1 ofile fputshort drop
+    else
+        "  66" ofile fputs drop
+        "     1" ofile fputs drop
+    then
+
+    add10Group
+;
+
+: add3dPolylineHeader                   ( ... )                      ( ... )
+    inbinary @ if
+        70 ofile fputc drop
+        8 ofile fputshort drop
+    else
+        "  70" ofile fputs drop
+        "     8" ofile fputs drop
+    then
+;
+
+: addVertex
+    addVertexHeader
+    add10Group
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveOffset                          ( ... )                      ( ... )
+    10 group                          ( ... x y z )
+    0 2 offset element 2!
+    0 1 offset element 2!
+    0 0 offset element 2!
+;
+
+: dxf:*:ellipse
+    saveLayer
+    saveOffset
+
+    removeXdata
+    11 group                          ( ... x y z )
+    \ Calculate the parameter 'a' for the ellipse equation: x = a cos(theta), y = b sin(theta)
+    vectorLength 2dup ellipsea 2!     ( ... len )
+
+    \ Calculate the parameter 'b'.
+    40 group                          ( ... len p )
+    f* ellipseb 2!                    ( ... )
+
+    \ end angle
+    42 group                          ( ... e )
+    2dup ellipseEndAngle 2!           ( ... e )
+
+    \ start angle
+    41 group                          ( ... e s )
+    2dup ellipseStartAngle 2!         ( ... e s )
+
+    f- fabs                           ( ... deltaangle )
+    2pi f- fabs
+    ellipseanglefuzz f< if
+        \ A full ellipse, not an elliptical arc.
+        2pi                           ( ... 2pi )
+    else
+        \ An elliptical arc.
+
+        \ Calculate the start angle.
+        ellipseStartAngle 2@          ( ... s )
+        normalizeEllipseAngle         ( ... s )
+        2dup ellipseStartAngle 2!     ( ... s )
+
+        \ Calculate the end angle.
+        ellipseEndAngle 2@            ( ... s e )
+        normalizeEllipseAngle         ( ... s e)
+        2dup ellipseEndAngle 2!       ( ... s e )
+
+        f> if
+            \ Start angle greater than end angle.
+            2pi ellipseStartAngle 2@ f-
+            ellipseEndAngle 2@ f+
+        else
+            ellipseEndAngle 2@        ( ... e )
+            ellipseStartAngle 2@      ( ... s )
+            f-                        ( ... arcangle )
+        then
+    then
+    ellipseSteps float f/
+    ellipseangleincr 2!
+
+    \ Set up the rotation matrix.
+    210 group                         ( ... x3 y3 z3 )
+    vector2dup                        ( ... x3 y3 z3 x3 y3 z3 )
+    2 2 rotationMatrix element 2!     ( ... x3 y3 z3 x3 y3 )
+    2 1 rotationMatrix element 2!     ( ... x3 y3 z3 x3 )
+    2 0 rotationMatrix element 2!     ( ... x3 y3 z3 )
+
+    11 group                          ( ... x3 y3 z3 x y z )
+    makeUnitVector                    ( ... x3 y3 z3 x1 y1 z1 )
+    vector2dup                        ( ... x3 y3 z3 x1 y1 z1 x1 y1 z1 )
+    0 2 rotationMatrix element 2!     ( ... x3 y3 z3 x1 y1 z1 x1 y1 )
+    0 1 rotationMatrix element 2!     ( ... x3 y3 z3 x1 y1 z1 x1 )
+    0 0 rotationMatrix element 2!     ( ... x3 y3 z3 x1 y1 z1 )
+
+    crossProduct                      ( ... x4 y4 z4 )
+    1 2 rotationMatrix element 2!     ( ... x4 y4 )
+    1 1 rotationMatrix element 2!     ( ... x4 )
+    1 0 rotationMatrix element 2!     ( ... )
+
+    "POLYLINE" 0 setgroup             \ Turn an ELLIPSE into a POLYLINE
+    \ Need to set point from the 0th VERTEX here.
+    11 delgroup
+    40 delgroup
+    41 delgroup
+    42 delgroup
+    48 delgroup
+    66 group? not if
+        66 addgroup
+    then
+    1 66 setgroup
+    70 group? not if
+        70 addgroup
+    then
+    8 70 setgroup
+    210 delgroup
+
+    0 ellipseStepToPoint              ( ... x y z )
+    ellipseApplyTransform
+    10 setgroup                       ( ... )
+
+    \ Need to force a write of this item in order to append explicit VERTEX items.
+    writeitem drop
+
+    \ Calculate points on the ellipse.
+    ellipseSteps 1+ 0 do
+        i ellipseStepToPoint          ( ... x y z )
+        ellipseApplyTransform
+\       2pointprint
+        addVertex
+		addVertexTrailer
+    loop
+    addSequend
+;
+
+: dxf:entities:dimension
+\    -3 delgroup
+    3 delgroup
+;
+
+\ : dxf:entities:insert
+\    -3 delgroup
+\ ;
+
+\ : dxf:entities:viewport
+\    -3 delgroup
+\ ;
+
+: dxf:entities:seqend
+    -2 delgroup
+;
+
+: addRotationAngle                    ( ... )                      ( ... )
+    textRotation 2@ 0.0 f= not if
+        inbinary @ if
+            50 ofile fputc drop
+        else
+            "  50" ofile fputs drop   ( ... x y z )
+        then
+        textRotation 2@
+        inbinary @ if
+            ofile fputd drop
+        else
+            "%#g" edbuf fstrform
+            edbuf ofile fputs drop
+        then
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: getArbitraryXAxis                   ( ... x y z )                ( ... x3 y3 z3 )
+    \ See pg. 272 of the AutoCAD R12 Customization Manual.
+    2 2pick                           ( ... x y z x )
+    \ 0.015625 = 1/64
+    0.015625 f< if                    ( ... x y z )
+        1 2pick                       ( ... x y z y )
+        0.015625 f< if                ( ... x y z )
+            0.0 1.0 0.0               ( ... x y z 0.0 1.0 0.0 )
+        else                          ( ... x y z )
+            0.0 0.0 1.0               ( ... x y z 0.0 0.0 1.0 )
+        then
+    else                              ( ... x y z )
+        0.0 0.0 1.0                   ( ... x y z 0.0 0.0 1.0 )
+    then
+    vector2swap                       ( ... 0.0 0.0 1.0 x y z )
+    crossProduct                      ( ... x2 y2 z2 )
+    makeUnitVector                    ( ... x3 y3 z3 )
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveExtrusion                       ( ... )                      ( ... )
+    0.0 2dup                          ( ... ang ang )
+    textRotation 2!                   ( ... ang )
+    textRotationPrimary 2!            ( ... )
+    210 group? if
+        210 group                     ( ... Zx Zy Zz )
+        vector2dup                    ( ... Zx Zy Zz Zx Zy Zz )
+        \ Set up the rotation matrix Z
+        2 2 rotationMatrix element 2!
+        1 2 rotationMatrix element 2!
+        0 2 rotationMatrix element 2! ( ... Zx Zy Zz )
+        vector2dup                    ( ... Zx Zy Zz Zx Zy Zz )
+        getArbitraryXAxis             ( ... Zx Zy Zz Xx Xy Xz )
+        vector2dup                    ( ... Zx Zy Zz Xx Xy Xz Xx Xy Xz )
+        \ Set up the rotation matrix X
+        2 0 rotationMatrix element 2!
+        1 0 rotationMatrix element 2!
+        0 0 rotationMatrix element 2! ( ... Zx Zy Zz Xx Xy Xz )
+        vector2dup                    ( ... Zx Zy Zz Xx Xy Xz Xx Xy Xz )
+        8 2pick                       ( ... Zx Zy Zz Xx Xy Xz Xx Xy Xz Zx )
+        8 2pick                       ( ... Zx Zy Zz Xx Xy Xz Xx Xy Xz Zx Zy )
+        8 2pick                       ( ... Zx Zy Zz Xx Xy Xz Xx Xy Xz Zx Zy Zz )
+        vector2swap                   ( ... Zx Zy Zz Xx Xy Xz Zx Zy Zz Xx Xy Xz )
+        crossProduct                  ( ... Zx Zy Zz Xx Xy Xz Yx Yy Yz )
+        makeUnitVector
+        \ Set up the rotation matrix Y
+        2 1 rotationMatrix element 2!
+        1 1 rotationMatrix element 2!
+        0 1 rotationMatrix element 2! ( ... Zx Zy Zz Xx Xy Xz )
+        \ Now transform the offset from World Coordinate System to Local CS.
+        offset rotationMatrix 1x33x3multiply
+        0 0 result element 2@         ( ... Zx Zy Zz Xx Xy Xz Xlcs )
+        0 1 result element 2@         ( ... Zx Zy Zz Xx Xy Xz Xlcs Ylcs )
+        0 2 result element 2@         ( ... Zx Zy Zz Xx Xy Xz Xlcs Ylcs Zlcs )
+
+        0 2 offset element 2!
+        0 1 offset element 2!
+        0 0 offset element 2!         ( ... Zx Zy Zz Xx Xy Xz )
+
+        2drop 2swap                   ( ... Zx Zy Zz Xy Xx )
+        atan2                         ( ... Zx Zy Zz rad )
+        2.0 pi f* 2swap f-            ( ... Zx Zy Zz 2pi-rad )
+        radToDeg f*                   ( ... Zx Zy Zz arbAxisAng )
+
+        \ Get angle between WCS X-axis and LCS X-axis
+        11 group? if                   ( ... Zx Zy Zz arbAxisAng )
+            11 group                   ( ... Zx Zy Zz arbAxisAng x y z )
+            0 2 vector element 2!
+            0 1 vector element 2!
+            0 0 vector element 2!
+            vector rotationMatrix 1x33x3multiply
+
+            0 1 result element 2@      ( ... Zx Zy Zz arbAxisAng y )
+            0 0 result element 2@      ( ... Zx Zy Zz arbAxisAng y x )
+            atan2 radToDeg f*          ( ... Zx Zy Zz arbAxisAng LCSang )
+
+            1.0 0.0 0.0                ( ... Zx Zy Zz arbAxisAng LCSang 1.0 0.0 0.0 )
+            2 0 rotationMatrix element 2@
+            1 0 rotationMatrix element 2@
+            0 0 rotationMatrix element 2@ ( ... Zx Zy Zz arbAxisAng LCSang 1.0 0.0 0.0 x y z )
+            vectorangle radToDeg f*    ( ... Zx Zy Zz arbAxisAng LCSang theta )
+            f+                         ( ... Zx Zy Zz arbAxisAng rotationAng )
+            2dup                       ( ... Zx Zy Zz arbAxisAng rotationAng rotationAng )
+            textRotationPrimary 2!     ( ... Zx Zy Zz arbAxisAng roationAng )
+            f+                         ( ... Zx Zy Zz arbAxisAng2 )
+            textRotation 2!            ( ... Zx Zy Zz )
+        then
+    else
+        \ Indicates no 210 group was present.
+        0.0 0.0 0.0
+    then
+    0 2 extrusion element 2!
+    0 1 extrusion element 2!
+    0 0 extrusion element 2!
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: save72Group                         ( ... )                      ( ... )
+    72 group? if
+        72 group group72 !
+    else
+        ." "Warning. No 72 group in MText entity." cr
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: saveHeight                          ( ... )                      ( ... )
+    40 group
+    textHeight 2!
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addExtrusion                        ( ... )                      ( ... )
+    0 2 extrusion element 2@          ( ... z )
+    0 1 extrusion element 2@          ( ... z y )
+    0 0 extrusion element 2@          ( ... z y x )
+    isZeroVector not if
+        inbinary @ if
+            210 ofile fputc drop
+            ofile fputd drop          ( ... z y )
+            220 ofile fputc drop
+            ofile fputd drop          ( ... z )
+            230 ofile fputc drop
+            ofile fputd drop          ( ... )
+        else
+            "210" ofile fputs drop
+            "%#g" edbuf fstrform      ( ... z y )
+            edbuf ofile fputs drop
+            "220" ofile fputs drop
+            "%#g" edbuf fstrform      ( ... z )
+            edbuf ofile fputs drop
+            "230" ofile fputs drop
+            "%#g" edbuf fstrform      ( ... )
+            edbuf ofile fputs drop
+        then
+    else
+        2drop 2drop 2drop
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: add72Group                          ( ... )                      ( ... )
+    \ Transform 72 into 71 group.
+    inbinary @ if
+        72 ofile fputc drop
+        0 ofile fputshort drop
+    else
+        "  72" ofile fputs drop
+        "0" ofile fputs drop
+    then
+
+    group72 @ dup                     ( ... n n )
+    1 = if                            ( ... n )
+        drop                          ( ... )
+        inbinary @ if
+            71 ofile fputc drop
+            0 ofile fputshort drop
+        else
+            "  71" ofile fputs drop
+            "0" ofile fputs drop
+        then
+    else
+        3 = if
+            inbinary @ if
+                71 ofile fputc drop
+                0 ofile fputshort drop
+            else
+                "  71" ofile fputs drop
+                "0" ofile fputs drop
+            then
+        then
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addTextHeader                       ( ... )                      ( ... )
+    \ Add a new TEXT entity.
+    "TEXT" edbuf strcpy
+    inbinary @ if
+        0 ofile fputc drop
+        edbuf strlen 1+
+        edbuf ofile fwrite drop
+        addLayer
+        40 ofile fputc drop
+        textHeight 2@
+        ofile fputd drop
+    else
+        "  0" ofile fputs drop
+        edbuf ofile fputs drop
+        addLayer
+        "  40" ofile fputs drop
+        textHeight 2@                 ( ... addr )
+        "%g" edbuf fstrform           ( ... )
+        edbuf ofile fputs drop
+    then
+    addHandle
+    addColor
+    addRotationAngle
+    add72group
+    addExtrusion
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addTextStyle
+    7group @ if
+        inbinary @ if
+            7 ofile fputc drop
+            mtextStyle strlen 1+
+            mtextStyle ofile fwrite drop
+        else
+            "  7" ofile fputs drop
+            mtextStyle ofile fputs drop
+        then
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addTextPosition                     ( ... )                      ( ... )
+    0 0 offset element 2@             ( ... x )
+    0 1 offset element 2@             ( ... x y )
+    0 2 offset element 2@             ( ... x y z )
+    add10Group
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: setNewTextPosition                  ( ... )                      ( ... )
+    0 2 extrusion element 2@          ( ... z )
+    0 1 extrusion element 2@          ( ... z y )
+    0 0 extrusion element 2@          ( ... z y x )
+    isZeroVector if
+        textHeight 2@ 2dup            ( ... height height )
+        mtextFudge f* f+ 2dup         ( ... newheight newheight )
+        \ X component
+        textRotationPrimary 2@ sin f* ( ... newheight sin*newheight )
+        0 0 offset element 2@ f+
+        0 0 offset element 2!         ( ... newheight )
+
+        \ Y component
+        textRotationPrimary 2@ cos f* ( ... cos*newheight )
+        0 1 offset element 2@ 2swap f-
+        0 1 offset element 2!         ( ... )
+    else
+        textHeight 2@ 2dup            ( ... height height )
+        mtextFudge f* f+ 2dup         ( ... newheight newheight )
+        \ X component
+
+        textRotationPrimary 2@ degToRad f*
+        sin f*                        ( ... newheight sin*newheight )
+        0 0 vector element 2!         ( ... newheight )
+
+        \ Y component
+        textRotationPrimary 2@ degToRad f*
+        cos f* -1.0 f*                ( ... cos*newheight )
+        0 1 vector element 2!         ( ... )
+        0.0 0 2 vector element 2!
+
+        \ Transform this offset into the new coordinate system
+        vector rotationMatrix 1x33x3multiply
+        0 0 result element 2@         ( ... x )
+        0 1 result element 2@         ( ... x y )
+        0 2 result element 2@         ( ... x y z )
+
+\       ." "vector after" cr
+\       2pointprint
+
+        0 0 offset element 2@         ( ... x y z x1 )
+        0 1 offset element 2@         ( ... x y z x1 y1 )
+        0 2 offset element 2@         ( ... x y z x1 y1 z1 )
+        2pointadd                     ( ... x2 y2 z2 )
+        0 2 offset element 2!
+        0 1 offset element 2!
+        0 0 offset element 2!
+    then
+    2drop 2drop 2drop
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: mtextReadChar                       ( ... )                      ( ... )
+    mtextFileA ftell                  ( ... p )
+    dup 0 mtextFileA fseek            ( ... p )
+    mtextFileA fgetc                  ( ... p c1 )
+    dup                               ( ... p c1 c1 )
+    EOF = if                          ( ... p c1 )
+        dup                           ( ... p c1 c1 )
+        thisChar !                    ( ... p c1 )
+		dup
+        nextChar !                    ( ... p )
+		thirdChar !
+        drop
+    else                              ( ... p c1 )
+        thisChar !                    ( ... p )
+        1+ dup 0 mtextFileA fseek     ( ... p2 )
+        mtextFileA fgetc              ( ... p2 c2 )
+        nextChar !                    ( ... p2 )
+	
+		nextChar EOF = not if         
+			mtextFileA fgetc          ( ... p2 c3 )
+			thirdChar !               ( ... p2 )
+		else
+			nextChar @                ( ... p2 c2 )
+			thirdChar !               ( ... p2 )
+		then
+
+		0 mtextFileA fseek            ( ... )
+	then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: mtextWriteChar                      ( ... )                      ( ... )
+	thisChar @                        ( ... c )
+    longString countChar @ + c!
+    1 countChar +!
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: addLongString                       ( ... )                      ( ... )
+    \ Save the character ...
+    thisChar @                        ( ... c )
+    EOS thisChar !
+    mtextWriteChar
+    \ ... now restore it.
+    thisChar !
+    inbinary @ if
+        1 ofile fputc drop
+        longString strlen 1+
+        longString ofile fwrite drop
+    else
+        "  1" ofile fputs drop
+        longString ofile fputs drop
+    then
+    0 countChar !
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: equalToThisChar                     ( ... c1 )                   ( ... )
+    thisChar @ =                      ( ... t/f )
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: equalToNextChar                     ( ... c1 )                   ( ... )
+    nextChar @ =                      ( ... t/f )
+;
+: equalToThirdChar
+	thirdChar @ =
+;
+\                                     Stack on entering:           Stack on leaving:
+: deleteSemicolon
+    iterator 0 do
+        mtextReadChar
+        semicolon equalToThisChar if
+            leave
+        then
+    loop
+;
+
+: mtextActionUnicode
+    "2205" diameter strcpy
+    "00B1" toler strcpy
+    "00B0" degree strcpy
+    diameter
+    unicodeStr
+    strcmp
+    0= if
+        percent thisChar !
+        mtextWriteChar
+        percent thisChar !
+        mtextWriteChar
+        "c"
+        thisChar
+        strcpy
+        mtextWriteChar
+    else
+        toler
+        unicodeStr
+        strcmp
+        0= if
+            percent thisChar !
+            mtextWriteChar
+            percent thisChar !
+            mtextWriteChar
+            "p"
+            thisChar
+            strcpy
+            mtextWriteChar
+        else
+            degree
+            unicodeStr
+            strcmp
+            0= if
+                percent thisChar !
+                mtextWriteChar
+                mtextWriteChar
+                "d"
+                thisChar
+                strcpy
+                mtextWriteChar
+             else
+                "?" thisChar strcpy
+                 mtextWriteChar
+             then
+        then
+    then
+;
+\ A backslash has already been encountered. The next character dictates the action.
+\                                     Stack on entering:           Stack on leaving:
+: mtextActionBackslash                ( ... )                      ( ... n )
+    \ '\'
+    backSlash equalToNextChar if
+        mtextReadChar mtextWriteChar
+        exit
+    then
+
+    \ '{'
+    leftBrace equalToNextChar if
+        mtextReadChar
+        mtextWriteChar
+        exit
+    then
+
+    \ '}'
+    rightBrace equalToNextChar if
+        mtextReadChar
+        mtextWriteChar
+        exit
+    then
+
+    \ 'O'
+    bigO equalToNextChar if
+        mtextReadChar
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        bigO thisChar !
+        mtextWriteChar
+        exit
+    then
+
+    \ 'C'
+    bigC equalToNextChar if
+        deleteSemicolon
+        exit
+    then
+
+    \ 'F'
+    bigF equalToNextChar if
+        deleteSemicolon
+        exit
+    then
+
+    \ 'H'
+    bigH equalToNextChar if
+        deleteSemicolon
+        exit
+    then
+
+    \ 'A'
+    bigA equalToNextChar if
+        mtextReadChar
+        mtextReadChar
+        thisChar @ ascii0 - dup       ( ... n n )
+        \ Valid realignment values: 0 1 2
+        0 = if                        ( ... n )
+            drop                      ( ... )
+            \ Offset = (1 1/3)*Height
+            textHeight 2@             ( ... height )
+            1.33 f* 2dup              ( ... 1.33height 1.33height )
+            \ Y-value
+            0 1 offset element 2@     ( ... 1.33height 1.33height y )
+            2swap f-                  ( ... 1.33height y-1.33height
+            0 1 offset element 2!     ( ... 1.33height )
+            \ X-value
+            0 0 offset element 2@     ( ... 1.33height x )
+            2swap f-                  ( ... x-1.33height
+            0 0 offset element 2!     ( ... )
+        else                          ( ... n )
+            1 = if                    ( ... )
+                \ Offset = (2/3)*Height
+                textHeight 2@         ( ... height )
+                0.47 f*               ( ... Cheight )
+                \ Y-value
+                0 1 offset element 2@ ( ... Cheight y )
+                2swap f-              ( ... y-Cheight )
+                0 1 offset element 2! ( ... )
+                \ X-value
+                textHeight 2@         ( ... height )
+                2.0 f*                ( ... Cheight )
+                0 0 offset element 2@ ( ... Cheight x )
+                2swap f-              ( ... x-Cheight )
+                0 0 offset element 2! ( ... )
+            then
+        then
+        \ Delete the semicolon.
+        mtextReadChar
+        exit
+    then
+
+    \ 'U'
+    bigU equalToNextChar if
+        2 0 do
+            mtextReadChar
+        loop
+        4 0 do
+            mtextReadChar
+            thisChar @
+            unicodeStr i + c!
+        loop
+        mtextActionUnicode
+        exit
+    then
+
+    \ 'S'
+    bigS equalToNextChar if
+         mtextReadChar
+         space thisChar !
+         mtextWriteChar
+         iterator 0 do
+             mtextReadChar
+             separator equalToThisChar if
+                 forwardSlash thisChar !
+             then
+             mtextWriteChar
+             semicolon equalToNextChar if
+                 mtextReadChar
+                 leave
+             then
+         loop
+         exit
+    then
+
+    \ 'o'
+    littleO equalToNextChar if
+        mtextReadChar
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        littleO thisChar !
+        mtextWriteChar
+        exit
+    then
+
+    \ 'L'
+    bigL equalToNextChar if
+        mtextReadChar
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        bigU thisChar !
+        mtextWriteChar
+        exit
+    then
+
+    \ 'l'
+    littleL equalToNextChar if
+        mtextReadChar
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        littleU thisChar !
+        mtextWriteChar
+        exit
+    then
+
+    \ 'P'
+    bigP equalToNextChar if
+        mtextReadChar
+        addTextHeader
+        addTextPosition
+        setNewTextPosition
+        addLongString
+        addTextStyle
+        exit
+    then
+
+    \ 'Q'
+    bigQ equalToNextChar if
+        deleteSemicolon
+        exit
+    then
+
+    \ The default action.
+    mtextWriteChar
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: mtextAction                         ( ... )                      ( ... n )
+\   If the current char is lead byte of a double-byte char,
+\   get the whole double-byte char and write it longString
+   
+	thisChar isleadbyte 0= not if
+		mtextWriteChar
+		mtextReadChar
+		mtextWriteChar
+		exit
+	then
+
+	
+	\ '{'
+    leftBrace equalToThisChar if
+        \ No action
+        exit
+    then
+
+    \ '}'
+    rightBrace equalToThisChar if
+        \ No action
+        exit
+    then
+
+    \ '\'
+    backSlash equalToThisChar if
+        \ Need to check the next character.
+        mtextActionBackslash
+        exit
+    then
+
+    \ o
+    degreeSymbol equalToThisChar if
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        littleD thisChar !
+        mtextWriteChar
+        exit
+    else
+        altDegreeSymbol equalToThisChar if
+            percent thisChar !
+            mtextWriteChar
+            mtextWriteChar
+            littleD thisChar !
+            mtextWriteChar
+            exit
+        then
+    then
+
+    \ plus/minus symbol
+    tolerSymbol equalToThisChar if
+        percent thisChar !
+        mtextWriteChar
+        mtextWriteChar
+        "p" thisChar strcpy
+        mtextWriteChar
+        exit
+    then
+
+    \ percent
+\   We can't just replace "%" with "%%%" without checking
+\   the special characters  %%d, %%p, %%c.
+\   The original code is commented out and replaced with
+\   new code. The thirdChar variable is introduced for this
+\   purpose and it is set in mextReadChar function.
+\   If you have any questions regarding this change, please
+\   contact Justin Zhou.
+
+\   percent equalToThisChar if
+\       percent thisChar !
+\       mtextWriteChar
+\       mtextWriteChar
+\       mtextWriteChar
+\       exit
+\   then
+
+	percent equalToThisChar if
+		percent equalToNextChar if
+			littleD equalToThirdChar if
+			\ "%%d"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+
+			bigD equalToThirdChar if
+			\ "%%D"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+
+			littleC equalToThirdChar if
+			\ "%%c"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+
+			bigC equalToThirdChar if
+			\ "%%C"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+
+			littleP equalToThirdChar if
+			\ "%%p"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+
+			bigP equalToThirdChar if
+			\ "%%P"
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				mtextReadChar
+				mtextWriteChar
+				exit
+			then
+			
+			\ "%%"
+			mtextReadChar
+			mtextWriteChar
+			mtextWriteChar
+			mtextWriteChar
+			mtextWriteChar
+			mtextWriteChar
+			mtextWriteChar
+			exit
+		then
+		\ "%"
+		percent thisChar !
+		mtextWriteChar
+		mtextWriteChar
+		mtextWriteChar
+		exit	
+	then
+
+    \ The default action.
+
+    mtextWriteChar
+;
+
+: dxf:*:mtext
+    "$mtexta.$ac" 11 mtextFileA fopen if
+        saveHeight
+        saveOffset
+        saveLayer
+        saveColor
+        save72group
+        saveExtrusion
+        0
+        3 group? if
+            drop
+            3 groupcount2
+        then
+        1 group? if
+            1+
+        then
+        dup
+        groupcount swap -
+        11 group? if
+            1-
+        then
+        210 group? if
+            1-
+        then
+        7 group? if
+            1-
+            7 group
+            mtextStyle
+            strcpy
+            true
+        else
+            false
+        then
+        7group !
+        fixedMtextGroups !
+        \ Top stack item 'p' contains the number of text groups which could
+        \ be multiple 3 and one 1 group, or just multiple 3 groups.
+\       dup                           ( ... p p )
+\       ." "Number of 3 and/or 1 groups in this entity = " . cr ( ... p )
+        0 do                          ( ... )
+            i fixedMtextGroups @ +    ( ... n )
+            -10000 swap -             ( ... -10000-n )
+            dup                       ( ... -10000-n -10000-n )
+            group strlen              ( ... -10000-n m )
+            swap                      ( ... m -10000-n )
+            group                     ( ... m addr )
+            mtextFileA                ( ... m addr file )
+            fwrite drop               ( ... )
+        loop
+
+        \ OK, all text is now written to 'mtextFileA'.
+        \ Now delete everything.
+        clearitem
+        writeitem drop
+
+        \ Now start reading the text from the temporary file taking the
+        \  appropriate actions on control characters.
+
+        \ Rewind the file.
+        0 0 mtextFileA fseek
+        0 countChar !
+
+        setNewTextPosition
+        mtextReadChar
+        begin
+        EOF equalToThisChar not
+        while
+            mtextAction
+            mtextReadChar
+            countChar @ mtextMaxLength >= if
+                addTextHeader
+                addTextPosition
+                setNewTextPosition
+                addLongString
+                addTextStyle
+            then
+        repeat
+
+        \ Flush out the last Text entity.
+        countChar @ if
+            addTextHeader
+            addTextPosition
+            addLongString
+            addTextStyle
+        then
+        mtextFileA fclose
+        "$mtexta.$ac" fdelete drop
+    else
+        ." "Cannot open MText temporary file.\n"
+    then
+;
+
+\                                     Stack on entering:           Stack on leaving:
+: getSplineItem                       ( ... #k p )                 ( ... #k p K )
+    dup                               ( ... #k p p )
+    -10000                            ( ... #k p p -10000 )
+    swap -                            ( ... #k p -10000-p )
+    2 pick - 1+                       ( ... #k p -10000-p-#k+1 )
+;
+
+: dxf:*:spline
+    saveLayer
+    saveSpace
+    saveColor
+    \ The spline iterator is proportional to the number of control points.
+    73 group                          ( ... n )
+    splineConstant *                  ( ... m )
+    splineIterator !                  ( ... )
+
+    \ Knots
+    72 group dup                      ( ... #k #k )
+    40 itempos2                       ( ... #k #k p )
+
+    \ Store value of first knot value.
+    dup                               ( ... #k #k p p )
+    -10000 swap -                     ( ... #k #k p -10000-p )
+    group                             ( ... #k #k p K0 )
+    firstKnot 2!                      ( ... #k #k p )
+    2dup                              ( ... #k #k p #k p )
+    -10000 swap -                     ( ... #k #k p #k -10000-p )
+    swap - 1+                         ( ... #k #k p -10000-p-#k+1 )
+    \ Make sure we're within the domain range.
+    group 1.0E-11 f-                  ( ... #k #k p Kn )
+    firstKnot 2@ f- fabs              ( ... #k #k p abs[Kn-K0] )
+    splineIterator @ 1 - float f/
+    knotInterval 2!                   ( ... #k #k p )
+
+    swap                              ( ... #k p #k )
+    0 do                              ( ... #k p )
+        getSplineItem
+        i +                           ( ... #k p -10000-p-#k+1+i )
+        group                         ( ... #k p K )
+        2swap                         ( ... K #k p )
+    loop
+    drop                              ( ... Kn...K0 #k )
+
+    \ Control points
+    73 group dup                      ( .... #c #c )
+    10 itempos2                       ( .... #c #c p )
+    swap                              ( .... #c p #c )
+    41 group? if
+        \ Group sequence: 10-20-30-41-10-20-30-41 ...
+        \ Position: -10000 - (p+2(#c-i-1))
+        0 do                          ( .... #c p )
+            dup                       ( .... #c p p )
+            2 pick                    ( .... #c p p #c )
+            i - 1-                    ( .... #c p p #c-i-1 )
+            2*                        ( .... #c p p 2[#c-i-1] )
+            +                         ( .... #c p p+2[#c-i-1] )
+            -10000 swap -             ( .... #c p -10000-[p+2[#c-i-1] )
+            group                     ( .... #c p Cx Cy Cz )
+            3 2roll                   ( .... Cx Cy Cz #c p )
+        loop
+    else
+        \ Group sequence: 10-20-30-10-20-30...
+        \ Position: -10000-p-#c+1+i
+        0 do                          ( .... #c p )
+            getSplineItem
+            i +                       ( .... #c p -10000-p-#c+1+i )
+            group                     ( .... #c p Cx Cy Cz )
+            3 2roll                   ( .... Cx Cy Cz #c p )
+        loop
+    then
+    drop                              ( ... Kn...K0 #k CxmCymCzm...Cx0Cy0Cz0 #c )
+
+    \ Weights
+    41 group? not if
+        \ Same number of weights as control points.
+        dup                           ( .... #c #c )
+        0 do                          ( .... #c )
+            dup                       ( .... #c #c )
+            1.0                       ( .... #c #c 1.0 )
+            2swap                     ( .... 1.0 #c #c )
+            drop                      ( .... 1.0 #c )
+        loop
+    else
+        \ Same number of weights as control points.
+        dup                           ( .... #c #c )
+        41 itempos2                   ( .... #c #c p )
+        swap                          ( .... #c p #c )
+        0 do                          ( .... #c p )
+            dup                       ( .... #c p p )
+            2 pick                    ( .... #c p p #c )
+            i - 1-                    ( .... #c p p #c-i-1 )
+            2*                        ( .... #c p p 2[#c-i-1] )
+            +                         ( .... #c p p+2[#c-i-1] )
+            -10000 swap -             ( .... #c p -10000-[p+2[#c-i-1] )
+            group                     ( .... #c p W )
+            2swap                     ( .... W #c p )
+        loop
+        drop
+    then                              ( ... Kn...K0 #k CxmCymCzm...Cx0Cy0Cz0 Wm...W0 #c )
+
+    \ Order
+    71 group 1+                       ( ... Kn...K0 #k CxmCymCzm...Cx0Cy0Cz0 Wm...W0 #c order )
+
+    \ Set up flag to begin (true) or end (false).
+    true
+    setupspline
+
+    clearitem writeitem drop
+
+    \ Now vary the parameter from the value of the first to the last knot.
+    0.0 0.0 0.0
+    addPolylineHeader
+    add3dPolylineHeader
+
+    splineIterator @ 0 do
+        i float knotInterval 2@ f*
+        firstKnot 2@ f+
+        evalSpline
+        addVertex
+        addVertexTrailer
+    loop
+    addSequend
+
+    \ Clean up any memory allocated by the interpreter.
+    false
+    setupspline
+;
+
+: doLeader
+        \ Decompose into polyline segments.
+        saveLayer
+        saveColor
+        10 itempos2                   ( ... n )
+        76 group 1- +                 ( ... n+[x-1] )
+        dup dup                       ( ... m m m )
+
+        76 group 0 do                 ( ... m m m )
+            -10000 swap -             ( ... m m -10000-m )
+            i +                       ( ... m m -10000-m+i )
+            group                     ( ... m m xx yy zz )
+            3 2roll                   ( ... xx yy zz m m )
+            dup                       ( ... xx yy zz m m m )
+        loop
+        drop drop drop
+
+        76 group                      ( .... xx yy zz xx yy zz p )
+        clearitem writeitem drop
+        0.0 0.0 0.0 addPolylineHeader
+        add3dPolylineHeader
+
+        0 do                          ( .... xx yy zz xx yy zz )
+            addVertex                 ( .... xx yy zz )
+			addVertexTrailer
+        loop
+        addSequend
+;
+
+: dxf:entities:leader
+    doLeader
+;
+
+: dxf:blocks:leader
+    doLeader
+;
+
+\   Termination processing
+: dxf:end
+    handleson @ if
+        \ No need to run a second pass if no new entities were added.
+        needToRewind @ if
+            \ Run 2 passes on the input file.
+            \ This is done to increment the handle seed value back in the header.
+            rewind @ if
+                false rewind !
+                "End translation.\n" type
+            else
+                true rewind !
+                "End first pass, now updating handle values.\n" type
+            then
+        then
+    then
+    depth if
+        .s cr
+    then
+;
